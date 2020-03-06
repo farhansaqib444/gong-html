@@ -75,6 +75,9 @@
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signUpModal2">
               Sign Up 2
             </button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+              Login
+            </button>
           </div>
         </div>
       </div>
@@ -89,8 +92,15 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content theme-modal sign-up-modal">
           <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <span class="modal-divider">
+            OR
+          </span>
             <div class="container">
               <div class="row align-items-center">
+
                 <div class="col-md-6 col-sm-6">
                   <div class="already-account">
                     <p>Already have an account?</p>
@@ -98,9 +108,6 @@
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6 text-center bg-red py-5">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
                   <form action="">
                     <h2 class="modal-title">Sign Up</h2>
                     <p class="title-description">
@@ -141,11 +148,17 @@
     </div>
 <!--    Sign Up Modal End-->
 
-  <!--    Sign Up Modal Start-->
-  <div style="display: block" class="modal fade show" id="signUpModal2" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
+  <!--    Sign Up Modal 2 Start-->
+  <div class="modal fade" id="signUpModal2" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content theme-modal sign-up-modal">
         <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <span class="modal-divider">
+            &
+          </span>
           <div class="container">
             <div class="row align-items-center">
               <div class="col-md-6 col-sm-6">
@@ -166,9 +179,7 @@
                 </div>
               </div>
               <div class="col-md-6 col-sm-6 text-center bg-red py-5">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+
                 <form action="">
                   <div class="user-img">
                     <img src="../assets/images/user-placeholder.png" alt="">
@@ -211,9 +222,56 @@
       </div>
     </div>
   </div>
-  <!--    Sign Up Modal End-->
+  <!--    Sign Up Modal 2 End-->
 
 
+  <!--    Login Modal Start-->
+  <div class="modal fade show d-block" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content theme-modal login-modal">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <span class="modal-divider">
+            OR
+          </span>
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-sm-6 text-center bg-red py-5">
+                <form action="">
+                  <h2 class="modal-title">Log In</h2>
+                  <p class="title-description">
+                    to your account
+                  </p>
+                  <div class="input-field">
+                    <label for="login-email">Email</label>
+                    <div class="input-group mb-3">
+                      <input type="email" class="form-control" id="login-email">
+                    </div>
+                  </div>
+                  <div class="input-field">
+                    <label for="login-password">Password</label>
+                    <div class="input-group mb-3">
+                      <input type="password" class="form-control" id="login-password">
+                    </div>
+                  </div>
+                  <button class="btn btn-primary rounded-pill mt-3">Login</button>
+                </form>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="already-account mb-0 mb-sm-4">
+                  <p>Don't have an account?</p>
+                  <a href="">Sign Up</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--    Login Modal End-->
 
   <!--Bootstrap 4 JS files-->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

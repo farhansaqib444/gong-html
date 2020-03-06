@@ -1,3 +1,20 @@
+.modal-divider {
+  color: #000;
+  width: 50px;
+  background-color: #fff;
+  height: 50px;
+  position: absolute;
+  z-index: 9;
+  border-radius: 100%;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 8px;
+  //center align
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
 .already-account {
   text-align: center;
   padding: 15px 0;
@@ -68,9 +85,22 @@
   }
   &.sign-up-modal {
     form {
-      max-width: 300px;
+      max-width: 250px;
       width: 100%;
       margin: 0 auto;
+    }
+  }
+
+  &.login-modal {
+    form {
+      max-width: 250px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .row {
+      div:first-child {
+        border-radius: 10px 0 0 10px;
+      }
     }
   }
 }
