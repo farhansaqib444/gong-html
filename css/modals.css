@@ -1,0 +1,86 @@
+.already-account {
+  text-align: center;
+  padding: 15px 0; }
+  .already-account p {
+    font-size: 17px;
+    font-family: Roboto, serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    margin-bottom: 0; }
+  .already-account a {
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: Roboto, serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #FFFFFF; }
+
+.modal-dialog {
+  margin: 10.75rem 15px; }
+
+.theme-modal {
+  background: url("../assets/images/modal-bg.png") no-repeat center left;
+  background-size: cover;
+  border: 0;
+  border-radius: 10px; }
+  .theme-modal .modal-header {
+    font-weight: 300; }
+    .theme-modal .modal-header .close {
+      padding: 5px 0 5px;
+      color: #fff; }
+  .theme-modal .modal-body {
+    padding: 0;
+    border-radius: 10px; }
+    .theme-modal .modal-body .row div:nth-child(2) {
+      border-radius: 0 0 10px 10px; }
+    .theme-modal .modal-body .close {
+      padding: 5px 10px 5px;
+      color: #fff;
+      font-weight: 300;
+      position: absolute;
+      right: 0;
+      top: 0; }
+    .theme-modal .modal-body .modal-title {
+      font-size: 26px;
+      font-family: Roboto, serif;
+      font-weight: 500;
+      margin-bottom: 15px;
+      letter-spacing: 0;
+      color: #FFFFFC; }
+    .theme-modal .modal-body .title-description {
+      font-size: 14px;
+      font-family: Roboto, serif;
+      font-weight: 400;
+      margin-bottom: 25px;
+      letter-spacing: 0;
+      color: #FFFFFF; }
+  .theme-modal.sign-up-modal form {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto; }
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 576px;
+    margin: 10.75rem auto; }
+
+  .theme-modal .modal-body .row div:nth-child(2) {
+    border-radius: 0 10px 10px 0; }
+  .theme-modal .modal-body .modal-title {
+    font-size: 32px; }
+  .theme-modal .modal-body .title-description {
+    font-size: 14px; } }
+@media (min-width: 768px) {
+  .modal-dialog {
+    max-width: 720px;
+    margin: 10.75rem auto; }
+
+  .theme-modal .modal-body .row div:nth-child(2) {
+    border-radius: 0 10px 10px 0; }
+  .theme-modal .modal-body .modal-title {
+    font-size: 36px; }
+  .theme-modal .modal-body .title-description {
+    font-size: 17px; } }
+
+/*# sourceMappingURL=modals.css.map */
