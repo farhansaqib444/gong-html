@@ -2,6 +2,9 @@
 .bg-red {
   background: #940000 0% 0% no-repeat padding-box; }
 
+.form-control:focus {
+  box-shadow: none; }
+
 .input-field {
   max-width: 300px;
   width: 100%;
@@ -26,6 +29,9 @@
     border-color: transparent;
     outline: 0;
     box-shadow: none; }
+
+button:focus {
+  outline: none; }
 
 .btn {
   font-size: 18px;
@@ -102,5 +108,27 @@
     align-self: start;
     margin-left: 25px;
     margin-bottom: 5px; }
+
+.search-widget {
+  position: relative; }
+  .search-widget input {
+    border: 1px solid #FEFEFE;
+    background-color: transparent;
+    border-radius: 21px;
+    font-family: Roboto, serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #AEAEAE; }
+  .search-widget i {
+    position: absolute;
+    right: 20px;
+    font-family: Roboto, serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    padding: 0; }
 
 /*# sourceMappingURL=theme-style.css.map */
