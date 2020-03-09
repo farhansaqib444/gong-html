@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
-
+.show-web-hide-mob {
+  display: initial;
+}
+.show-mob-hide-web {
+  display: none;
+}
 .bg-red {
   background: #940000 0% 0% no-repeat padding-box;
 }
@@ -82,58 +87,40 @@ button:focus {
   box-shadow: none;
 }
 //theme btn styling end
-
-
-//css elements start
-//      ==============image picker css start=================
-.user-img {
-  display: inline-block;
-  position: relative;
-  img {
-    width: 97px;
-    height: 97px;
-    border-radius: 100%;
+//      ==============Navbar css start=================
+.navbar {
+  .dropdown-toggle::after {
+    display: none;
   }
-  span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 27px;
-    height: 27px;
-    border-radius: 100%;
-    position: absolute;
-    bottom: -10px;
-    right: 37px;
-    background-color: #FDC156;
-  }
-  i {
-    color: #fff;
-    align-items: center;
-    font-size: 15px;
+  .navbar-collapse {
+    .navbar-nav {
+      align-items: center;
+    }
   }
 }
-//      ============== image picker css End =================
-
-
-//      ==============Gender widget css start=================
-.user-gender {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  label {
-    font-size: 14px;
-    color: #FFFFFC;
-    align-self: start;
-    margin-left: 25px;
-    margin-bottom: 5px;
-  }
+.navbar-toggler {
+  border: 0 !important;
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border-radius: .25rem;
 }
-//      ==============Gender widget  css End =================
 
-//      ============== search-widget css start=================
+        //      ============== search-widget css start=================
 .search-widget {
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #AEAEAE;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #AEAEAE;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #AEAEAE;
+  }
   position: relative;
   input {
     border: 1px solid #FEFEFE;
@@ -143,11 +130,16 @@ button:focus {
     font-size: 17px;
     font-weight: 400;
     letter-spacing: 0;
-    color: #AEAEAE;
+    color: #FEFEFE;
+    &:focus {
+      background-color: transparent;
+      color: #FEFEFE;
+    }
   }
-  i {
+  button {
     position: absolute;
-    right: 20px;
+    right: 10px;
+    top: 8px;
     font-family: Roboto, serif;
     font-size: 17px;
     font-weight: 400;
@@ -157,6 +149,39 @@ button:focus {
     padding: 0;
   }
 }
-//      ============== search-widget css End =================
+        //      ============== search-widget css End =================
 
-//css elements end
+
+//      ==============Navbar css End=================
+
+
+@media (max-width: 768px) {
+  .show-web-hide-mob {
+    display: none;
+  }
+  .show-mob-hide-web {
+    display: initial;
+  }
+  .navbar {
+    .navbar-brand {
+      width: 60px;
+    }
+    .nav-user-icon {
+      width: 40px;
+    }
+    .dropdown-toggle::after {
+      display: none;
+    }
+    .navbar-collapse {
+      .navbar-nav {
+        align-items: start;
+      }
+    }
+    .search-widget {
+      input.form-control {
+        width: 100%;
+      }
+    }
+  }
+
+}

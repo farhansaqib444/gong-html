@@ -1,3 +1,50 @@
+//      ==============image picker css start=================
+.upload-user-img {
+  display: inline-block;
+  position: relative;
+  img {
+    width: 97px;
+    height: 97px;
+    border-radius: 100%;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -10px;
+    right: 37px;
+    background-color: #FDC156;
+  }
+  i {
+    color: #fff;
+    align-items: center;
+    font-size: 15px;
+  }
+}
+//      ============== image picker css End =================
+
+
+//      ==============Gender widget css start=================
+.user-gender {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  label {
+    font-size: 14px;
+    color: #FFFFFC;
+    align-self: start;
+    margin-left: 25px;
+    margin-bottom: 5px;
+  }
+}
+//      ==============Gender widget  css End =================
+
 .modal-divider {
   color: #000;
   width: 50px;

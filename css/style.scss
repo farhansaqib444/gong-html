@@ -1,0 +1,33 @@
+.content {
+  .banner-area {
+    background: url("../assets/images/gong-banner.png") no-repeat center center;
+    background-size: cover;
+    height: 720px;
+    .banner-content {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      h1 {
+        font-size: 104px;
+        font-weight: 700;
+        font-family: Script MT;
+        letter-spacing: 0;
+        color: #FEFEFE;
+        margin-bottom: 25px;
+      }
+      p {
+        font-size: 17px;
+        font-weight: 400;
+        font-family: Roboto, serif;
+        letter-spacing: 0;
+        color: #FEFEFE;
+        margin-bottom: 45px;
+      }
+      button {
+
+      }
+    }
+  }
+}
