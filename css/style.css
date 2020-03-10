@@ -35,18 +35,17 @@
       letter-spacing: 0;
       color: #FEFEFE;
       margin-bottom: 45px; }
-
-.tab-section {
+.content .tab-section {
   margin-bottom: 90px; }
-  .tab-section nav {
+  .content .tab-section nav {
     background-color: #273043;
     border-radius: 10px;
     margin-bottom: 45px; }
-    .tab-section nav .nav-tabs {
+    .content .tab-section nav .nav-tabs {
       border-bottom: transparent;
       padding: 0 80px;
       margin-top: -40px; }
-      .tab-section nav .nav-tabs .nav-link {
+      .content .tab-section nav .nav-tabs .nav-link {
         border: 1px solid transparent;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
@@ -57,88 +56,86 @@
         align-items: center;
         justify-content: center;
         flex: auto; }
-        .tab-section nav .nav-tabs .nav-link p {
+        .content .tab-section nav .nav-tabs .nav-link p {
           font-size: 13px;
           font-weight: 400;
           font-family: Roboto, serif;
           letter-spacing: 0;
           color: #FFFFFF; }
-      .tab-section nav .nav-tabs div svg {
+      .content .tab-section nav .nav-tabs div svg {
         margin-bottom: 7px; }
-      .tab-section nav .nav-tabs .nav-item.active {
+      .content .tab-section nav .nav-tabs .nav-item.active {
         color: #273043;
         background-color: #FEC157;
         border-color: #FEC157 #FEC157 #FEC157; }
-        .tab-section nav .nav-tabs .nav-item.active div svg {
+        .content .tab-section nav .nav-tabs .nav-item.active div svg {
           fill: black; }
-  .tab-section .tab-content .tab-widget-title {
+  .content .tab-section .tab-content .tab-widget-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: -55px; }
-    .tab-section .tab-content .tab-widget-title h2 {
+    .content .tab-section .tab-content .tab-widget-title h2 {
       padding: 10px 5px;
       color: #fff;
       font-size: 22px;
       font-weight: 500;
       margin-bottom: 0; }
-      .tab-section .tab-content .tab-widget-title h2:last-child {
+      .content .tab-section .tab-content .tab-widget-title h2:last-child {
         font-style: italic;
         padding-right: 15px; }
-    .tab-section .tab-content .tab-widget-title.bg-green {
+    .content .tab-section .tab-content .tab-widget-title.bg-green {
       background: transparent linear-gradient(90deg, #0BA360 0%, #0EA463 31%, #18A96D 57%, #29B17F 81%, #3CBA92 100%) 0% 0% no-repeat padding-box; }
-    .tab-section .tab-content .tab-widget-title.bg-purple {
+    .content .tab-section .tab-content .tab-widget-title.bg-purple {
       background: transparent linear-gradient(90deg, #66A6FF 0%, #66A6FF 33%, #35A4AB 100%) 0% 0% no-repeat padding-box; }
-    .tab-section .tab-content .tab-widget-title.bg-purple-reverse {
+    .content .tab-section .tab-content .tab-widget-title.bg-purple-reverse {
       background: transparent linear-gradient(90deg, #764BA2 0%, #7353AD 23%, #6C68CB 65%, #667EEA 100%) 0% 0% no-repeat padding-box; }
-    .tab-section .tab-content .tab-widget-title.bg-red {
+    .content .tab-section .tab-content .tab-widget-title.bg-red {
       background: transparent linear-gradient(90deg, #C71D6F 0%, #C71D6F 12%, #C72170 27%, #C82E74 43%, #C9437A 60%, #CC6283 77%, #CF888F 89%, #D09693 100%, #D09693 100%) 0% 0% no-repeat padding-box; }
-  .tab-section .tab-content .slider-item {
+  .content .tab-section .tab-content .slider-item {
     width: 220px;
     height: 220px;
     margin-bottom: 25px; }
-    .tab-section .tab-content .slider-item iframe, .tab-section .tab-content .slider-item video {
+    .content .tab-section .tab-content .slider-item iframe, .content .tab-section .tab-content .slider-item video {
       background: #000;
       width: 260px;
       height: 220px;
       border-radius: 10px; }
-
-.app-area {
+.content .app-area {
   background: url("../assets/images/download-banner.png") no-repeat center center;
   background-size: cover;
   height: 730px;
   margin-bottom: 90px; }
-  .app-area .app-area-content h3 {
+  .content .app-area .app-area-content h3 {
     font-size: 28px;
     font-weight: 400;
     color: #fff;
     margin-bottom: 10px; }
-  .app-area .app-area-content h1 {
+  .content .app-area .app-area-content h1 {
     font-size: 64px;
     color: #FDC156;
     font-weight: 500;
     font-family: Roboto, serif;
     margin-bottom: 15px; }
-  .app-area .app-area-content p {
+  .content .app-area .app-area-content p {
     font-size: 19px;
     font-weight: 400;
     color: #fff;
     margin-bottom: 23px; }
-  .app-area .app-area-content .app-btn-group {
+  .content .app-area .app-area-content .app-btn-group {
     display: flex; }
-    .app-area .app-area-content .app-btn-group a {
+    .content .app-area .app-area-content .app-btn-group a {
       margin-right: 15px;
       border-radius: 10px; }
-    .app-area .app-area-content .app-btn-group img {
+    .content .app-area .app-area-content .app-btn-group img {
       width: 100%;
       max-width: 200px;
       border-radius: 10px; }
-
-.artist-area {
+.content .artist-area {
   margin-bottom: 90px; }
-  .artist-area .owl-dots {
+  .content .artist-area .owl-dots {
     display: none; }
-  .artist-area h2 {
+  .content .artist-area h2 {
     font-size: 40px;
     text-align: center;
     font-weight: 700;
@@ -146,11 +143,36 @@
     letter-spacing: 0;
     color: #930000;
     margin-bottom: 50px; }
-  .artist-area .item img {
+  .content .artist-area .item img {
     border-radius: 50%;
     margin: 0 auto;
     max-width: 240px;
     width: 100%; }
+.content .user-card {
+  text-align: center;
+  background: #940000 0 0 no-repeat padding-box;
+  border-radius: 10px 0 0 10px;
+  padding: 40px 0; }
+  .content .user-card img {
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    border: 2px solid #FEC157;
+    border-radius: 100%;
+    margin-bottom: 8px; }
+  .content .user-card label {
+    font-size: 17px;
+    display: inline-block;
+    font-weight: 500;
+    font-family: Roboto, serif;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FEC157; }
+  .content .user-card p {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Roboto, serif;
+    color: #FEC157; }
 
 .footer {
   background: #000000 0% 0% no-repeat padding-box;
@@ -213,6 +235,18 @@
     letter-spacing: 0;
     color: #FEFEFE;
     margin-bottom: 25px; }
+
+  .tab-section nav .nav-tabs {
+    border-bottom: transparent;
+    padding: 0 30px;
+    margin-top: -40px; }
+    .tab-section nav .nav-tabs .nav-link {
+      width: 80px;
+      height: 80px; }
+    .tab-section nav .nav-tabs .nav-item.active {
+      color: #273043;
+      background-color: #FEC157;
+      border-color: #FEC157 #FEC157 #FEC157; }
 
   .app-area {
     height: 730px;

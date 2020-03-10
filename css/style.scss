@@ -14,206 +14,239 @@
 }
 
 .content {
-            //=============banner styling start=============
-  .banner-area {
-    background: url("../assets/images/gong-banner.png") no-repeat center center;
-    background-size: cover;
-    height: 100vh;
-    .banner-content {
-      text-align: center;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      h1 {
-        font-size: 104px;
-        font-weight: 700;
-        font-family: Script MT;
-        letter-spacing: 0;
-        color: #FEFEFE;
-        margin-bottom: 25px;
-      }
-      p {
-        font-size: 17px;
-        font-weight: 400;
-        font-family: Roboto, serif;
-        letter-spacing: 0;
-        color: #FEFEFE;
-        margin-bottom: 45px;
-      }
-      button {
 
-      }
+                              //+++Home Page+++
+          //=============banner styling start=============
+  .banner-area {
+  background: url("../assets/images/gong-banner.png") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  .banner-content {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      font-size: 104px;
+      font-weight: 700;
+      font-family: Script MT;
+      letter-spacing: 0;
+      color: #FEFEFE;
+      margin-bottom: 25px;
+    }
+    p {
+      font-size: 17px;
+      font-weight: 400;
+      font-family: Roboto, serif;
+      letter-spacing: 0;
+      color: #FEFEFE;
+      margin-bottom: 45px;
+    }
+    button {
+
     }
   }
-            //=============banner styling End===============
 }
+          //=============banner styling End===============
 
-
-//=============banner styling start=============
-.tab-section {
-  margin-bottom: 90px;
-  nav {
-    background-color: #273043;
-    border-radius: 10px;
-    margin-bottom: 45px;
-    .nav-tabs {
-      border-bottom: transparent;
-      padding: 0 80px;
-      margin-top: -40px;
-      .nav-link {
-        border: 1px solid transparent;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        padding: 0;
-        width: 110px;
-        height: 110px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex: auto;
-        p {
-          font-size: 13px;
-          font-weight: 400;
-          font-family: Roboto, serif;
-          letter-spacing: 0;
-          color: #FFFFFF;
+  //=============banner styling start=============
+  .tab-section {
+    margin-bottom: 90px;
+    nav {
+      background-color: #273043;
+      border-radius: 10px;
+      margin-bottom: 45px;
+      .nav-tabs {
+        border-bottom: transparent;
+        padding: 0 80px;
+        margin-top: -40px;
+        .nav-link {
+          border: 1px solid transparent;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          padding: 0;
+          width: 110px;
+          height: 110px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: auto;
+          p {
+            font-size: 13px;
+            font-weight: 400;
+            font-family: Roboto, serif;
+            letter-spacing: 0;
+            color: #FFFFFF;
+          }
         }
-      }
-      div {
-         svg    {
-           margin-bottom: 7px;
-         }
-       }
-      .nav-item.active {
-        color: #273043;
-        background-color: #FEC157;
-        border-color: #FEC157 #FEC157 #FEC157;
         div {
           svg    {
-            fill: black;
+            margin-bottom: 7px;
+          }
+        }
+        .nav-item.active {
+          color: #273043;
+          background-color: #FEC157;
+          border-color: #FEC157 #FEC157 #FEC157;
+          div {
+            svg    {
+              fill: black;
+            }
           }
         }
       }
     }
-  }
-  .tab-content {
-    .tab-widget-title {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: -55px;
-      h2 {
-        padding: 10px 5px;
-        color: #fff;
-        font-size: 22px;
-        font-weight: 500;
-        margin-bottom: 0;
-        &:last-child {
-          font-style: italic;
-          padding-right: 15px;
+    .tab-content {
+      .tab-widget-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -55px;
+        h2 {
+          padding: 10px 5px;
+          color: #fff;
+          font-size: 22px;
+          font-weight: 500;
+          margin-bottom: 0;
+          &:last-child {
+            font-style: italic;
+            padding-right: 15px;
+          }
+        }
+        &.bg-green {
+          background: transparent linear-gradient(90deg, #0BA360 0%, #0EA463 31%, #18A96D 57%, #29B17F 81%, #3CBA92 100%) 0% 0% no-repeat padding-box;
+        }
+        &.bg-purple {
+          background: transparent linear-gradient(90deg, #66A6FF 0%, #66A6FF 33%, #35A4AB 100%) 0% 0% no-repeat padding-box;
+        }
+        &.bg-purple-reverse {
+          background: transparent linear-gradient(90deg, #764BA2 0%, #7353AD 23%, #6C68CB 65%, #667EEA 100%) 0% 0% no-repeat padding-box;
+        }
+        &.bg-red {
+          background: transparent linear-gradient(90deg, #C71D6F 0%, #C71D6F 12%, #C72170 27%, #C82E74 43%, #C9437A 60%, #CC6283 77%, #CF888F 89%, #D09693 100%, #D09693 100%) 0% 0% no-repeat padding-box;
         }
       }
-      &.bg-green {
-        background: transparent linear-gradient(90deg, #0BA360 0%, #0EA463 31%, #18A96D 57%, #29B17F 81%, #3CBA92 100%) 0% 0% no-repeat padding-box;
-      }
-      &.bg-purple {
-        background: transparent linear-gradient(90deg, #66A6FF 0%, #66A6FF 33%, #35A4AB 100%) 0% 0% no-repeat padding-box;
-      }
-      &.bg-purple-reverse {
-        background: transparent linear-gradient(90deg, #764BA2 0%, #7353AD 23%, #6C68CB 65%, #667EEA 100%) 0% 0% no-repeat padding-box;
-      }
-      &.bg-red {
-        background: transparent linear-gradient(90deg, #C71D6F 0%, #C71D6F 12%, #C72170 27%, #C82E74 43%, #C9437A 60%, #CC6283 77%, #CF888F 89%, #D09693 100%, #D09693 100%) 0% 0% no-repeat padding-box;
-      }
-    }
-    .slider-item {
-      width: 220px;
-      height: 220px;
-      margin-bottom: 25px;
-      iframe, video {
-        background: #000;
-        width: 260px;
+      .slider-item {
+        width: 220px;
         height: 220px;
-        border-radius: 10px;
+        margin-bottom: 25px;
+        iframe, video {
+          background: #000;
+          width: 260px;
+          height: 220px;
+          border-radius: 10px;
+        }
       }
     }
   }
-}
-//=============banner styling End===============
+  //=============banner styling End===============
 
 
-//=============app-area styling start=============
-.app-area {
-  background: url("../assets/images/download-banner.png") no-repeat center center;
-  background-size: cover;
-  height: 730px;
-  margin-bottom: 90px;
-  .app-area-content {
-    h3 {
-      font-size: 28px;
-      font-weight: 400;
-      color: #fff;
-      margin-bottom: 10px;
-    }
-    h1 {
-      font-size: 64px;
-      color: #FDC156;
-      font-weight: 500;
-      font-family: Roboto, serif;
-      margin-bottom: 15px;
-    }
-    p {
-      font-size: 19px;
-      font-weight: 400;
-      color: #fff;
-      margin-bottom: 23px;
-    }
-    .app-btn-group {
-      display: flex;
-      a {
-        margin-right: 15px;
-        border-radius: 10px;
+  //=============app-area styling start=============
+  .app-area {
+    background: url("../assets/images/download-banner.png") no-repeat center center;
+    background-size: cover;
+    height: 730px;
+    margin-bottom: 90px;
+    .app-area-content {
+      h3 {
+        font-size: 28px;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 10px;
       }
-      img {
-        width: 100%;
-        max-width: 200px;
-        border-radius: 10px;
+      h1 {
+        font-size: 64px;
+        color: #FDC156;
+        font-weight: 500;
+        font-family: Roboto, serif;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 19px;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 23px;
+      }
+      .app-btn-group {
+        display: flex;
+        a {
+          margin-right: 15px;
+          border-radius: 10px;
+        }
+        img {
+          width: 100%;
+          max-width: 200px;
+          border-radius: 10px;
 
+        }
       }
     }
   }
-}
-//=============app-area styling End===============
+  //=============app-area styling End===============
 
 
   //=============artist-area styling start=============
-.artist-area {
-  margin-bottom: 90px;
-  .owl-dots {
-    display: none;
-  }
-  h2 {
-    font-size: 40px;
-    text-align: center;
-    font-weight: 700;
-    font-family: Roboto, serif;
-    letter-spacing: 0;
-    color: #930000;
-    margin-bottom: 50px;
-  }
-  .item {
-    img {
-      border-radius: 50%;
-      margin: 0 auto;
-      max-width: 240px;
-      width: 100%;
+  .artist-area {
+    margin-bottom: 90px;
+    .owl-dots {
+      display: none;
+    }
+    h2 {
+      font-size: 40px;
+      text-align: center;
+      font-weight: 700;
+      font-family: Roboto, serif;
+      letter-spacing: 0;
+      color: #930000;
+      margin-bottom: 50px;
+    }
+    .item {
+      img {
+        border-radius: 50%;
+        margin: 0 auto;
+        max-width: 240px;
+        width: 100%;
+      }
     }
   }
-}
-//=============artist-area styling End===============
+  //=============artist-area styling End===============
 
+                  //+++submit form screen 5 Page+++
+
+  .user-card {
+    text-align: center;
+    background: #940000 0 0 no-repeat padding-box;
+    border-radius: 10px 0 0 10px;
+    padding: 40px 0;
+    img {
+      width: 100px;
+      height: 100%;
+      text-align: center;
+      border: 2px solid #FEC157;
+      border-radius: 100%;
+      margin-bottom: 8px;
+    }
+    label {
+      font-size: 17px;
+      display: inline-block;
+      font-weight: 500;
+      font-family: Roboto, serif;
+      letter-spacing: 0;
+      color: #FFFFFF;
+      border-bottom: 1px solid #FEC157;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      font-family: Roboto, serif;
+      color: #FEC157;
+    }
+  }
+
+}
 
 //=============footer-area styling start=============
 .footer {
@@ -306,43 +339,62 @@
     }
   }
 
-//=============app-area styling start=============
-.app-area {
-  height: 730px;
-  margin-bottom: 50px;
-  .app-area-content {
-    h3 {
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-    h1 {
-      font-size: 36px;
-      margin-bottom: 15px;
-    }
-    p {
-      font-size: 14px;
-      margin-bottom: 18px;
-    }
-    .app-btn-group {
-      display: flex;
-      a {
-        margin-right: 15px;
-        border-radius: 10px;
+  .tab-section {
+    nav {
+      .nav-tabs {
+        border-bottom: transparent;
+        padding: 0 30px;
+        margin-top: -40px;
+        .nav-link {
+          width: 80px;
+          height: 80px;
+        }
+        .nav-item.active {
+          color: #273043;
+          background-color: #FEC157;
+          border-color: #FEC157 #FEC157 #FEC157;
+        }
       }
-      img {
-        width: 100%;
-        max-width: 120px;
-        border-radius: 10px;
+    }
+  }
 
+  //=============app-area styling start=============
+  .app-area {
+    height: 730px;
+    margin-bottom: 50px;
+    .app-area-content {
+      h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 14px;
+        margin-bottom: 18px;
+      }
+      .app-btn-group {
+        display: flex;
+        a {
+          margin-right: 15px;
+          border-radius: 10px;
+        }
+        img {
+          width: 100%;
+          max-width: 120px;
+          border-radius: 10px;
+
+        }
       }
     }
+    .app-demo {
+      max-width: 260px;
+      width: 100%;
+    }
   }
-  .app-demo {
-    max-width: 260px;
-    width: 100%;
-  }
-}
-//=============app-area styling End===============
+  //=============app-area styling End===============
 
   //=============artist-area styling start=============
   .artist-area {
@@ -361,8 +413,6 @@
     }
   }
   //=============artist-area styling End===============
-
-
 }
 
 @media (max-width: 425px) {
@@ -416,7 +466,5 @@
   }
   //=============app-area styling End===============
 }
-
-
 
 //=============Media Query End===============
