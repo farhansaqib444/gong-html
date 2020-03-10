@@ -20,6 +20,15 @@
     color: #fff;
     align-items: center;
     font-size: 15px; }
+  .upload-user-img input {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
 
 .user-gender {
   display: flex;

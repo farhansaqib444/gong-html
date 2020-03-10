@@ -16,12 +16,16 @@
   border-bottom: 2px solid #F4F4F4;
 }
 .file-upload {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+  border-bottom:  2px solid #E5E5E5;;
   .button-wrapper {
     position: relative;
     display: inline-block;
     text-align: center;
-  }
 
+  }
   .button-wrapper span.label {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 2px solid #DCDCDC;
@@ -38,14 +42,19 @@
     align-items: center;
   }
 
-  #upload {
-    display: inline-block;
+  #upload-video, #upload-image, #upload-music {
     position: absolute;
     z-index: 1;
-    top: 0;
-    left: 0;
     opacity: 0;
     cursor: pointer;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    &:hover {
+      background: #FEC157 0% 0% no-repeat padding-box;
+      border: 2px solid #940000;
+    }
   }
 }
 .content {

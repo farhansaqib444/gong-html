@@ -13,32 +13,41 @@
 .border-bottom {
   border-bottom: 2px solid #F4F4F4; }
 
-.file-upload .button-wrapper {
-  position: relative;
-  display: inline-block;
-  text-align: center; }
-.file-upload .button-wrapper span.label {
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 2px solid #DCDCDC;
-  border-radius: 10px;
-  position: relative;
-  z-index: 0;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  color: #AEAEAE;
-  font-size: 35px;
+.file-upload {
   display: flex;
-  justify-content: center;
-  align-items: center; }
-.file-upload #upload {
-  display: inline-block;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  cursor: pointer; }
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+  border-bottom: 2px solid #E5E5E5; }
+  .file-upload .button-wrapper {
+    position: relative;
+    display: inline-block;
+    text-align: center; }
+  .file-upload .button-wrapper span.label {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #DCDCDC;
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    color: #AEAEAE;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .file-upload #upload-video, .file-upload #upload-image, .file-upload #upload-music {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+    .file-upload #upload-video:hover, .file-upload #upload-image:hover, .file-upload #upload-music:hover {
+      background: #FEC157 0% 0% no-repeat padding-box;
+      border: 2px solid #940000; }
 
 .content .banner-area {
   background: url("../assets/images/gong-banner.png") no-repeat center center;
