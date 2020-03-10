@@ -10,6 +10,36 @@
 .bg-red {
   background: transparent linear-gradient(90deg, #C71D6F 0%, #C71D6F 12%, #C72170 27%, #C82E74 43%, #C9437A 60%, #CC6283 77%, #CF888F 89%, #D09693 100%, #D09693 100%) 0% 0% no-repeat padding-box; }
 
+.border-bottom {
+  border-bottom: 2px solid #F4F4F4; }
+
+.file-upload .button-wrapper {
+  position: relative;
+  display: inline-block;
+  text-align: center; }
+.file-upload .button-wrapper span.label {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #DCDCDC;
+  border-radius: 10px;
+  position: relative;
+  z-index: 0;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  color: #AEAEAE;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+.file-upload #upload {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer; }
+
 .content .banner-area {
   background: url("../assets/images/gong-banner.png") no-repeat center center;
   background-size: cover;
@@ -152,7 +182,8 @@
   text-align: center;
   background: #940000 0 0 no-repeat padding-box;
   border-radius: 10px 0 0 10px;
-  padding: 40px 0; }
+  padding: 40px 0;
+  margin-bottom: 15px; }
   .content .user-card img {
     width: 100px;
     height: 100%;
@@ -173,6 +204,61 @@
     font-weight: 400;
     font-family: Roboto, serif;
     color: #FEC157; }
+.content .user-info {
+  border-bottom: 2px solid #F4F4F4;
+  padding-bottom: 10px; }
+  .content .user-info .info-field {
+    margin-bottom: 10px; }
+    .content .user-info .info-field span {
+      font-size: 14px;
+      font-weight: 400;
+      font-family: Roboto, serif; }
+      .content .user-info .info-field span i {
+        margin-right: 5px;
+        color: #940000; }
+    .content .user-info .info-field label, .content .user-info .info-field a {
+      font-size: 14px;
+      font-weight: 500;
+      font-family: Roboto, serif;
+      color: #940000;
+      margin: 0; }
+      .content .user-info .info-field label :hover, .content .user-info .info-field a :hover {
+        color: #940000; }
+.content .competition-from nav {
+  border-radius: 0 10px 10px 0;
+  background: #F2F2F2;
+  margin-bottom: 25px; }
+  .content .competition-from nav .nav-tabs {
+    border-bottom: 0; }
+    .content .competition-from nav .nav-tabs .nav-link {
+      border-radius: 10px;
+      font-size: 24px;
+      font-family: Roboto, serif;
+      background: #F2F2F2;
+      font-weight: 500;
+      color: #AEAEAE;
+      border: 0;
+      position: relative; }
+    .content .competition-from nav .nav-tabs .nav-link.active {
+      color: #940000; }
+.content .nav-tabs .nav-item + .nav-item:before {
+  content: " | ";
+  position: absolute;
+  left: -3px;
+  font-weight: 300; }
+.content .tab-content .competition-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: Roboto, serif;
+  letter-spacing: 0;
+  margin-bottom: 15px;
+  color: #930000; }
+.content .tab-content .competition-title p {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Roboto, serif;
+  letter-spacing: 0;
+  color: #AEAEAE; }
 
 .footer {
   background: #000000 0% 0% no-repeat padding-box;
