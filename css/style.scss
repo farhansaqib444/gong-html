@@ -15,33 +15,55 @@
 .border-bottom {
   border-bottom: 2px solid #F4F4F4;
 }
+
 .file-upload {
-  display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 50px;
-  border-bottom:  2px solid #E5E5E5;;
-  .button-wrapper {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-
-  }
-  .button-wrapper span.label {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 2px solid #DCDCDC;
-    border-radius: 10px;
-    position: relative;
-    z-index: 0;
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-    color: #AEAEAE;
-    font-size: 35px;
-    display: flex;
+  nav {
     justify-content: center;
-    align-items: center;
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
   }
+  .nav-tabs {
+    border: 0;
+  }
+  .nav-tabs .nav-link {
+    border: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    .button-wrapper {
+      position: relative;
+      display: inline-block;
+      text-align: center;
 
+      span.label {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 2px solid #DCDCDC;
+        border-radius: 10px;
+        position: relative;
+        z-index: 0;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        color: #AEAEAE;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: inherit;
+    background-color: transparent;
+    border-color: transparent;
+    .button-wrapper {
+      span.label {
+        background: #FEC157 0% 0% no-repeat padding-box;
+        border: 2px solid #940000;
+        color: #000
+      }
+    }
+  }
   #upload-video, #upload-image, #upload-music {
     position: absolute;
     z-index: 1;
@@ -55,6 +77,29 @@
       background: #FEC157 0% 0% no-repeat padding-box;
       border: 2px solid #940000;
     }
+  }
+ }
+.button-wrapper {
+  position: relative;
+  display: inline-block;
+  background: none;
+  border: none;
+  text-align: center;
+
+  span.label {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #DCDCDC;
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    color: #AEAEAE;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .content {
@@ -317,7 +362,7 @@
     }
   }
   .competition-from {
-    nav {
+    nav.form-steps-nav {
       border-radius: 0 10px 10px 0;
       background: #F2F2F2;
       margin-bottom: 25px;
@@ -333,35 +378,40 @@
           border: 0;
           position: relative;
         }
+        .nav-item + .nav-item:before {
+          content: " | ";
+          position: absolute;
+          left: -3px;
+          font-weight: 300;
+        }
         .nav-link.active {
           color: #940000;
         }
       }
     }
-  }
-  .nav-tabs .nav-item + .nav-item:before {
-    content: " | ";
-    position: absolute;
-    left: -3px;
-    font-weight: 300;
-  }
-  .tab-content {
-    .competition-title {
-      h2 {
-        font-size: 36px;
-        font-weight: 700;
-        font-family: Roboto, serif;
-        letter-spacing: 0;
-        margin-bottom: 15px;
-        color: #930000;
+    .form-steps-content {
+      .competition-title {
+        h2 {
+          font-size: 36px;
+          font-weight: 700;
+          font-family: Roboto, serif;
+          letter-spacing: 0;
+          margin-bottom: 15px;
+          color: #930000;
+        }
+        p {
+          font-size: 20px;
+          font-weight: 500;
+          font-family: Roboto, serif;
+          letter-spacing: 0;
+          color: #AEAEAE;
+        }
       }
-      p {
-        font-size: 20px;
-        font-weight: 500;
-        font-family: Roboto, serif;
-        letter-spacing: 0;
-        color: #AEAEAE;
-      }
+    }
+  }
+  .competition-btn-group {
+    div {
+      border-bottom: 2px solid #F4F4F4;
     }
   }
 }
@@ -435,7 +485,7 @@
       color: #6E6E6E;
       margin-bottom: 0;
     }
-    }
+  }
 //=============footer-area styling start=============
 
 
@@ -453,6 +503,14 @@
           color: #FEFEFE;
           margin-bottom: 25px;
         }
+      }
+    }
+    .user-card {
+      border-radius: 10px;
+    }
+    .competition-btn-group {
+      div {
+        border-bottom: 0;
       }
     }
   }
@@ -553,7 +611,6 @@
         }
       }
     }
-
     .tab-section {
       nav {
         .nav-tabs {
@@ -573,12 +630,18 @@
         }
       }
     }
-  }
-  .app-area {
-    .app-area-content {
-      text-align: center;
-      .app-btn-group {
-        justify-content: center;
+
+    .app-area {
+      .app-area-content {
+        text-align: center;
+        .app-btn-group {
+          justify-content: center;
+        }
+      }
+    }
+    .competition-btn-group {
+      div {
+        border-bottom: 2px solid #F4F4F4;
       }
     }
   }

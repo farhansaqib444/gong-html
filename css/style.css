@@ -13,41 +13,76 @@
 .border-bottom {
   border-bottom: 2px solid #F4F4F4; }
 
-.file-upload {
+.file-upload nav {
+  justify-content: center;
   display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 50px;
-  border-bottom: 2px solid #E5E5E5; }
-  .file-upload .button-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px; }
+.file-upload .nav-tabs {
+  border: 0; }
+.file-upload .nav-tabs .nav-link {
+  border: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+  .file-upload .nav-tabs .nav-link .button-wrapper {
     position: relative;
     display: inline-block;
     text-align: center; }
-  .file-upload .button-wrapper span.label {
+    .file-upload .nav-tabs .nav-link .button-wrapper span.label {
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 2px solid #DCDCDC;
+      border-radius: 10px;
+      position: relative;
+      z-index: 0;
+      width: 80px;
+      height: 80px;
+      cursor: pointer;
+      color: #AEAEAE;
+      font-size: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+.file-upload .nav-tabs .nav-item.show .nav-link, .file-upload .nav-tabs .nav-link.active {
+  color: inherit;
+  background-color: transparent;
+  border-color: transparent; }
+  .file-upload .nav-tabs .nav-item.show .nav-link .button-wrapper span.label, .file-upload .nav-tabs .nav-link.active .button-wrapper span.label {
+    background: #FEC157 0% 0% no-repeat padding-box;
+    border: 2px solid #940000;
+    color: #000; }
+.file-upload #upload-video, .file-upload #upload-image, .file-upload #upload-music {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+  .file-upload #upload-video:hover, .file-upload #upload-image:hover, .file-upload #upload-music:hover {
+    background: #FEC157 0% 0% no-repeat padding-box;
+    border: 2px solid #940000; }
+
+.button-wrapper {
+  position: relative;
+  display: inline-block;
+  background: none;
+  border: none;
+  text-align: center; }
+  .button-wrapper span.label {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 2px solid #DCDCDC;
     border-radius: 10px;
     position: relative;
     z-index: 0;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     color: #AEAEAE;
-    font-size: 35px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center; }
-  .file-upload #upload-video, .file-upload #upload-image, .file-upload #upload-music {
-    position: absolute;
-    z-index: 1;
-    opacity: 0;
-    cursor: pointer;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%; }
-    .file-upload #upload-video:hover, .file-upload #upload-image:hover, .file-upload #upload-music:hover {
-      background: #FEC157 0% 0% no-repeat padding-box;
-      border: 2px solid #940000; }
 
 .content .banner-area {
   background: url("../assets/images/gong-banner.png") no-repeat center center;
@@ -233,13 +268,13 @@
       margin: 0; }
       .content .user-info .info-field label :hover, .content .user-info .info-field a :hover {
         color: #940000; }
-.content .competition-from nav {
+.content .competition-from nav.form-steps-nav {
   border-radius: 0 10px 10px 0;
   background: #F2F2F2;
   margin-bottom: 25px; }
-  .content .competition-from nav .nav-tabs {
+  .content .competition-from nav.form-steps-nav .nav-tabs {
     border-bottom: 0; }
-    .content .competition-from nav .nav-tabs .nav-link {
+    .content .competition-from nav.form-steps-nav .nav-tabs .nav-link {
       border-radius: 10px;
       font-size: 24px;
       font-family: Roboto, serif;
@@ -248,26 +283,28 @@
       color: #AEAEAE;
       border: 0;
       position: relative; }
-    .content .competition-from nav .nav-tabs .nav-link.active {
+    .content .competition-from nav.form-steps-nav .nav-tabs .nav-item + .nav-item:before {
+      content: " | ";
+      position: absolute;
+      left: -3px;
+      font-weight: 300; }
+    .content .competition-from nav.form-steps-nav .nav-tabs .nav-link.active {
       color: #940000; }
-.content .nav-tabs .nav-item + .nav-item:before {
-  content: " | ";
-  position: absolute;
-  left: -3px;
-  font-weight: 300; }
-.content .tab-content .competition-title h2 {
+.content .competition-from .form-steps-content .competition-title h2 {
   font-size: 36px;
   font-weight: 700;
   font-family: Roboto, serif;
   letter-spacing: 0;
   margin-bottom: 15px;
   color: #930000; }
-.content .tab-content .competition-title p {
+.content .competition-from .form-steps-content .competition-title p {
   font-size: 20px;
   font-weight: 500;
   font-family: Roboto, serif;
   letter-spacing: 0;
   color: #AEAEAE; }
+.content .competition-btn-group div {
+  border-bottom: 2px solid #F4F4F4; }
 
 .footer {
   background: #000000 0% 0% no-repeat padding-box;
@@ -330,6 +367,10 @@
     letter-spacing: 0;
     color: #FEFEFE;
     margin-bottom: 25px; }
+  .content .user-card {
+    border-radius: 10px; }
+  .content .competition-btn-group div {
+    border-bottom: 0; }
 
   .tab-section nav .nav-tabs {
     border-bottom: transparent;
@@ -403,10 +444,11 @@
       background-color: #FEC157;
       border-color: #FEC157 #FEC157 #FEC157;
       border-radius: 10px; }
-
-  .app-area .app-area-content {
+  .content .app-area .app-area-content {
     text-align: center; }
-    .app-area .app-area-content .app-btn-group {
-      justify-content: center; } }
+    .content .app-area .app-area-content .app-btn-group {
+      justify-content: center; }
+  .content .competition-btn-group div {
+    border-bottom: 2px solid #F4F4F4; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,6 +8,13 @@
 .bg-red {
   background: #940000 0% 0% no-repeat padding-box;
 }
+a {
+  color: #940000;
+  &:hover {
+    color: #940000;
+    text-decoration: none;
+  }
+}
 .form-control:focus {
   box-shadow: none;
 }
@@ -39,7 +46,34 @@
     box-shadow: none;
   }
 }
+.theme-form {
+  .input-field {
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    label {
+      color: #DCDCDC;
+      opacity: 1;
+    }
+    .form-control {
+      border: 1px solid #DCDCDC;
+      background-color: transparent;
+      height: calc(1.8em + .75rem + 2px);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      border-radius: 10px;
+    }
 
+    .form-control:focus {
+      color: #495057;
+      background-color: #DCDCDC;
+      border-color: #DCDCDC;
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+}
 //theme btn styling Start.
 button:focus {
   outline: none;
@@ -49,7 +83,7 @@ button:focus {
   font-weight: 500;
   font-family: Roboto, serif;
   border: none;
-  padding: 7px 30px;
+  padding: 10px 30px;
   letter-spacing: 0;
   color: #000000;
 }
