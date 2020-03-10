@@ -1,7 +1,19 @@
+.bg-green {
+  background: transparent linear-gradient(90deg, #0BA360 0%, #0EA463 31%, #18A96D 57%, #29B17F 81%, #3CBA92 100%) 0% 0% no-repeat padding-box; }
+
+.bg-purple {
+  background: transparent linear-gradient(90deg, #66A6FF 0%, #66A6FF 33%, #35A4AB 100%) 0% 0% no-repeat padding-box; }
+
+.bg-purple-reverse {
+  background: transparent linear-gradient(90deg, #764BA2 0%, #7353AD 23%, #6C68CB 65%, #667EEA 100%) 0% 0% no-repeat padding-box; }
+
+.bg-red {
+  background: transparent linear-gradient(90deg, #C71D6F 0%, #C71D6F 12%, #C72170 27%, #C82E74 43%, #C9437A 60%, #CC6283 77%, #CF888F 89%, #D09693 100%, #D09693 100%) 0% 0% no-repeat padding-box; }
+
 .content .banner-area {
   background: url("../assets/images/gong-banner.png") no-repeat center center;
   background-size: cover;
-  height: 720px; }
+  height: 100vh; }
   .content .banner-area .banner-content {
     text-align: center;
     height: 100%;
@@ -24,38 +36,174 @@
       color: #FEFEFE;
       margin-bottom: 45px; }
 
-.tab-section nav {
-  background-color: #273043;
-  border-radius: 10px; }
-  .tab-section nav .nav-tabs {
-    border-bottom: transparent;
-    padding: 0 80px;
+.tab-section {
+  margin-bottom: 90px; }
+  .tab-section nav {
+    background-color: #273043;
+    border-radius: 10px;
+    margin-bottom: 45px; }
+    .tab-section nav .nav-tabs {
+      border-bottom: transparent;
+      padding: 0 80px;
+      margin-top: -40px; }
+      .tab-section nav .nav-tabs .nav-link {
+        border: 1px solid transparent;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 0;
+        width: 110px;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: auto; }
+        .tab-section nav .nav-tabs .nav-link p {
+          font-size: 13px;
+          font-weight: 400;
+          font-family: Roboto, serif;
+          letter-spacing: 0;
+          color: #FFFFFF; }
+      .tab-section nav .nav-tabs div svg {
+        margin-bottom: 7px; }
+      .tab-section nav .nav-tabs .nav-item.active {
+        color: #273043;
+        background-color: #FEC157;
+        border-color: #FEC157 #FEC157 #FEC157; }
+        .tab-section nav .nav-tabs .nav-item.active div svg {
+          fill: black; }
+  .tab-section .tab-content .tab-widget-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: -55px; }
-    .tab-section nav .nav-tabs .nav-link {
-      border: 1px solid transparent;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      padding: 0;
-      width: 110px;
-      height: 110px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex: auto; }
-      .tab-section nav .nav-tabs .nav-link p {
-        font-size: 13px;
-        font-weight: 400;
-        font-family: Roboto, serif;
-        letter-spacing: 0;
-        color: #FFFFFF; }
-    .tab-section nav .nav-tabs div svg {
-      margin-bottom: 7px; }
-    .tab-section nav .nav-tabs .nav-item.active {
-      color: #273043;
-      background-color: #FEC157;
-      border-color: #FEC157 #FEC157 #FEC157; }
-      .tab-section nav .nav-tabs .nav-item.active div svg {
-        fill: black; }
+    .tab-section .tab-content .tab-widget-title h2 {
+      padding: 10px 5px;
+      color: #fff;
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 0; }
+      .tab-section .tab-content .tab-widget-title h2:last-child {
+        font-style: italic;
+        padding-right: 15px; }
+    .tab-section .tab-content .tab-widget-title.bg-green {
+      background: transparent linear-gradient(90deg, #0BA360 0%, #0EA463 31%, #18A96D 57%, #29B17F 81%, #3CBA92 100%) 0% 0% no-repeat padding-box; }
+    .tab-section .tab-content .tab-widget-title.bg-purple {
+      background: transparent linear-gradient(90deg, #66A6FF 0%, #66A6FF 33%, #35A4AB 100%) 0% 0% no-repeat padding-box; }
+    .tab-section .tab-content .tab-widget-title.bg-purple-reverse {
+      background: transparent linear-gradient(90deg, #764BA2 0%, #7353AD 23%, #6C68CB 65%, #667EEA 100%) 0% 0% no-repeat padding-box; }
+    .tab-section .tab-content .tab-widget-title.bg-red {
+      background: transparent linear-gradient(90deg, #C71D6F 0%, #C71D6F 12%, #C72170 27%, #C82E74 43%, #C9437A 60%, #CC6283 77%, #CF888F 89%, #D09693 100%, #D09693 100%) 0% 0% no-repeat padding-box; }
+  .tab-section .tab-content .slider-item {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 25px; }
+    .tab-section .tab-content .slider-item iframe, .tab-section .tab-content .slider-item video {
+      background: #000;
+      width: 260px;
+      height: 220px;
+      border-radius: 10px; }
+
+.app-area {
+  background: url("../assets/images/download-banner.png") no-repeat center center;
+  background-size: cover;
+  height: 730px;
+  margin-bottom: 90px; }
+  .app-area .app-area-content h3 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 10px; }
+  .app-area .app-area-content h1 {
+    font-size: 64px;
+    color: #FDC156;
+    font-weight: 500;
+    font-family: Roboto, serif;
+    margin-bottom: 15px; }
+  .app-area .app-area-content p {
+    font-size: 19px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 23px; }
+  .app-area .app-area-content .app-btn-group {
+    display: flex; }
+    .app-area .app-area-content .app-btn-group a {
+      margin-right: 15px;
+      border-radius: 10px; }
+    .app-area .app-area-content .app-btn-group img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 10px; }
+
+.artist-area {
+  margin-bottom: 90px; }
+  .artist-area .owl-dots {
+    display: none; }
+  .artist-area h2 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-family: Roboto, serif;
+    letter-spacing: 0;
+    color: #930000;
+    margin-bottom: 50px; }
+  .artist-area .item img {
+    border-radius: 50%;
+    margin: 0 auto;
+    max-width: 240px;
+    width: 100%; }
+
+.footer {
+  background: #000000 0% 0% no-repeat padding-box;
+  padding-top: 50px; }
+  .footer .footer-widget {
+    margin-bottom: 50px; }
+    .footer .footer-widget .logo {
+      max-width: 165px;
+      width: 100%; }
+    .footer .footer-widget h3 {
+      font-size: 16px;
+      font-weight: 500;
+      font-family: Roboto, serif;
+      font: Regular 16px/19px Proxima Nova;
+      letter-spacing: 0;
+      color: #FFFFFF;
+      margin-bottom: 8px; }
+    .footer .footer-widget ul {
+      margin: 0;
+      padding: 0; }
+      .footer .footer-widget ul li {
+        list-style: none; }
+        .footer .footer-widget ul li a {
+          color: #fff;
+          font-size: 14px;
+          font-weight: 400;
+          font-family: Roboto, serif; }
+          .footer .footer-widget ul li a:hover {
+            color: #fff;
+            text-decoration: none; }
+      .footer .footer-widget ul.social-media li {
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 10px; }
+        .footer .footer-widget ul.social-media li a {
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+          display: inline-block;
+          margin-right: 5px; }
+
+.copy-right {
+  padding: 15px 0;
+  text-align: center;
+  background: #000000;
+  border-top: 1px solid #BFBFBF; }
+  .copy-right p {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: Roboto, serif;
+    letter-spacing: 0;
+    color: #6E6E6E;
+    margin-bottom: 0; }
 
 @media (max-width: 768px) {
   .content .banner-area .banner-content h1 {
@@ -64,7 +212,44 @@
     font-family: Script MT;
     letter-spacing: 0;
     color: #FEFEFE;
-    margin-bottom: 25px; } }
+    margin-bottom: 25px; }
+
+  .app-area {
+    height: 730px;
+    margin-bottom: 50px; }
+    .app-area .app-area-content h3 {
+      font-size: 22px;
+      margin-bottom: 10px; }
+    .app-area .app-area-content h1 {
+      font-size: 36px;
+      margin-bottom: 15px; }
+    .app-area .app-area-content p {
+      font-size: 14px;
+      margin-bottom: 18px; }
+    .app-area .app-area-content .app-btn-group {
+      display: flex; }
+      .app-area .app-area-content .app-btn-group a {
+        margin-right: 15px;
+        border-radius: 10px; }
+      .app-area .app-area-content .app-btn-group img {
+        width: 100%;
+        max-width: 120px;
+        border-radius: 10px; }
+    .app-area .app-demo {
+      max-width: 260px;
+      width: 100%; }
+
+  .artist-area {
+    margin-bottom: 50px; }
+    .artist-area h2 {
+      font-size: 36px;
+      margin-bottom: 50px; }
+    .artist-area .item {
+      text-align: center; }
+      .artist-area .item img {
+        border-radius: 50%;
+        max-width: 150px;
+        width: 100%; } }
 @media (max-width: 425px) {
   .content .banner-area .banner-content h1 {
     font-size: 40px;
@@ -76,6 +261,23 @@
   .content .banner-area .banner-content p {
     font-size: 14px;
     font-weight: 400;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .content .tab-section nav .nav-tabs {
+    border-bottom: transparent;
+    padding: 0 0px;
+    margin-top: -40px; }
+    .content .tab-section nav .nav-tabs .nav-link {
+      width: 80px;
+      height: 80px; }
+    .content .tab-section nav .nav-tabs .nav-item.active {
+      color: #273043;
+      background-color: #FEC157;
+      border-color: #FEC157 #FEC157 #FEC157;
+      border-radius: 10px; }
+
+  .app-area .app-area-content {
+    text-align: center; }
+    .app-area .app-area-content .app-btn-group {
+      justify-content: center; } }
 
 /*# sourceMappingURL=style.css.map */

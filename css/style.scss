@@ -1,9 +1,24 @@
+//https://xd.adobe.com/view/a4be0ec5-e746-4849-5641-2d14c3867e45-d28f/
+
+.bg-green {
+  background: transparent linear-gradient(90deg, #0BA360 0%, #0EA463 31%, #18A96D 57%, #29B17F 81%, #3CBA92 100%) 0% 0% no-repeat padding-box;
+}
+.bg-purple {
+  background: transparent linear-gradient(90deg, #66A6FF 0%, #66A6FF 33%, #35A4AB 100%) 0% 0% no-repeat padding-box;
+}
+.bg-purple-reverse {
+  background: transparent linear-gradient(90deg, #764BA2 0%, #7353AD 23%, #6C68CB 65%, #667EEA 100%) 0% 0% no-repeat padding-box;
+}
+.bg-red {
+  background: transparent linear-gradient(90deg, #C71D6F 0%, #C71D6F 12%, #C72170 27%, #C82E74 43%, #C9437A 60%, #CC6283 77%, #CF888F 89%, #D09693 100%, #D09693 100%) 0% 0% no-repeat padding-box;
+}
+
 .content {
             //=============banner styling start=============
   .banner-area {
     background: url("../assets/images/gong-banner.png") no-repeat center center;
     background-size: cover;
-    height: 720px;
+    height: 100vh;
     .banner-content {
       text-align: center;
       height: 100%;
@@ -38,13 +53,15 @@
 
 //=============banner styling start=============
 .tab-section {
+  margin-bottom: 90px;
   nav {
     background-color: #273043;
     border-radius: 10px;
+    margin-bottom: 45px;
     .nav-tabs {
       border-bottom: transparent;
       padding: 0 80px;
-      margin-top: -55px;
+      margin-top: -40px;
       .nav-link {
         border: 1px solid transparent;
         border-top-left-radius: 0;
@@ -69,7 +86,6 @@
            margin-bottom: 7px;
          }
        }
-
       .nav-item.active {
         color: #273043;
         background-color: #FEC157;
@@ -84,11 +100,192 @@
   }
   .tab-content {
     .tab-widget-title {
-
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: -55px;
+      h2 {
+        padding: 10px 5px;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 0;
+        &:last-child {
+          font-style: italic;
+          padding-right: 15px;
+        }
+      }
+      &.bg-green {
+        background: transparent linear-gradient(90deg, #0BA360 0%, #0EA463 31%, #18A96D 57%, #29B17F 81%, #3CBA92 100%) 0% 0% no-repeat padding-box;
+      }
+      &.bg-purple {
+        background: transparent linear-gradient(90deg, #66A6FF 0%, #66A6FF 33%, #35A4AB 100%) 0% 0% no-repeat padding-box;
+      }
+      &.bg-purple-reverse {
+        background: transparent linear-gradient(90deg, #764BA2 0%, #7353AD 23%, #6C68CB 65%, #667EEA 100%) 0% 0% no-repeat padding-box;
+      }
+      &.bg-red {
+        background: transparent linear-gradient(90deg, #C71D6F 0%, #C71D6F 12%, #C72170 27%, #C82E74 43%, #C9437A 60%, #CC6283 77%, #CF888F 89%, #D09693 100%, #D09693 100%) 0% 0% no-repeat padding-box;
+      }
+    }
+    .slider-item {
+      width: 220px;
+      height: 220px;
+      margin-bottom: 25px;
+      iframe, video {
+        background: #000;
+        width: 260px;
+        height: 220px;
+        border-radius: 10px;
+      }
     }
   }
 }
 //=============banner styling End===============
+
+
+//=============app-area styling start=============
+.app-area {
+  background: url("../assets/images/download-banner.png") no-repeat center center;
+  background-size: cover;
+  height: 730px;
+  margin-bottom: 90px;
+  .app-area-content {
+    h3 {
+      font-size: 28px;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 64px;
+      color: #FDC156;
+      font-weight: 500;
+      font-family: Roboto, serif;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 19px;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 23px;
+    }
+    .app-btn-group {
+      display: flex;
+      a {
+        margin-right: 15px;
+        border-radius: 10px;
+      }
+      img {
+        width: 100%;
+        max-width: 200px;
+        border-radius: 10px;
+
+      }
+    }
+  }
+}
+//=============app-area styling End===============
+
+
+  //=============artist-area styling start=============
+.artist-area {
+  margin-bottom: 90px;
+  .owl-dots {
+    display: none;
+  }
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-family: Roboto, serif;
+    letter-spacing: 0;
+    color: #930000;
+    margin-bottom: 50px;
+  }
+  .item {
+    img {
+      border-radius: 50%;
+      margin: 0 auto;
+      max-width: 240px;
+      width: 100%;
+    }
+  }
+}
+//=============artist-area styling End===============
+
+
+//=============footer-area styling start=============
+.footer {
+  background: #000000 0% 0% no-repeat padding-box;
+  padding-top: 50px;
+  .footer-widget {
+    margin-bottom: 50px;
+      .logo {
+        max-width: 165px;
+        width: 100%;
+      }
+    h3 {
+      font-size: 16px;
+      font-weight: 500;
+      font-family: Roboto, serif;
+      font: Regular 16px/19px Proxima Nova;
+      letter-spacing: 0;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        a {
+          color: #fff;
+          font-size: 14px;
+          font-weight: 400;
+          font-family: Roboto, serif;
+          &:hover {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+      &.social-media {
+        li {
+          display: inline-block;
+          text-align: center;
+          margin-bottom: 10px;
+          a {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            display: inline-block;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+//=============footer-area styling start=============
+
+
+//=============footer-area styling start=============
+.copy-right {
+  padding: 15px 0;
+  text-align: center;
+  background: #000000;
+  border-top: 1px solid #BFBFBF;
+    p {
+      font-size: 17px;
+      font-weight: 400;
+      font-family: Roboto, serif;
+      letter-spacing: 0;
+      color: #6E6E6E;
+      margin-bottom: 0;
+    }
+    }
+//=============footer-area styling start=============
 
 
 //=============Media Query Start===============
@@ -108,6 +305,64 @@
       }
     }
   }
+
+//=============app-area styling start=============
+.app-area {
+  height: 730px;
+  margin-bottom: 50px;
+  .app-area-content {
+    h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+    .app-btn-group {
+      display: flex;
+      a {
+        margin-right: 15px;
+        border-radius: 10px;
+      }
+      img {
+        width: 100%;
+        max-width: 120px;
+        border-radius: 10px;
+
+      }
+    }
+  }
+  .app-demo {
+    max-width: 260px;
+    width: 100%;
+  }
+}
+//=============app-area styling End===============
+
+  //=============artist-area styling start=============
+  .artist-area {
+    margin-bottom: 50px;
+    h2 {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+    .item {
+      text-align: center;
+      img {
+        border-radius: 50%;
+        max-width: 150px;
+        width: 100%;
+      }
+    }
+  }
+  //=============artist-area styling End===============
+
+
 }
 
 @media (max-width: 425px) {
@@ -122,6 +377,7 @@
           color: #FEFEFE;
           margin-bottom: 15px;
         }
+
         p {
           font-size: 14px;
           font-weight: 400;
@@ -129,7 +385,36 @@
         }
       }
     }
+
+    .tab-section {
+      nav {
+        .nav-tabs {
+          border-bottom: transparent;
+          padding: 0 0px;
+          margin-top: -40px;
+          .nav-link {
+            width: 80px;
+            height: 80px;
+          }
+          .nav-item.active {
+            color: #273043;
+            background-color: #FEC157;
+            border-color: #FEC157 #FEC157 #FEC157;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
   }
+  .app-area {
+    .app-area-content {
+      text-align: center;
+      .app-btn-group {
+        justify-content: center;
+      }
+    }
+  }
+  //=============app-area styling End===============
 }
 
 
