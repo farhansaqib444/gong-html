@@ -303,13 +303,10 @@
       color: #AEAEAE;
       border: 0;
       position: relative; }
-    .content .competition-from nav.form-steps-nav .nav-tabs .nav-item + .nav-item:before {
-      content: " | ";
-      position: absolute;
-      left: -3px;
-      font-weight: 300; }
     .content .competition-from nav.form-steps-nav .nav-tabs .nav-link.active {
-      color: #940000; }
+      color: #000;
+      background: #FEC157;
+      border-radius: 0; }
 .content .competition-from .form-steps-content .competition-title h2 {
   font-size: 36px;
   font-weight: 700;
@@ -331,6 +328,45 @@
   color: #273043; }
 .content .competition-btn-group div {
   border-bottom: 2px solid #F4F4F4; }
+
+.join-list {
+  background: #FAFAFA 0% 0% no-repeat padding-box;
+  border: 1px solid #273043;
+  border-radius: 10px;
+  padding: 10px; }
+  .join-list .table tr td {
+    border: 0;
+    padding: 0; }
+    .join-list .table tr td span {
+      font-size: 15px;
+      font-family: Roboto, serif; }
+  .join-list.modal-list {
+    border: 0;
+    background: #fff; }
+    .join-list.modal-list .table tr td {
+      border: 0;
+      padding: 0 15px 15px;
+      white-space: nowrap; }
+      .join-list.modal-list .table tr td p {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: Roboto, serif;
+        color: #AEAEAE;
+        margin: 0; }
+      .join-list.modal-list .table tr td label {
+        display: block;
+        font-size: 17px;
+        font-weight: 500;
+        font-family: Roboto, serif;
+        color: #273043;
+        margin: 0; }
+  .join-list h4 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #000; }
+  .join-list i {
+    color: #930000; }
 
 .footer {
   background: #000000 0% 0% no-repeat padding-box;
@@ -446,6 +482,18 @@
         border-radius: 50%;
         max-width: 150px;
         width: 100%; } }
+.join-list .table tr td i {
+  font-size: 14px; }
+.join-list .table tr td span {
+  font-size: 13px; }
+.join-list h4 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #000; }
+.join-list i {
+  color: #930000; }
+
 @media (max-width: 425px) {
   .content .banner-area .banner-content h1 {
     font-size: 40px;

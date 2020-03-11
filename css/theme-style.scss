@@ -91,7 +91,7 @@ button:focus {
   font-weight: 500;
   font-family: Roboto, serif;
   border: none;
-  padding: 10px 30px;
+  padding: 8px 30px;
   letter-spacing: 0;
   color: #000000;
 }
@@ -107,7 +107,7 @@ button:focus {
 .btn-primary {
   color: #000;
   background-color: #FDC156;
-  border-color: #FDC156;
+  border: 2px solid #FDC156;
 }
 .btn-primary:hover {
   color: #000;
@@ -126,6 +126,22 @@ button:focus {
   box-shadow: none;
 }
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+.btn-secondary {
+  color: #000;
+  background-color: transparent;
+  border: 2px solid #AEAEAE;
+}
+.btn-secondary:hover {
+  color: #000;
+  background-color: transparent;
+  border-color: #AEAEAE;
+}
+.btn-secondary.focus, .btn-secondary:focus {
+  color: #000;
+  background-color: transparent;
+  border-color: #AEAEAE;
   box-shadow: none;
 }
 //theme btn styling end
