@@ -54,15 +54,23 @@ a {
     label {
       color: #DCDCDC;
       opacity: 1;
+      font-weight: 500;
+      &.text-dark {
+        color: #273043;
+      }
     }
     .form-control {
       border: 1px solid #DCDCDC;
       background-color: transparent;
       height: calc(1.8em + .75rem + 2px);
-      color: #fff;
+      color: #495057;
       font-size: 14px;
       font-weight: 400;
       border-radius: 10px;
+      width: 100%;
+      &.border-dark {
+        border: 1px solid #273043;
+      }
     }
 
     .form-control:focus {
@@ -202,6 +210,8 @@ button:focus {
     }
     .nav-user-icon {
       width: 40px;
+      height: 40px;
+      border-radius: 100%;
     }
     .dropdown-toggle::after {
       display: none;

@@ -48,15 +48,21 @@ a {
   text-align: left; }
   .theme-form .input-field label {
     color: #DCDCDC;
-    opacity: 1; }
+    opacity: 1;
+    font-weight: 500; }
+    .theme-form .input-field label.text-dark {
+      color: #273043; }
   .theme-form .input-field .form-control {
     border: 1px solid #DCDCDC;
     background-color: transparent;
     height: calc(1.8em + .75rem + 2px);
-    color: #fff;
+    color: #495057;
     font-size: 14px;
     font-weight: 400;
-    border-radius: 10px; }
+    border-radius: 10px;
+    width: 100%; }
+    .theme-form .input-field .form-control.border-dark {
+      border: 1px solid #273043; }
   .theme-form .input-field .form-control:focus {
     color: #495057;
     background-color: #DCDCDC;
@@ -168,7 +174,9 @@ button:focus {
   .navbar .navbar-brand {
     width: 60px; }
   .navbar .nav-user-icon {
-    width: 40px; }
+    width: 40px;
+    height: 40px;
+    border-radius: 100%; }
   .navbar .dropdown-toggle::after {
     display: none; }
   .navbar .navbar-collapse .navbar-nav {
