@@ -131,6 +131,11 @@ button:focus {
 //theme btn styling end
 //      ==============Navbar css start=================
 .navbar {
+  .nav-user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
   .dropdown-toggle::after {
     display: none;
   }
