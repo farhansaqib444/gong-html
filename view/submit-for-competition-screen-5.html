@@ -144,140 +144,108 @@
                   </h2>
                   <p>Step 1/2</p>
                 </div>
-                <div class="file-upload">
-                  <nav>
-                    <div class="nav nav-tabs" id="upload-nav-tab" role="tablist">
-
-                      <a class="nav-item nav-link active" id="nav-Video-tab" data-toggle="tab" href="#nav-Video" role="tab" aria-controls="nav-Video" aria-selected="true">
-                        <div class="button-wrapper">
+                <div class="file-upload upload-btn-group text-center ">
+                  <div class="button-wrapper file-type">
                            <span class="label">
                               <i class="fa fa-video-camera"></i>
                            </span>
-                        </div>
-                      </a>
-
-                      <a class="nav-item nav-link" id="nav-Music-tab" data-toggle="tab" href="#nav-Music" role="tab" aria-controls="nav-Music" aria-selected="false">
-                        <div class="button-wrapper">
+                  </div>
+                  <div class="button-wrapper file-type">
                            <span class="label">
                               <i class="fa fa-music"></i>
                            </span>
-                        </div>
-                      </a>
-
-                      <a class="nav-item nav-link" id="nav-Images-tab" data-toggle="tab" href="#nav-Images" role="tab" aria-controls="nav-Images" aria-selected="false">
-                        <div class="button-wrapper">
+                  </div>
+                  <div class="button-wrapper file-type">
                           <span class="label">
                             <i class="fa fa-image"></i>
                           </span>
-                        </div>
-                      </a>
-                    </div>
-                  </nav>
-                  <div class="tab-content border-bottom mb-5" id="upload-nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-Video" role="tabpanel" aria-labelledby="nav-Video-tab">
-                      <form action="/file-upload" class="dropzone">
-                        <div class="fallback">
-                            <div class="upload-preview">
-                              <input name="file" type="file" multiple />
-                            </div>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="tab-pane fade" id="nav-Music" role="tabpanel" aria-labelledby="nav-Music-tab">
-                      <form action="/file-upload" class="dropzone">
-                        <div class="fallback">
-                          <div class="upload-preview">
-                            <input name="file" type="file" multiple />
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="tab-pane fade" id="nav-Images" role="tabpanel" aria-labelledby="nav-Images-tab">
-                      <form action="/file-upload" class="dropzone">
-                        <div class="fallback">
-                          <div class="upload-preview">
-                            <input name="file" type="file" multiple />
-                          </div>
-                        </div>
-                      </form>
-                    </div>
                   </div>
-                  <div class="category-btn mb-4">
-                    <button class="button-wrapper">
+                  <div class="tab-content border-bottom mb-5" >
+                    <form action="/file-upload" class="dropzone">
+                      <div class="fallback">
+                        <div class="upload-preview">
+                          <input name="file" type="file" multiple />
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="category-btn mb-4">
+                  <button class="button-wrapper category-lead">
                  <span class="label">
                     <i class="fa fa-microphone"></i>
                  </span>
-                      <label for="">Vocals</label>
-                    </button>
-                    <button class="button-wrapper">
+                    <label for="">Vocals</label>
+                  </button>
+                  <button class="button-wrapper category-lead">
                  <span class="label">
                     <i class="fa fa-users"></i>
                  </span>
-                      <label for="">Dance</label>
-                    </button>
-                    <button class="button-wrapper">
+                    <label for="">Dance</label>
+                  </button>
+                  <button class="button-wrapper category-lead">
                  <span class="label">
                     <i class="fa fa-video-camera"></i>
                  </span>
-                      <label for="">Comedy</label>
-                    </button>
-                    <button class="button-wrapper">
+                    <label for="">Comedy</label>
+                  </button>
+                  <button class="button-wrapper category-lead">
                  <span class="label">
                     <i class="fa fa-microphone"></i>
                  </span>
-                      <label for="">Acting</label>
-                    </button>
-                    <button class="button-wrapper">
+                    <label for="">Acting</label>
+                  </button>
+                  <button class="button-wrapper category-lead">
                  <span class="label">
                     <i class="fa fa-sign-language"></i>
                  </span>
-                      <label for="">Cheering</label>
-                    </button>
-                    <button class="button-wrapper">
+                    <label for="">Cheering</label>
+                  </button>
+                  <button class="button-wrapper category-lead">
                  <span class="label">
                     <i class="fa fa-image"></i>
                  </span>
-                      <label for="">Modeling</label>
-                    </button>
-                  </div>
-                  <div class="theme-form ">
-                    <div class="container">
-                      <div class="row border-bottom mb-4">
-                        <div class="col-md-4">
-                          <div class="input-field">
-                            <label for="Name">Give it a Name</label>
-                            <div class="input-group mb-4">
-                              <input type="text" class="form-control" id="Name">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="input-field">
-                            <label for="Genre">Choose a Genre</label>
-                            <div class="input-group mb-4">
-                              <input type="text" class="form-control" id="Genre">
-                            </div>
+                    <label for="">Modeling</label>
+                  </button>
+                </div>
+                <div class="theme-form ">
+                  <div class="container">
+                    <div class="row border-bottom mb-4">
+                      <div class="col-md-4">
+                        <div class="input-field">
+                          <label for="Name">Give it a Name</label>
+                          <div class="input-group mb-4">
+                            <input type="text" class="form-control" id="Name">
                           </div>
                         </div>
                       </div>
-                      <div class="row ">
-                        <div class="col-12 d-flex justify-content-center">
-                          <div class="mb-5">
-                            <div class="checkbox checkbox-primary checkbox-inline">
-                              <input type="checkbox" id="inlineCheckbox2" value="option1" checked="">
-                              <label for="inlineCheckbox2"> I agree to the <a href=""> <strong>Privacy Policy</strong> </a> </label>
-                            </div>
-                            <div class="checkbox checkbox-primary checkbox-inline">
-                              <input type="checkbox" id="inlineCheckbox1" value="option1">
-                              <label for="inlineCheckbox1"> I agree to the <a href=""> <strong>Terms & Conditions</strong> </a> </label>
-                            </div>
+                      <div class="col-md-4">
+                        <div class="input-field">
+                          <label for="Genre">Choose a Genre</label>
+                          <div class="input-group mb-4">
+                            <input type="text" class="form-control" id="Genre">
                           </div>
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="col-12 mb-5 text-center">
-                          <button class="btn btn-primary rounded-pill">Proceed</button>
+                    </div>
+                    <div class="row ">
+                      <div class="col-12 d-flex justify-content-center">
+                        <div class="mb-5">
+                          <div class="checkbox checkbox-primary checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="option1" checked="">
+                            <label for="inlineCheckbox2"> I agree to the <a href=""> <strong>Privacy Policy</strong> </a> </label>
+                          </div>
+                          <div class="checkbox checkbox-primary checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label for="inlineCheckbox1"> I agree to the <a href=""> <strong>Terms & Conditions</strong> </a> </label>
+                          </div>
                         </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 mb-5 text-center">
+                        <button class="btn btn-primary rounded-pill">Proceed</button>
                       </div>
                     </div>
                   </div>
@@ -369,6 +337,14 @@
 <!--Bootstrap 4 JS files-->
 
 <script src="../js/dropzone.js"></script>
+<script>
+  $( document ).ready(function() {
+    $(document).on('click', '.button-wrapper.category-lead', function (e) {
+      $('.button-wrapper.category-lead').removeClass('category-active');
+      $(this).addClass('category-active');
+    });
+  });
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
   <script>
     // Dropzone class:
