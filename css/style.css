@@ -1,4 +1,4 @@
-.category-active {
+.button-wrapper.category-lead.active span, .button-wrapper.file-type.active span {
   background: #FEC157 0% 0% no-repeat padding-box;
   color: #000; }
 

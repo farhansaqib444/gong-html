@@ -1,7 +1,13 @@
 //https://xd.adobe.com/view/a4be0ec5-e746-4849-5641-2d14c3867e45-d28f/
-.category-active {
-  background: #FEC157 0% 0% no-repeat padding-box;
-  color: #000
+.button-wrapper {
+  &.category-lead, &.file-type {
+    &.active {
+      span {
+        background: #FEC157 0% 0% no-repeat padding-box;
+        color: #000
+      }
+    }
+  }
 }
 .bg-green {
   background: transparent linear-gradient(90deg, #0BA360 0%, #0EA463 31%, #18A96D 57%, #29B17F 81%, #3CBA92 100%) 0% 0% no-repeat padding-box;
