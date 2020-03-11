@@ -144,34 +144,34 @@
                   </h2>
                   <p>Step 1/2</p>
                 </div>
-                <div class="file-upload upload-btn-group text-center ">
-                  <div class="button-wrapper file-type">
-                           <span class="label">
-                              <i class="fa fa-video-camera"></i>
-                           </span>
-                  </div>
-                  <div class="button-wrapper file-type">
-                           <span class="label">
-                              <i class="fa fa-music"></i>
-                           </span>
-                  </div>
-                  <div class="button-wrapper file-type">
-                          <span class="label">
-                            <i class="fa fa-image"></i>
-                          </span>
-                  </div>
-                  <div class="tab-content border-bottom mb-5" >
-                    <form action="/file-upload" class="dropzone">
-                      <div class="fallback">
-                        <div class="upload-preview">
+                <form action="/file-upload">
+                  <div class="file-upload upload-btn-group text-center">
+                    <div class="button-wrapper file-type">
+                             <span class="label">
+                                <i class="fa fa-video-camera"></i>
+                             </span>
+                    </div>
+                    <div class="button-wrapper file-type">
+                             <span class="label">
+                                <i class="fa fa-music"></i>
+                             </span>
+                    </div>
+                    <div class="button-wrapper file-type">
+                            <span class="label">
+                              <i class="fa fa-image"></i>
+                            </span>
+                    </div>
+                    <div class="tab-content border-bottom mb-5" >
+                      <div class="upload-preview">
+                        <label>
+                          <img src="../assets/images/upload-placeholder.png" alt="">
                           <input name="file" type="file" multiple />
-                        </div>
+                        </label>
                       </div>
-                    </form>
+                    </div>
                   </div>
-                </div>
 
-                <div class="category-btn mb-4">
+                  <div class="category-btn mb-4">
                   <button class="button-wrapper category-lead">
                  <span class="label">
                     <i class="fa fa-microphone"></i>
@@ -209,7 +209,7 @@
                     <label for="">Modeling</label>
                   </button>
                 </div>
-                <div class="theme-form ">
+                  <div class="theme-form ">
                   <div class="container">
                     <div class="row border-bottom mb-4">
                       <div class="col-md-4">
@@ -250,6 +250,7 @@
                     </div>
                   </div>
                 </div>
+                </form>
               </div>
               <div class="tab-pane fade" id="nav-Competitions" role="tabpanel" aria-labelledby="nav-Competitions-tab">Competitions</div>
               <div class="tab-pane fade" id="nav-Shop" role="tabpanel" aria-labelledby="nav-Shop-tab">Shop</div>

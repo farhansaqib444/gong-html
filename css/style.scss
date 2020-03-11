@@ -97,17 +97,30 @@
     margin: auto;
   }
 }
-
+.upload-preview {
+  position: relative;
+  img {
+    cursor: pointer;
+    margin: 40px 0;
+  }
+  input {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 .file-upload {
   &.upload-btn-group {
     .button-wrapper {
       margin: 0 20px;
     }
     span.label {
-      background: #FFFFFF 0% 0% no-repeat padding-box;
-      border: 2px solid #DCDCDC;
-      border-radius: 10px;
-      position: relative;
       z-index: 0;
       width: 80px;
       height: 80px;
