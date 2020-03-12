@@ -16,47 +16,51 @@
 
 .red-title-bg {
   background: #940000 0% 0% no-repeat padding-box;
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 5px 10px; }
   .red-title-bg h2 {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 400;
     font-family: Roboto, serif;
     letter-spacing: 0;
     color: #FFFFFF; }
     .red-title-bg h2 span {
-      font-size: 24px;
-      font-weight: 500;
+      font-size: 20px;
+      font-weight: 400;
       font-family: Roboto, serif;
       letter-spacing: 0;
       color: #FFFFFF; }
   .red-title-bg a {
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 400;
     font-family: Roboto, serif;
     letter-spacing: 0;
     color: #FFFFFF; }
 
 .gray-title-bg {
-  background: #940000 0% 0% no-repeat padding-box;
-  color: #000000; }
+  background: #DCDCDC 0% 0% no-repeat padding-box;
+  color: #000000;
+  margin-bottom: 20px;
+  padding: 5px 10px; }
   .gray-title-bg h2 {
     font-size: 24px;
     font-weight: 400;
     font-family: Roboto, serif;
     letter-spacing: 0;
-    color: #FFFFFF; }
+    color: #000000; }
     .gray-title-bg h2 span {
       font-size: 24px;
       font-weight: 400;
       font-family: Roboto, serif;
       letter-spacing: 0;
-      color: #FFFFFF; }
+      color: #000000; }
   .gray-title-bg a {
     font-size: 24px;
     font-weight: 400;
     font-family: Roboto, serif;
     letter-spacing: 0;
-    color: #FFFFFF; }
+    color: #000000; }
 
 .border-bottom {
   border-bottom: 2px solid #F4F4F4; }
@@ -443,6 +447,33 @@
   .join-list i {
     color: #930000; }
 
+.active-competition-videos .video-card {
+  margin-bottom: 20px; }
+  .active-competition-videos .video-card img {
+    width: 100%; }
+
+.mini-icon .button-wrapper {
+  position: relative;
+  display: inline-block;
+  background: none;
+  border: none;
+  text-align: center;
+  margin-right: 25px; }
+  .mini-icon .button-wrapper span.label {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #DCDCDC;
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: #AEAEAE;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
 .footer {
   background: #000000 0% 0% no-repeat padding-box;
   padding-top: 50px; }
@@ -556,19 +587,19 @@
       .artist-area .item img {
         border-radius: 50%;
         max-width: 150px;
-        width: 100%; } }
-.join-list .table tr td i {
-  font-size: 14px; }
-.join-list .table tr td span {
-  font-size: 13px; }
-.join-list h4 {
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 0;
-  color: #000; }
-.join-list i {
-  color: #930000; }
+        width: 100%; }
 
+  .join-list .table tr td i {
+    font-size: 14px; }
+  .join-list .table tr td span {
+    font-size: 13px; }
+  .join-list h4 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #000; }
+  .join-list i {
+    color: #930000; } }
 @media (max-width: 425px) {
   .content .banner-area .banner-content h1 {
     font-size: 40px;
