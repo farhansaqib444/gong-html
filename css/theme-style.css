@@ -81,7 +81,12 @@ button:focus {
   border: none;
   padding: 8px 30px;
   letter-spacing: 0;
-  color: #000000; }
+  color: #000000;
+  border-radius: 10px; }
+  .btn.mini-btn {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 25px; }
 
 .btn:hover {
   color: #212529;
@@ -129,6 +134,30 @@ button:focus {
   color: #000;
   background-color: transparent;
   border-color: #AEAEAE;
+  box-shadow: none; }
+
+.btn-danger {
+  color: #fff;
+  background-color: #940000;
+  border: 2px solid #940000; }
+
+.btn-danger:hover {
+  color: #fff;
+  background-color: #940000;
+  border-color: #940000; }
+
+.btn-danger:not(:disabled):not(.disabled).active, .btn-danger:not(:disabled):not(.disabled):active, .show > .btn-danger.dropdown-toggle {
+  color: #fff;
+  background-color: #940000;
+  border-color: #940000; }
+
+.btn-danger.focus, .btn-danger:focus {
+  color: #fff;
+  background-color: #940000;
+  border-color: #940000;
+  box-shadow: none; }
+
+.btn-danger:not(:disabled):not(.disabled).active:focus, .btn-danger:not(:disabled):not(.disabled):active:focus, .show > .btn-danger.dropdown-toggle:focus {
   box-shadow: none; }
 
 .navbar .nav-user-icon {
@@ -204,5 +233,13 @@ button:focus {
     align-items: start; }
   .navbar .search-widget input.form-control {
     width: 100%; } }
+@media (max-width: 425px) {
+  .btn {
+    font-size: 14px;
+    padding: 6px 25px; }
+    .btn.mini-btn {
+      font-size: 14px;
+      font-weight: 400;
+      padding: 5px 20px; } }
 
 /*# sourceMappingURL=theme-style.css.map */

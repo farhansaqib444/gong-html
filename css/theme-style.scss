@@ -97,6 +97,12 @@ button:focus {
   padding: 8px 30px;
   letter-spacing: 0;
   color: #000000;
+  border-radius: 10px;
+  &.mini-btn {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 25px;
+  }
 }
 .btn:hover {
   color: #212529;
@@ -131,6 +137,7 @@ button:focus {
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
   box-shadow: none;
 }
+
 .btn-secondary {
   color: #000;
   background-color: transparent;
@@ -147,6 +154,32 @@ button:focus {
   border-color: #AEAEAE;
   box-shadow: none;
 }
+
+.btn-danger {
+  color: #fff;
+  background-color: #940000;
+  border: 2px solid #940000;
+}
+.btn-danger:hover {
+  color: #fff;
+  background-color: #940000;
+  border-color: #940000;
+}
+.btn-danger:not(:disabled):not(.disabled).active, .btn-danger:not(:disabled):not(.disabled):active, .show>.btn-danger.dropdown-toggle {
+  color: #fff;
+  background-color: #940000;
+  border-color: #940000;
+}
+.btn-danger.focus, .btn-danger:focus {
+  color: #fff;
+  background-color: #940000;
+  border-color: #940000;
+  box-shadow: none;
+}
+.btn-danger:not(:disabled):not(.disabled).active:focus, .btn-danger:not(:disabled):not(.disabled):active:focus, .show>.btn-danger.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
 //theme btn styling end
 //      ==============Navbar css start=================
 .navbar {
@@ -249,6 +282,18 @@ button:focus {
       input.form-control {
         width: 100%;
       }
+    }
+  }
+
+}
+@media (max-width: 425px) {
+  .btn {
+    font-size: 14px;
+    padding: 6px 25px;
+    &.mini-btn {
+      font-size: 14px;
+      font-weight: 400;
+      padding: 5px 20px;
     }
   }
 
