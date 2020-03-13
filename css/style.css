@@ -478,8 +478,19 @@
     border-bottom: 2px solid #E5E5E5; }
     .post-video-grid .video-posted .video-card {
       margin-bottom: 15px; }
-      .post-video-grid .video-posted .video-card img {
-        width: 100%; }
+      .post-video-grid .video-posted .video-card div {
+        border-radius: 10px; }
+      .post-video-grid .video-posted .video-card .player .like-btn {
+        position: absolute;
+        z-index: 9;
+        right: 25px;
+        top: 10px;
+        border: none;
+        border-radius: 5px;
+        display: inline-block;
+        background-color: #940000;
+        color: #fff;
+        padding: 2px 5px; }
     .post-video-grid .video-posted .video-btn-group {
       margin-bottom: 15px;
       display: flex;

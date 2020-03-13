@@ -639,8 +639,22 @@
     border-bottom: 2px solid #E5E5E5;
 
     .video-card {
-      img {
-        width: 100%;
+      div {
+        border-radius: 10px;
+      }
+      .player {
+        .like-btn {
+          position: absolute;
+          z-index: 9;
+          right: 25px;
+          top: 10px;
+          border: none;
+          border-radius: 5px;
+          display: inline-block;
+          background-color: #940000;
+          color: #fff;
+          padding: 2px 5px;
+        }
       }
       margin-bottom: 15px;
     }
@@ -1068,6 +1082,9 @@
     padding-bottom: 0;
     .video-posted {
       .video-card {
+
+
+
         img {
           width: 100%;
         }
