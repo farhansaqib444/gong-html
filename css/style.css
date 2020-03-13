@@ -2,6 +2,15 @@
   background: #FEC157 0% 0% no-repeat padding-box;
   color: #000; }
 
+.mejs__overlay-button {
+  background-image: url("../css/video/mejs-controls.svg"); }
+
+.mejs__overlay-loading-bg-img {
+  background-image: url("../css/video/mejs-controls.svg"); }
+
+.mejs__button > button {
+  background-image: url("../css/video/mejs-controls.svg"); }
+
 .bg-green {
   background: transparent linear-gradient(90deg, #0BA360 0%, #0EA463 31%, #18A96D 57%, #29B17F 81%, #3CBA92 100%) 0% 0% no-repeat padding-box; }
 
