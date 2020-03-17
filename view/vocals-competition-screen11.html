@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
   <link rel="stylesheet" href="../css/video/mediaelementplayer.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.15/mediaelementplayer-legacy.min.css" integrity="sha256-t5CKAVpWfsI2MBHfJHU2jb/zQ2Dp2j/f9QYE1jlftkY=" crossorigin="anonymous" />
   <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -484,108 +485,25 @@
   </div>
 
   <!--Bootstrap 4 JS files-->
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous">
-  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"> </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!--Bootstrap 4 JS files-->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.15/mediaelement-and-player.min.js" integrity="sha256-8/UOjLaSyiqm0IvIvezgdQ4B7tMGZHUW6071T8EgmsI=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.15/renderers/youtube.min.js" integrity="sha256-A0g4Z6FYZNZ7XMVZbdfmjAYEiuWTDDTirQSm+DYFwfU=" crossorigin="anonymous"></script>
-  <script>
 
-    var
-      sourcesSelector = document.body.querySelectorAll('select'),
-      sourcesTotal = sourcesSelector.length
-    ;
-
-    for (var i = 0; i < sourcesTotal; i++) {
-      sourcesSelector[i].addEventListener('change', function (e) {
-        var
-          media = e.target.closest('.media-container').querySelector('.mejs__container').id,
-          player = mejs.players[media]
-        ;
-
-        player.setSrc(e.target.value.replace('&amp;', '&'));
-        player.setPoster('');
-        player.load();
-
-      });
-
-      // These media types cannot play at all on iOS, so disabling them
-      if (mejs.Features.isiOS) {
-        if (sourcesSelector[i].querySelector('option[value^="rtmp"]')) {
-          sourcesSelector[i].querySelector('option[value^="rtmp"]').disabled = true;
-        }
-        if (sourcesSelector[i].querySelector('option[value$="webm"]')) {
-          sourcesSelector[i].querySelector('option[value$="webm"]').disabled = true;
-        }
-        if (sourcesSelector[i].querySelector('option[value$=".mpd"]')) {
-          sourcesSelector[i].querySelector('option[value$=".mpd"]').disabled = true;
-        }
-        if (sourcesSelector[i].querySelector('option[value$=".ogg"]')) {
-          sourcesSelector[i].querySelector('option[value$=".ogg"]').disabled = true;
-        }
-        if (sourcesSelector[i].querySelector('option[value$=".flv"]')) {
-          sourcesSelector[i].querySelector('option[value*=".flv"]').disabled = true;
-        }
-      }
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-      var mediaElements = document.querySelectorAll('video, audio'), total = mediaElements.length;
-
-      for (var i = 0; i < total; i++) {
-        new MediaElementPlayer(mediaElements[i], {
-          pluginPath: 'https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/',
-          shimScriptAccess: 'always',
-          success: function () {
-            var target = document.body.querySelectorAll('.player'), targetTotal = target.length;
-            for (var j = 0; j < targetTotal; j++) {
-              target[j].style.visibility = 'visible';
-            }
-          }
-        });
-      }
-    });
-  </script>
+<script type="javascript" src="../js/custom.js"></script>
   <script>
     $(document).ready(function(){
 
-      // $('video, audio').mediaelementplayer({
-      //   // Do not forget to put a final slash (/)
-      //   pluginPath: 'https://cdnjs.com/libraries/mediaelement/',
-      //   // this will allow the CDN to use Flash without restrictions
-      //   // (by default, this is set as `sameDomain`)
-      //   shimScriptAccess: 'always'
-      //   // more configuration
-      // });
-
-
-      $(".artist-carousel").owlCarousel({
-        loop: true,
-        nav: false,
-        dot: false,
-        margin:15,
-        responsive: {
-          0: {
-            items: 2,
-            nav: false,
-            dot: false,
-          },
-          600: {
-            items: 3,
-            nav: false,
-            dot: false,
-          },
-          1000: {
-            items: 5,
-          }
-        }
+      $('video, audio').mediaelementplayer({
+        // Do not forget to put a final slash (/)
+        pluginPath: 'https://cdnjs.com/libraries/mediaelement/',
+        // this will allow the CDN to use Flash without restrictions
+        // (by default, this is set as `sameDomain`)
+        shimScriptAccess: 'always'
+        // more configuration
       });
     });
   </script>
