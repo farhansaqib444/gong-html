@@ -239,7 +239,7 @@
   height: 100vh;
   .banner-content {
     text-align: center;
-    height: 100%;
+    heigt: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -633,6 +633,16 @@
     left: -1px; // quickfix to hide divider on left side
   }
 }
+.post-audio-grid {
+  margin-bottom: 25px;
+  border-bottom: 2px solid #E5E5E5;
+  padding-bottom: 25px;
+  .audio-posted {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #E5E5E5;
+  }
+}
 .post-video-grid {
   margin-bottom: 25px;
   border-bottom: 2px solid #E5E5E5;
@@ -999,6 +1009,20 @@
         border-bottom: 0;
       }
     }
+    //=============banner styling start=============
+    .tab-section {
+      margin-bottom: 50px;
+      .tab-content {
+        .tab-widget-title {
+          margin-bottom: 20px;
+          margin-top: 30px;
+        }
+      }
+    }
+    .post-video-grid .video-posted {
+      padding-bottom: 35px;
+    }
+    //=============banner styling End===============
     //=============app-area styling start=============
     .app-area {
       height: 730px;

@@ -1,14 +1,5 @@
 $(document).ready(function(){
 
-  $( ".btn-loader" ).click(function(e){
-    e.preventDefault();
-    $(this).toggleClass('sending').blur();
-
-    setTimeout(function(){
-      $( ".btn-loader" ).removeClass('sending').blur();
-    },1500);
-
-  });
 
   $('.artist-carousel').owlCarousel({
     loop:true,
