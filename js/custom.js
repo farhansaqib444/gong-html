@@ -1,6 +1,40 @@
-$(document).ready(function(){
 
 
+  var wavesurfer = Object.create(WaveSurfer);
+  $(document).ready(function(){
+    wavesurfer = WaveSurfer.create({
+      container: "#waveform",
+      waveColor: '#940000',
+      progressColor: '#273043',
+      responsive: true,
+      // backend: 'MediaElement',
+    });
+
+
+    // Load the audio file here.
+    wavesurfer.load('../assets/audio/demo.wav');
+    wavesurfer.on('ready', function () {
+      let time = wavesurfer.getDuration();
+      $("#duration").text(formateTime(time));
+    });
+    wavesurfer.on('audioprocess', function () {
+      let time = wavesurfer.getCurrentTime();
+      $("#currentDuration").text(formateTime(time));
+
+    });
+
+
+    function formateTime(time) {
+      var minutes = Math.floor(time / 60).toFixed(0);
+      minutes = (minutes < 10)?"0"+minutes:minutes;
+      var seconds = (time - minutes * 60).toFixed(0);
+      seconds = (seconds < 10)?"0"+seconds:seconds;
+      return minutes.substr(-2) + ":" + seconds;
+    }
+  });
+
+
+  $(document).ready(function(){
   $('.artist-carousel').owlCarousel({
     loop:true,
     margin:10,

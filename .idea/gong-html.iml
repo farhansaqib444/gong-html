@@ -8,5 +8,6 @@
     <orderEntry type="library" name="dropzone" level="application" />
     <orderEntry type="library" name="mediaelementplayer-legacy" level="application" />
     <orderEntry type="library" name="mediaelement-and-player" level="application" />
+    <orderEntry type="library" name="wavesurfer" level="application" />
   </component>
 </module>

@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="../css/theme-style.css">
   <link rel="stylesheet" href="../css/style.css">
   <style>
-    .owl-dots {
+    .owl-dots, .owl-nav {
       display: none;
     }
   </style>
@@ -195,8 +195,27 @@
               </div>
               <div class="post-audio-grid border-0">
                 <div class="video-slider">
-                  <div class="audio-posted">
+                  <div class="audio-posted ">
+                    <div class="audio-owl-slider  owl-theme">
+                      <div class="item">
+                        <div id="waveform" class="audio-waveform">
+                          <button class="like-btn">
+                            <i class="fa fa-thumbs-up"></i> <span>164</span>
+                          </button>
+                          <p class="event-name">Star_Kriti</p>
+                          <p class="event-category">Rich, White &amp; Straight</p>
 
+                          <button class="play-btn" type="button" name="playbtn" onclick="wavesurfer.play()">
+                            <i class="fa fa-play"></i>
+                          </button>
+                        </div>
+                        <div class="">
+<!--                          <button type="button" name="playbtn" onclick="wavesurfer.pause()">Pause</button>-->
+<!--                          <span id="currentDuration">00:00</span> / <span id="duration"></span>-->
+                        </div>
+                      </div>
+                    <!-- Define an HTML element where the waveform should appear -->
+                    </div>
                   </div>
                 </div>
               </div>
@@ -408,13 +427,20 @@
 
 
 <!--Bootstrap 4 JS files-->
+
+
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"> </script>
+
+<!-- Include wavesurfer.js from cdn -->
+<script src="../js/wavesurfer.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!--Bootstrap 4 JS files-->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.15/mediaelement-and-player.min.js" integrity="sha256-8/UOjLaSyiqm0IvIvezgdQ4B7tMGZHUW6071T8EgmsI=" crossorigin="anonymous"></script>
+
+
 
 <script type="text/javascript"  src="../js/custom.js"></script>
 <script>
@@ -445,7 +471,23 @@
           items:2
         }
       }
-    })
+    });
+    $('.audio-owl-slider').owlCarousel({
+      loop:false,
+      margin:18,
+      nav:false,
+      responsive:{
+        0:{
+          items:1
+        },
+        600:{
+          items: 1
+        },
+        768:{
+          items:2
+        }
+      }
+    });
   });
 
 </script>

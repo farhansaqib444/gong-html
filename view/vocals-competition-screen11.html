@@ -493,20 +493,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.15/mediaelement-and-player.min.js" integrity="sha256-8/UOjLaSyiqm0IvIvezgdQ4B7tMGZHUW6071T8EgmsI=" crossorigin="anonymous"></script>
 
-<script type="javascript" src="../js/custom.js"></script>
-  <script>
-    $(document).ready(function(){
+  <script type="javascript" src="../js/custom.js"></script>
+    <script>
+      $(document).ready(function(){
 
-      $('video, audio').mediaelementplayer({
-        // Do not forget to put a final slash (/)
-        pluginPath: 'https://cdnjs.com/libraries/mediaelement/',
-        // this will allow the CDN to use Flash without restrictions
-        // (by default, this is set as `sameDomain`)
-        shimScriptAccess: 'always'
-        // more configuration
+        $('video, audio').mediaelementplayer({
+          // Do not forget to put a final slash (/)
+          pluginPath: 'https://cdnjs.com/libraries/mediaelement/',
+          // this will allow the CDN to use Flash without restrictions
+          // (by default, this is set as `sameDomain`)
+          shimScriptAccess: 'always'
+          // more configuration
+        });
       });
-    });
-  </script>
+    </script>
 
 </body>
 </html>
