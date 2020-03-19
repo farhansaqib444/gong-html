@@ -251,9 +251,10 @@
       .content .tab-section nav .nav-tabs div .active-img {
         display: none; }
       .content .tab-section nav .nav-tabs .nav-item.active {
-        color: #273043;
         background-color: #FEC157;
         border-color: #FEC157 #FEC157 #FEC157; }
+        .content .tab-section nav .nav-tabs .nav-item.active div p {
+          color: #273043; }
         .content .tab-section nav .nav-tabs .nav-item.active div svg {
           fill: black; }
         .content .tab-section nav .nav-tabs .nav-item.active div .passive-img {
