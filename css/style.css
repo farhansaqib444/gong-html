@@ -244,14 +244,22 @@
           font-family: Roboto, serif;
           letter-spacing: 0;
           color: #FFFFFF; }
-      .content .tab-section nav .nav-tabs div svg {
+      .content .tab-section nav .nav-tabs div img, .content .tab-section nav .nav-tabs div svg {
         margin-bottom: 7px; }
+      .content .tab-section nav .nav-tabs div .passive-img {
+        display: inline-block; }
+      .content .tab-section nav .nav-tabs div .active-img {
+        display: none; }
       .content .tab-section nav .nav-tabs .nav-item.active {
         color: #273043;
         background-color: #FEC157;
         border-color: #FEC157 #FEC157 #FEC157; }
         .content .tab-section nav .nav-tabs .nav-item.active div svg {
           fill: black; }
+        .content .tab-section nav .nav-tabs .nav-item.active div .passive-img {
+          display: none; }
+        .content .tab-section nav .nav-tabs .nav-item.active div .active-img {
+          display: inline-block; }
   .content .tab-section .tab-content .tab-widget-title {
     display: flex;
     justify-content: space-between;
