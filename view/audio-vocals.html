@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vocals Competition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Bootstrap 4 Css -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="../css/video/mediaelementplayer.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.15/mediaelementplayer-legacy.min.css" integrity="sha256-t5CKAVpWfsI2MBHfJHU2jb/zQ2Dp2j/f9QYE1jlftkY=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!--Custom Style Sheets-->
+
+    <link rel="stylesheet" href="../css/theme-style.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+<div class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <img class="navbar-brand" src="../assets/images/gong-logo.png" alt="">
+            <div class="d-flex">
+                <div class="dropdown  show-mob-hide-web mr-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="mobile-user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="nav-user-icon" src="../assets/images/user-icon.png" alt="">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="mobile-user">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Setting</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                <form class="form-inline my-4 my-lg-0 search-widget ml-auto">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button type="submit">
+                        <i class="material-icons">
+                            search
+                        </i>
+                    </button>
+                </form>
+                <ul class="navbar-nav  mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Gong Talk <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gong News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Group</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Subscription</a>
+                    </li>
+                    <li class="nav-item dropdown show-web-hide-mob">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="nav-user-icon" src="../assets/images/user-icon.png" alt="">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Setting</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="content mt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="post-video-grid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="competition-title align-items-sm-start align-item-start mb-4 d-flex justify-content-sm-between flex-sm-row flex-column">
+                                <h2 class="mb-4 mb-sm-0">
+                                    Vocals Competition
+                                </h2>
+                                <div>
+                                    <button class="btn btn-secondary mini-btn mt-sm-2 mt-0 mb-sm-0 mb-2">Popular </button>
+                                    <button class="btn btn-danger mini-btn mt-sm-2 mt-0 mb-sm-0 mb-2">SOPRANO </button>
+                                    <button class="btn btn-primary mb-sm-0 mb-2">Submit </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row grid-divider">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="video-posted">
+                                <div class="container">
+                                    <div class="row align-items-center ">
+                                        <div class="col-md-7">
+                                            <div class="post-audio-grid border-0 pb-0 mb-0">
+                                                <div class="audio-posted pb-0 border-0">
+                                                    <div class="audio-owl-slider  owl-theme">
+                                                        <div id="waveform" class="audio-waveform">
+                                                            <button class="like-btn">
+                                                                <i class="fa fa-thumbs-up"></i> <span>164</span>
+                                                            </button>
+                                                            <p class="event-name">Star_Kriti</p>
+                                                            <p class="event-category">Rich, White &amp; Straight</p>
+
+                                                            <button class="play-btn" type="button" name="playbtn" onclick="wavesurfer.play()">
+                                                                <i class="fa fa-play"></i>
+                                                            </button>
+                                                            <!--                          <button class="play-btn" type="button" name="playbtn" onclick="wavesurfer.pause()">-->
+                                                            <!--                            <i class="fa fa-pause"></i>-->
+                                                            <!--                          </button>-->
+
+                                                        </div>
+                                                        <div class="">
+                                                            <!--                          <button class="play-btn" type="button" name="playbtn" onclick="wavesurfer.pause()">Pause</button>-->
+                                                            <!--                          <span id="currentDuration">00:00</span> / <span id="duration"></span>-->
+                                                        </div>
+                                                        <!-- Define an HTML element where the waveform should appear -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="video-btn-group">
+                                                <button class="btn btn-secondary py-2 px-4 active mini-btn rounded-pill">crown</button>
+                                                <button class="btn btn-secondary py-2 px-4 mini-btn rounded-pill">2nd</button>
+                                            </div>
+                                            <div class="video-btn-group">
+                                                <button class="btn btn-secondary py-2 px-4 mini-btn rounded-pill">crown</button>
+                                                <button class="btn btn-secondary py-2 px-4 mini-btn rounded-pill">2nd</button>
+                                            </div>
+                                            <label for="" class="video-owner-label">Posted by:</label>
+                                            <div class="media">
+                                                <img class="mr-3" src="../assets/images/user-icon.png" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="mt-0">John D.</h5>
+                                                    <p>10 wins</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="video-posted">
+                                <div class="container">
+                                    <div class="row align-items-center ">
+                                        <div class="col-md-7">
+                                            <div class="post-audio-grid border-0 pb-0 mb-0">
+                                                <div class="audio-posted pb-0 border-0">
+                                                    <div class="audio-owl-slider  owl-theme">
+                                                        <div id="" class="audio-waveform">
+                                                            <div class="img-card">
+
+                                                            </div>
+                                                            <button class="like-btn">
+                                                                <i class="fa fa-thumbs-up"></i> <span>164</span>
+                                                            </button>
+                                                            <p class="event-name">Star_Kriti</p>
+                                                            <p class="event-category">Rich, White &amp; Straight</p>
+
+                                                            <button class="play-btn" type="button" name="playbtn" onclick="wavesurfer.play()">
+                                                                <i class="fa fa-play"></i>
+                                                            </button>
+                                                            <!--                          <button class="play-btn" type="button" name="playbtn" onclick="wavesurfer.pause()">-->
+                                                            <!--                            <i class="fa fa-pause"></i>-->
+                                                            <!--                          </button>-->
+
+                                                        </div>
+                                                        <div class="">
+                                                            <!--                          <button class="play-btn" type="button" name="playbtn" onclick="wavesurfer.pause()">Pause</button>-->
+                                                            <!--                          <span id="currentDuration">00:00</span> / <span id="duration"></span>-->
+                                                        </div>
+                                                        <!-- Define an HTML element where the waveform should appear -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="video-btn-group">
+                                                <button class="btn btn-secondary py-2 px-4 active mini-btn rounded-pill">crown</button>
+                                                <button class="btn btn-secondary py-2 px-4 mini-btn rounded-pill">2nd</button>
+                                            </div>
+                                            <div class="video-btn-group">
+                                                <button class="btn btn-secondary py-2 px-4 mini-btn rounded-pill">crown</button>
+                                                <button class="btn btn-secondary py-2 px-4 mini-btn rounded-pill">2nd</button>
+                                            </div>
+                                            <label for="" class="video-owner-label">Posted by:</label>
+                                            <div class="media">
+                                                <img class="mr-3" src="../assets/images/user-icon.png" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="mt-0">John D.</h5>
+                                                    <p>10 wins</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row grid-divider">
+            <div class="col-lg-8 col-md-6 col-sm-12 mb-4 mb-sm-0">
+                <div class="review-tab">
+                    <nav>
+                        <div class="nav nav-tabs" id="review-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-comment-tab" data-toggle="tab" href="#nav-comment" role="tab" aria-controls="nav-comment" aria-selected="true">Comment <span>(5)</span></a>
+                            <a class="nav-item nav-link" id="nav-share-tab" data-toggle="tab" href="#nav-share" role="tab" aria-controls="nav-share" aria-selected="false">Share <span>(5)</span></a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="review-tabContent">
+                        <div class="tab-pane fade show active" id="nav-comment" role="tabpanel" aria-labelledby="nav-comment-tab">
+                            <ul class="review-list">
+                                <li>
+                                    <div class="review-content">
+                                        <div class="media">
+                                            <img class="mr-3" src="../assets/images/user-icon.png" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="mt-0">Johnny S</h5>
+                                                <p>Few seconds ago</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            This is a very looooooooooooooooooooooong comment to appreciate the contestants of this competition in a cool way!
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="review-content">
+                                        <div class="media">
+                                            <img class="mr-3" src="../assets/images/user-icon.png" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="mt-0">Johnny S</h5>
+                                                <p>Few seconds ago</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            This is a very looooooooooooooooooooooong comment to appreciate the contestants of this competition in a cool way!
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="review-content">
+                                        <div class="media">
+                                            <img class="mr-3" src="../assets/images/user-icon.png" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="mt-0">Johnny S</h5>
+                                                <p>Few seconds ago</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            This is a very looooooooooooooooooooooong comment to appreciate the contestants of this competition in a cool way!
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="text-center mb-4">
+                                <a class="see-all" href="">View All</a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-share" role="tabpanel" aria-labelledby="nav-share-tab">
+                            <ul class="review-list">
+                                <li>
+                                    <div class="review-content">
+                                        <div class="media">
+                                            <img class="mr-3" src="../assets/images/user-icon.png" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="mt-0">Johnny S</h5>
+                                                <p>Few seconds ago</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            This is a very looooooooooooooooooooooong comment to appreciate the contestants of this competition in a cool way!
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="review-content">
+                                        <div class="media">
+                                            <img class="mr-3" src="../assets/images/user-icon.png" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="mt-0">Johnny S</h5>
+                                                <p>Few seconds ago</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            This is a very looooooooooooooooooooooong comment to appreciate the contestants of this competition in a cool way!
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="review-content">
+                                        <div class="media">
+                                            <img class="mr-3" src="../assets/images/user-icon.png" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="mt-0">Johnny S</h5>
+                                                <p>Few seconds ago</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            This is a very looooooooooooooooooooooong comment to appreciate the contestants of this competition in a cool way!
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="text-center mb-4">
+                                <a class="see-all" href="">View All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="theme-timer">
+                    <img src="../assets/images/timer.png" alt="timer.png">
+                </div>
+                <div class="statistics-table">
+                    <h3>Competition Statistics</h3>
+                    <ul>
+                        <li>
+                            <span>Total Votes</span>
+                            <span>23 Votes</span>
+                        </li>
+                        <li>
+                            <span>1st (as of now)</span>
+                            <span class="user-name">John D.</span>
+                        </li>
+                        <li>
+                            <span>Tier</span>
+                            <span>Popular</span>
+                        </li>
+                        <li>
+                            <span>Genre</span>
+                            <span>Soprano</span>
+                        </li>
+                        <li>
+                            <span>Category</span>
+                            <span>Vocals</span>
+                        </li>
+                        <li>
+                            <span>Genre</span>
+                            <span>Soprano</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <button class="btn btn-primary rounded-pill">Share</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-12 text-center ">
+                <div class="footer-widget d-flex align-items-center justify-content-center pb-4 pb-sm-0 h-100">
+                    <img class="logo" src="../assets/images/footer-logo.png" alt="footer-logo">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 text-center text-sm-left">
+                <div class="footer-widget">
+                    <h3>GONG</h3>
+                    <ul>
+                        <li><a href="">Advertise</a></li>
+                        <li><a href="">Investor Portal</a></li>
+                        <li><a href="">Press</a></li>
+                        <li><a href="">Releases</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Settings</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 text-center text-sm-left">
+                <div class="footer-widget">
+                    <h3>JOIN COMPETITIONS</h3>
+                    <ul>
+                        <li><a href="">Login</a> </li>
+                        <li><a href="">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 text-center text-sm-left">
+                <div class="footer-widget">
+                    <h3>FOLLOW US</h3>
+                    <ul class="social-media">
+                        <li>
+                            <a style="" href="">
+                                <img src="../assets/images/fb.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a style="" href="">
+                                <img src="../assets/images/twitter.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a style="" href="">
+                                <img src="../assets/images/insta.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a style="" href="">
+                                <img src="../assets/images/pin.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="copy-right">
+                    <p>
+                        2020, Gong. All Rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Bootstrap 4 JS files-->
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"> </script>
+
+<!-- Include wavesurfer.js from cdn -->
+<script src="../js/wavesurfer.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--Bootstrap 4 JS files-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.15/mediaelement-and-player.min.js" integrity="sha256-8/UOjLaSyiqm0IvIvezgdQ4B7tMGZHUW6071T8EgmsI=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript"  src="../js/custom.js"></script>
+<script>
+    $(document).ready(function(){
+
+        $('video, audio').mediaelementplayer({
+            // Do not forget to put a final slash (/)
+            pluginPath: 'https://cdnjs.com/libraries/mediaelement/',
+            // this will allow the CDN to use Flash without restrictions
+            // (by default, this is set as `sameDomain`)
+            shimScriptAccess: 'always'
+            // more configuration
+        });
+    )}
+</script>
+</body>
+</html>
+
