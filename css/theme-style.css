@@ -19,10 +19,24 @@ a {
 
 .input-field {
   text-align: left; }
-  .input-field .input-group {
-    flex-direction: column; }
-    .input-field .input-group p {
-      margin: 0; }
+  .input-field .input-group .input-pre-icon {
+    background: #F2F2F2;
+    position: absolute;
+    height: calc(1.3em + .75rem + 2px);
+    padding: 2px 5px 5.5px 5px;
+    z-index: 9;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    width: 35px; }
+    .input-field .input-group .input-pre-icon + input, .input-field .input-group .input-pre-icon + select {
+      padding-left: 40px; }
+  .input-field .input-group i {
+    line-height: 32px;
+    color: #940000; }
+  .input-field .input-group .input-icon {
+    display: inline-block; }
+  .input-field .input-group p {
+    margin: 0; }
   .input-field label {
     font-size: 14px;
     font-weight: 500;
@@ -33,13 +47,13 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.8);
     background-color: transparent;
     color: #fff;
+    flex-basis: auto;
     font-size: 14px;
     font-weight: 400;
     border-radius: 10px !important; }
   .input-field .form-control:focus {
     color: #495057;
     background-color: #fff;
-    border-color: transparent;
     outline: 0;
     box-shadow: none; }
 
@@ -56,7 +70,7 @@ a {
   .theme-form .input-field .form-control {
     border: 1px solid #DCDCDC;
     background-color: transparent;
-    height: calc(1.8em + .75rem + 2px);
+    height: calc(1.5em + .75rem + 2px);
     color: #495057;
     font-size: 14px;
     font-weight: 400;
@@ -143,14 +157,17 @@ button:focus {
   background-color: #FDC156;
   border-color: #FDC156; }
 
-.btn-primary.focus, .btn-primary:focus {
+.btn-primary.focus, .btn-primary:focus, .btn-primary:disabled {
   color: #000;
   background-color: #FDC156;
   border-color: #FDC156;
   box-shadow: none; }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: none; }
+  box-shadow: none;
+  color: #000;
+  background-color: #FDC156;
+  border-color: #FDC156; }
 
 .btn-secondary {
   color: #000;

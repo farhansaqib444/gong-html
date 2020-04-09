@@ -21,7 +21,28 @@ a {
 .input-field {
   text-align: left;
   .input-group {
-    flex-direction: column;
+    .input-pre-icon {
+      background: #F2F2F2;
+      position: absolute;
+      height: calc(1.3em + .75rem + 2px);
+      padding: 2px 5px 5.5px 5px;
+      z-index: 9;
+      border-radius: 10px 0 0 10px;
+      text-align: center;
+      width: 35px;
+      + input, + select {
+        padding-left: 40px;
+
+      }
+    }
+    i {
+      line-height: 32px;
+      color: #940000;
+    }
+    .input-icon {
+      display: inline-block;
+    }
+
     p {
       margin: 0;
     }
@@ -37,6 +58,7 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.8);
     background-color: transparent;
     color: #fff;
+    flex-basis: auto;
     font-size: 14px;
     font-weight: 400;
     border-radius: 10px !important;
@@ -44,7 +66,6 @@ a {
   .form-control:focus {
     color: #495057;
     background-color: #fff;
-    border-color: transparent;
     outline: 0;
     box-shadow: none;
   }
@@ -65,7 +86,7 @@ a {
     .form-control {
       border: 1px solid #DCDCDC;
       background-color: transparent;
-      height: calc(1.8em + .75rem + 2px);
+      height: calc(1.5em + .75rem + 2px);
       color: #495057;
       font-size: 14px;
       font-weight: 400;
@@ -169,7 +190,7 @@ button:focus {
   background-color: #FDC156;
   border-color: #FDC156;
 }
-.btn-primary.focus, .btn-primary:focus {
+.btn-primary.focus, .btn-primary:focus, .btn-primary:disabled {
   color: #000;
   background-color: #FDC156;
   border-color: #FDC156;
@@ -177,6 +198,9 @@ button:focus {
 }
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
   box-shadow: none;
+  color: #000;
+  background-color: #FDC156;
+  border-color: #FDC156;
 }
 
 .btn-secondary {
@@ -247,7 +271,7 @@ button:focus {
   border-radius: .25rem;
 }
 
-        //      ============== search-widget css start=================
+//      ============== search-widget css start=================
 .search-widget {
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #AEAEAE;
@@ -289,7 +313,7 @@ button:focus {
     padding: 0;
   }
 }
-        //      ============== search-widget css End =================
+//      ============== search-widget css End =================
 
 
 //      ==============Navbar css End=================

@@ -77,7 +77,7 @@
     color: #FFFFFF; }
 
 .modal-dialog {
-  margin: 10.75rem 15px; }
+  margin: 2rem 15px; }
 
 .theme-modal {
   background: url("../assets/images/modal-bg.png") no-repeat center left;
@@ -126,6 +126,25 @@
     margin: 0 auto; }
   .theme-modal.login-modal .row div:first-child {
     border-radius: 10px 0 0 10px; }
+
+.sign-up-selection .media img.de-active {
+  display: flex; }
+.sign-up-selection .media img.on-active {
+  display: none; }
+.sign-up-selection .media .media-body {
+  text-align: left; }
+  .sign-up-selection .media .media-body h5 {
+    font-size: 17px;
+    color: #fff; }
+  .sign-up-selection .media .media-body p {
+    color: #fff;
+    font-size: 14px; }
+.sign-up-selection .media.active img.on-active {
+  display: flex; }
+.sign-up-selection .media.active img.de-active {
+  display: none; }
+.sign-up-selection .media.active .media-body h5 {
+  color: #FEC157; }
 
 .checkbox label {
   display: inline-block;
@@ -339,7 +358,7 @@
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 576px;
-    margin: 10.75rem auto; }
+    margin: 2rem auto; }
 
   .theme-modal .modal-body .row div:nth-child(2) {
     border-radius: 0 10px 10px 0; }
@@ -350,7 +369,7 @@
 @media (min-width: 768px) {
   .modal-dialog {
     max-width: 720px;
-    margin: 10.75rem auto; }
+    margin: 2rem auto; }
 
   .theme-modal .modal-body .row div:nth-child(2) {
     border-radius: 0 10px 10px 0; }
@@ -358,5 +377,8 @@
     font-size: 36px; }
   .theme-modal .modal-body .title-description {
     font-size: 17px; } }
+@media (max-width: 576px) {
+  .modal-divider {
+    display: none; } }
 
 /*# sourceMappingURL=modals.css.map */

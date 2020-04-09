@@ -93,7 +93,7 @@
   }
 }
 .modal-dialog {
-  margin: 10.75rem 15px;;
+  margin: 2rem 15px;;
 }
 .theme-modal{
   background: url("../assets/images/modal-bg.png") no-repeat center left;
@@ -164,6 +164,40 @@
   }
 }
 
+.sign-up-selection {
+  .media {
+    img.de-active {
+      display: flex;
+    }
+    img.on-active {
+      display: none;
+    }
+    .media-body  {
+      text-align: left;
+      h5 {
+        font-size: 17px;
+        color: #fff;
+      }
+      p {
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+    &.active {
+      img.on-active {
+        display: flex;
+      }
+      img.de-active {
+        display: none;
+      }
+      .media-body  {
+        h5 {
+          color: #FEC157;
+        }
+      }
+    }
+  }
+}
 
 //Check box Styling Start
 //https://codepen.io/Edrees21/pen/YXVYXM?editors=1100
@@ -426,7 +460,7 @@
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 576px;
-    margin: 10.75rem auto;
+    margin: 2rem auto;
   }
   .theme-modal{
     .modal-body {
@@ -449,7 +483,7 @@
 @media (min-width: 768px) {
   .modal-dialog {
     max-width: 720px;
-    margin: 10.75rem auto;
+    margin: 2rem auto;
   }
   .theme-modal{
     .modal-body {
@@ -465,6 +499,12 @@
         font-size: 17px;
       }
     }
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-divider {
+    display: none;
   }
 }
 

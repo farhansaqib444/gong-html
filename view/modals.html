@@ -92,11 +92,96 @@
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
             Login
           </button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signUpModal-3">
+            signUpModal-3
+          </button>
         </div>
       </div>
     </div>
   </div>
   <div class="footer"></div>
+
+
+  <!--    Sign Up Modal Start-->
+  <div class="modal fade" id="signUpModal-3" tabindex="-1" role="dialog" aria-labelledby="signUpModal-3Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content theme-modal sign-up-modal" style="background: url({{asset('assets/images/modal-bg.png')}}) no-repeat center;background-size: cover">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <span class="modal-divider">
+		            OR
+		          </span>
+          <div class="container">
+            <div class="row align-items-center">
+
+              <div class="col-md-6 col-sm-6">
+                <div class="already-account">
+                  <p>Already have an account?</p>
+                  <a href="javascript:;" class="login_model_cl" data-toggle="modal" data-target="#loginModal">Log In</a>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 text-center bg-red py-5">
+                <form action="" method="post" id="signupForm">
+                  <h2 class="modal-title">Sign Up</h2>
+                  <p class="title-description">
+                    Hi, Which of the following best describes you?
+                  </p>
+
+                  <div class="sign-up-selection">
+                    <div class="media active">
+                      <img class="on-active mr-2" src="../assets/images/Talent-form-icon.png" alt="Talent">
+                      <img class="de-active mr-2" src="../assets/images/Talent-form-icon-1.png" alt="Talent">
+                      <div class="media-body">
+                        <h5 class="mt-0">Talent</h5>
+                        <p>
+                          (I am looking to showcase my talents, find an agent, compete and build a fan base.)
+                        </p>
+                      </div>
+                    </div>
+                    <div class="media">
+                      <img class="on-active mr-2" src="../assets/images/fan-form-icon.png" alt="fan">
+                      <img class="de-active mr-2" src="../assets/images/fan-form-icon-1.png" alt="fan">
+                      <div class="media-body">
+                        <h5 class="mt-0">Fan</h5>
+                        <p>
+                          (I am just here to watch, support my friends, and be entertained.)
+                        </p>
+                      </div>
+                    </div>
+                    <div class="media">
+                      <img class="on-active mr-2" src="../assets/images/agent-form-icon.png" alt="agent">
+                      <img class="de-active mr-2" src="../assets/images/agent-form-icon-1.png" alt="agent">
+                      <div class="media-body">
+                        <h5 class="mt-0">Agent</h5>
+                        <p>
+                          (I am here to find fresh talent and rising stars.)
+                        </p>
+                      </div>
+                    </div>
+                    <div class="media">
+                      <img class="on-active mr-2" src="../assets/images/Sponsor-form-icon.png" alt="Sponsor">
+                      <img class="de-active mr-2" src="../assets/images/Sponsor-form-icon-1.png" alt="Sponsor">
+                      <div class="media-body">
+                        <h5 class="mt-0">Sponsor</h5>
+                        <p>
+                          (I am here to promote my business, create special private competitions for talent and connect with everyone.)
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="btn btn-primary rounded-pill mt-3 btn_signup_1">Sign Up</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--    Sign Up Modal End-->
 
 <!--    Sign Up Modal Start-->
 <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
