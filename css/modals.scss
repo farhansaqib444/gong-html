@@ -74,7 +74,7 @@
 }
 .already-account {
   text-align: center;
-  padding: 15px 0;
+  padding: 15px 20px;
   p {
     font-size: 17px;
     font-family: Roboto, serif;
@@ -144,7 +144,7 @@
   }
   &.sign-up-modal {
     form {
-      max-width: 250px;
+      max-width: 300px;
       width: 100%;
       margin: 0 auto;
     }
@@ -482,10 +482,13 @@
 
 @media (min-width: 768px) {
   .modal-dialog {
-    max-width: 720px;
+    max-width: 730px;
     margin: 2rem auto;
   }
   .theme-modal{
+    .container {
+      max-width: 730px;
+    }
     .modal-body {
       .row {
         div:nth-child(2) {
@@ -507,9 +510,3 @@
     display: none;
   }
 }
-
-
-
-
-
-

@@ -60,7 +60,7 @@
 
 .already-account {
   text-align: center;
-  padding: 15px 0; }
+  padding: 15px 20px; }
   .already-account p {
     font-size: 17px;
     font-family: Roboto, serif;
@@ -117,7 +117,7 @@
       letter-spacing: 0;
       color: #FFFFFF; }
   .theme-modal.sign-up-modal form {
-    max-width: 250px;
+    max-width: 300px;
     width: 100%;
     margin: 0 auto; }
   .theme-modal.login-modal form {
@@ -368,9 +368,11 @@
     font-size: 14px; } }
 @media (min-width: 768px) {
   .modal-dialog {
-    max-width: 720px;
+    max-width: 730px;
     margin: 2rem auto; }
 
+  .theme-modal .container {
+    max-width: 730px; }
   .theme-modal .modal-body .row div:nth-child(2) {
     border-radius: 0 10px 10px 0; }
   .theme-modal .modal-body .modal-title {

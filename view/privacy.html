@@ -1,0 +1,546 @@
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Gong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--  Font Icons-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Bootstrap 4 Css -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!--Custom Style Sheets-->
+
+    <link rel="stylesheet" href="../css/theme-style.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style type="text/css">ol {
+        margin: 0;
+        padding: 0
+    }
+
+    table td, table th {
+        padding: 0
+    }
+
+    .c1 {
+        -webkit-text-decoration-skip: none;
+        color: #0000ff;
+        font-weight: 400;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        font-size: 12pt;
+        font-family: "Times New Roman"
+    }
+
+    .c0 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 12pt;
+        font-family: "Times New Roman";
+        font-style: normal
+    }
+
+    .c8 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.15;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+        height: 11pt
+    }
+
+    .c5 {
+        padding-top: 12pt;
+        padding-bottom: 12pt;
+        line-height: 1.15;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    .c6 {
+        color: #000000;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 13.5pt;
+        font-style: normal
+    }
+
+    .c14 {
+        -webkit-text-decoration-skip: none;
+        color: #003399;
+        text-decoration: underline;
+        text-decoration-skip-ink: none
+    }
+
+    .c7 {
+        color: #000000;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-style: normal
+    }
+
+    .c11 {
+        font-weight: 400;
+        font-size: 11pt;
+        font-family: "Arial"
+    }
+
+
+    .c2 {
+        font-size: 7pt;
+        font-family: "Times New Roman";
+        font-weight: 400
+    }
+
+    .c10 {
+        font-family: "Times New Roman";
+        font-weight: 400
+    }
+
+    .c12 {
+        color: inherit;
+        text-decoration: inherit
+    }
+
+    .c4 {
+        font-family: "Times New Roman";
+        font-weight: 700
+    }
+
+    .c9 {
+        margin-left: 54pt
+    }
+
+    .c3 {
+        font-size: 12pt
+    }
+
+    .title {
+        padding-top: 0pt;
+        color: #000000;
+        font-size: 26pt;
+        padding-bottom: 3pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    .subtitle {
+        padding-top: 0pt;
+        color: #666666;
+        font-size: 15pt;
+        padding-bottom: 16pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    li {
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial"
+    }
+
+    p {
+        margin: 0;
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial"
+    }
+
+    h1 {
+        padding-top: 20pt;
+        color: #000000;
+        font-size: 20pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h2 {
+        padding-top: 18pt;
+        color: #000000;
+        font-size: 16pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h3 {
+        padding-top: 16pt;
+        color: #434343;
+        font-size: 14pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h4 {
+        padding-top: 14pt;
+        color: #666666;
+        font-size: 12pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h5 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h6 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        font-style: italic;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }</style>
+</head>
+<body class="c13">
+<div class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <img class="navbar-brand" src="../assets/images/gong-logo.png" alt="">
+            <div class="d-flex">
+                <div class="dropdown  show-mob-hide-web mr-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="mobile-user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="nav-user-icon" src="../assets/images/user-icon.png" alt="">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="mobile-user">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Setting</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                <form class="form-inline my-4 my-lg-0 search-widget ml-auto">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button type="submit">
+                        <i class="material-icons">
+                            search
+                        </i>
+                    </button>
+                </form>
+                <ul class="navbar-nav  mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Gong Talk <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gong News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Group</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Subscription</a>
+                    </li>
+                    <li class="nav-item dropdown show-web-hide-mob">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="nav-user-icon" src="../assets/images/user-icon.png" alt="">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Setting</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 py-5">
+            <p class="c5"><span class="c0">Privacy Policy (Updated April 14, 2020)</span></p>
+            <p class="c5"><span class="c10 c3">For a prior version of Gong&#39;s Privacy Policy, click </span><span
+                    class="c1">here</span><span class="c10 c3">. For a summary of changes, click </span><span class="c1">here</span><span
+                    class="c0">.</span></p>
+            <p class="c5"><span class="c0">Gong, Inc. (&ldquo;Gong&rdquo; or &ldquo;we&rdquo;) is committed to protecting the privacy of users of our applications and websites (&ldquo;you&rdquo;). We have prepared this privacy policy to describe to you our practices regarding the Personal Data (as defined below) that we collect from users of our applications and websites (collectively, the &ldquo;Site&rdquo;) and online services (the &ldquo;Services&rdquo;). This policy does not apply to the practices of companies that we do not own or control.</span>
+            </p>
+            <p class="c5"><span class="c0">By using our Site and our Services you understand and agree to the terms of this privacy policy and you expressly consent to the collection, use and disclosure of your Personal Data in accordance with this policy. If you do not agree to this policy, do not install, use, or access our Site or our Services. We may update this policy from time to time and will post updates to this policy on this web page, including the policy&#39;s effective date.</span>
+            </p>
+            <p class="c5"><span class="c7 c4 c3">A Note to Users Outside of the United States. If you are a non U.S. user of the Site or the Services, by visiting the Site, using the Services and providing us with Personal Data, you acknowledge and agree that your Personal Data may be processed for the purposes identified in this privacy policy. In addition, your Personal Data may be processed in the country in which it was collected and in other countries, including the United States, where laws regarding processing of Personal Data may be less stringent than the laws in your country. By providing your data, you consent to such transfer.</span>
+            </p>
+            <p class="c5"><span class="c4 c6">1. INFORMATION COLLECTION AND USE</span></p>
+            <p class="c5"><span class="c0">&ldquo;Personal Data&rdquo; means data that allows someone to identify or contact you, including, for example, your name, address, phone number, email address, as well as any other non-public information about you that is associated with or linked to any of the foregoing data, including musical content that you create using our Site and our Services (&ldquo;Content&rdquo;). &ldquo;Aggregate Data&rdquo; means Personal Data that has been combined by or for Gong into anonymous groups of users where the groups are large enough to reasonably prevent individual users from being identified, and &ldquo;Anonymized Data&rdquo; is Personal Data that has been anonymized by or for Gong so that it does not allow a third party to easily identify a specific individual.</span>
+            </p>
+            <p class="c5"><span class="c6 c4">2. INFORMATION THAT YOU PROVIDE TO US DIRECTLY</span></p>
+            <p class="c5"><span class="c7 c4 c3">Basic account information</span></p>
+            <p class="c5"><span class="c0">In order to register for a Gong account on the Site, you are required to provide Gong with certain Personal Data, such as your email address, phone number, username and password. Your user name is listed publicly on the Services, including in search results. We may use your email address and/or phone number to send you information about the Services, provide customer support or to notify you of additional Gong products and services. You may use your account settings to unsubscribe from notifications from Gong.</span>
+            </p>
+            <p class="c5"><span class="c7 c4 c3">Additional profile information</span></p>
+            <p class="c5"><span class="c0">You may also choose to provide Gong with additional Personal Data for your profile, which we will make public (your &ldquo;Public Profile&rdquo;), such as a picture, your location and an additional blurb about yourself. The information that you provide in your Public Profile will be visible to others, including anonymous visitors to the Site.</span>
+            </p>
+            <p class="c5"><span class="c7 c4 c3">&nbsp;</span></p>
+            <p class="c5"><span class="c7 c4 c3">Information from third party social network accounts</span></p>
+            <p class="c5"><span class="c0">If you sign into the Site with a third party social network, such as Gong Connect, we will collect any information that you have agreed to make available to Gong through such account, which may include: (1) your first and last name, (2) your user ID/URL, (3) your profile picture, (4) your list of friends, (5) your email address and/or phone number, and/or (6) your birthday. This information will be primarily used for user registration and to enhance your social experience on the Site, which may include friend-to-friend interaction and notifications, chat, or messaging functionality, public leaderboards, head-to-head competition and other similar features. If you sign into Gong with a third party social network and agree to make your list of friends on such network available to Gong, your friends on such network will automatically follow you on the Site and your Gong account will be automatically configured to follow your friends. You can, however, unfollow any other user on Gong at any time.</span>
+            </p>
+            <p class="c5"><span class="c7 c4 c3">Content, following and other public information</span></p>
+            <p class="c5"><span class="c0">Gong&#39;s Services are designed to help you create and share Content. Most of the information you provide Gong is information you are asking Gong to make public. This includes the Content you create and the metadata associated with it, such as when you created it, the people you follow, the songs you mark as favorites or share, and your comments on Content provided by other users. We will associate this information with your Personal Data and we may use this information and other information that results from your use of the Site and/or Services to customize the content we show you, including ads. When you share information or Content via the Site or the Services, you should think carefully about what you are making public.</span>
+            </p>
+            <p class="c5"><span class="c7 c4 c3">Public forums</span></p>
+            <p class="c5"><span class="c0">Comments, Forums, message boards, blogs and/or news groups may be available to you through the Site and/or the Services. Please remember that any information you post in these areas becomes public information. If you post personal information online that is accessible to the public, you may receive unsolicited responses. You should exercise caution when deciding to disclose any of your personal information in a public forum.</span>
+            </p>
+            <p class="c5"><span class="c4 c3 c7">Surveys and contests</span></p>
+            <p class="c5"><span class="c0">We sometimes conduct or sponsor surveys and contests. Participation in surveys and contests is completely voluntary. If you elect to participate, we may ask you for contact, demographic, and other information. We use this Personal Data to understand our users and their use of the Site and Services and to improve the Site and Services, and we may provide users with the results of such surveys and contests.</span>
+            </p>
+            <p class="c5"><span class="c7 c4 c3">Other information we collect</span></p>
+            <p class="c5"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c0">We collect the content, communications and other information you provide when you use our Products, including when you sign up for an account, create or share content, and message or communicate with others. This can include information in or about the content you provide (like metadata), such as the location of a photo or the date a file was created. It can also include what you see through features we provide. Our systems automatically process content and communications you and others provide to analyze context and what&#39;s in them for the purposes below.</span>
+            </p>
+            <p class="c5"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c4 c3">Networks and connections.</span><span class="c0">&nbsp;We collect information about the people, competitions, accounts and groups you are connected to and how you interact with them across our Products, such as people you communicate with the most or groups you are part of as well as categories of competitions that you compete in watch. We also collect contact information if you choose to upload, sync, or import it from a device (such as an address book or call log or SMS log history), which we use for things like helping you and others find people you may know and for the other purposes listed below.</span>
+            </p>
+            <p class="c5"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c4 c3">Your usage.</span><span class="c0">&nbsp;We collect information about how you use our Products, such as the types of content you view or engage with; the features you use; the actions you take; the people or accounts you interact with; and the time, frequency and duration of your activities. For example, we log when you&#39;re using and have last used our Products, and what comments, videos and other content you view on our Products. We also collect information about how you use features like our marketplace.</span>
+            </p>
+            <p class="c5"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c4 c3">Information about transactions made on our Products.</span><span class="c0">&nbsp;If you use our Products for purchases or other financial transactions (such as when you make a purchase in our marketplace of another user&rsquo;s content or make a tip towards a user), we collect information about the purchase or transaction. This includes payment information, such as your credit or debit card number and other card information; other account and authentication information; and billing, shipping and contact details.</span>
+            </p>
+            <p class="c5"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c4 c3">Things others do and information they provide about you.</span><span class="c0">&nbsp;We also receive and analyze content, communications and information that other people provide when they use our Products. This can include information about you, such as when others share or comment on a photo of you, send a message to you, or upload, sync or import your contact information.</span>
+            </p>
+            <p class="c5"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c4 c3">Competition Statistics &ndash;</span><span class="c0">&nbsp;We also collect information about your performance in competitions, your number of wins, average rating, number of votes received, number of invites that you have provided to a competition, and all statistics related to your competitions. We also collect statistics for any competitions you create which might include the users that join your competition, the number of competitors, category chosen, and all information related to the competition.</span>
+            </p>
+            <p class="c5"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c4 c3">Device Information - </span><span class="c0">As described below, we collect information from and about the computers, phones, connected TVs and other web-connected devices you use that integrate with our Products, and we combine this information across different devices you use. For example, we use information collected about your use of our Products on your phone to better personalize the content (including ads) or features you see when you use our Products on another device, such as your laptop or tablet, or to measure whether you took an action in response to an ad we showed you on your phone on a different device. Information we obtain from the devices includes:</span>
+            </p>
+            <p class="c5 c9"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c4 c3">Device attributes:</span><span class="c0">&nbsp;information such as the operating system, hardware and software versions, battery level, signal strength, available storage space, browser type, app and file names and types, and plugins.</span>
+            </p>
+            <p class="c5 c9"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c4 c3">Device operations:</span><span class="c0">&nbsp;information about operations and behaviors performed on the device, such as whether a window is foregrounded or backgrounded, or mouse movements (which can help distinguish humans from bots).</span>
+            </p>
+            <p class="c5 c9"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c4 c3">Identifiers:</span><span class="c0">&nbsp;unique identifiers, device IDs, and other identifiers, such as from games, apps or accounts you use, and Family Device IDs (or other identifiers unique to Gong products associated with the same device or account).</span>
+            </p>
+            <p class="c5 c9"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c4 c3">Device signals:</span><span class="c0">&nbsp;Bluetooth signals, and information about nearby Wi-Fi access points, beacons, and cell towers.</span>
+            </p>
+            <p class="c5 c9"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c3 c4">Data from device settings:</span><span class="c0">&nbsp;information you allow us to receive through device settings you turn on, such as access to your GPS location, camera or photos.</span>
+            </p>
+            <p class="c5 c9"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c4 c3">Network and connections:</span><span class="c0">&nbsp;information such as the name of your mobile operator or ISP, language, time zone, mobile phone number, IP address, connection speed and, in some cases, information about other devices that are nearby or on your network, so we can do things like help you stream a video from your phone to your TV.</span>
+            </p>
+            <p class="c5 c9"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c4 c3">Cookie data:</span><span class="c0">&nbsp;data from cookies stored on your device, including cookie IDs and settings.</span>
+            </p>
+            <p class="c5"><span class="c6 c4">3. INFORMATION THAT WE GET FROM YOUR USE OF THE SERVICES</span></p>
+            <p class="c5"><span class="c7 c4 c3">Log data and location information</span></p>
+            <p class="c5"><span class="c0">When you use the Services, we automatically collect certain log data, including your IP address, browser type, hardware type, unique device ID, the version of your operating system, your activity within the Services, and your location (based on opt-in location-based services, which rely upon a device&#39;s GPS coordinates). We use this information to administer, troubleshoot and improve the Services, and to help us understand how you and our other users use the Site and Services. We may also collect similar information from emails sent to Gong&#39;s users, which helps us track which emails are opened and which links are clicked by recipients.</span>
+            </p>
+            <p class="c5"><span class="c7 c4 c3">Cookies and similar technologies</span></p>
+            <p class="c5"><span class="c0">The Site uses cookies, which deposit certain record keeping information on your computer or mobile device, and other similar technologies, to collect usage data, to keep track of your preferences, to deliver content and advertising specific to your interests and for other similar purposes. We may use both session cookies (which expire once you close your web browser) and persistent cookies (which stay on your computer until you delete them) to provide you with a more personal and interactive experience on our Site. These cookies can&#39;t read other data from your hard drive or read cookie files created by other sites or applications. Most browsers are set to accept cookies unless you reconfigure your browser to refuse them or to notify you when you will have received one. If you do not accept cookies, you will not be able to use certain features of the Site and Services. We may also ask advertisers or other partners to serve ads or services to your devices, which may use cookies or similar technologies placed by Gong or such third party. We do not currently respond to &ldquo;do not track&rdquo; signals or other mechanisms that might enable consumers to opt out of tracking on the Site and Services.</span>
+            </p>
+            <p class="c5"><span class="c7 c4 c3">Third-party platforms and marketplaces</span></p>
+            <p class="c5"><span class="c0">Third-party libraries included in Gong&#39;s applications collect device information and user activity within the application. Third-party platforms and marketplaces through which Gong&#39;s applications are made available may collect information about you, or receive information from Gong, in order to provide or analyze their services. These third-party platforms and marketplaces are neither developed nor administered by us and we are not responsible for the actions of those third parties. You should carefully review the terms of service and privacy policies of any third-party platforms or marketplaces that you use to access Gong&#39;s applications.</span>
+            </p>
+            <p class="c5"><span class="c7 c4 c3">Google Analytics</span></p>
+            <p class="c5"><span class="c3 c10">We use Google Analytics&#39; Demographics and Interest Reporting feature to collect information about use of the Site. Google Analytics collects information such as how often users visit the Site, what pages they visit when they do so, and what other sites they used prior to coming to the Site. We will not facilitate the merging of your Personal Data with non-personally identifiable information collected through Google Analytics unless we have given you notice of that merger. You may opt-out of Google Analytics tracking with the</span><span
+                    class="c10 c3"><a class="c12"
+                                      href="https://www.google.com/url?q=https://tools.google.com/dlpage/gaoptout/&amp;sa=D&amp;ust=1586906006675000">&nbsp;</a></span><span
+                    class="c1"><a class="c12"
+                                  href="https://www.google.com/url?q=https://tools.google.com/dlpage/gaoptout/&amp;sa=D&amp;ust=1586906006675000">Google Analytics opt-out browser add-on</a></span><span
+                    class="c0">.</span></p>
+            <p class="c5"><span class="c7 c4 c3">4. How do we use this information?</span></p>
+            <p class="c5"><span class="c0">We use the information we have to deliver our Products, including to personalize features and content (including your Gong News, connecting you with agents if you are a talent and have opted in to sharing your information with agents, suggesting Gong Competitions for you to enter or view, &nbsp;Gong Talent users to follow and ads) and make suggestions for you (such as groups you may be interested in or topics you may want to follow) on and off our Products. To create personalized Products that are unique and relevant to you, we use your connections, preferences, interests and activities based on the data we collect and learn from you and others ; how you use and interact with our Products; and the people, groups, competitions, categories, places or things you&#39;re connected to and interested in on and off our Products.</span>
+            </p>
+            <p class="c5"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c4 c3">Location-related information:</span><span class="c0">&nbsp;We use location-related-information such as your current location, where you live, the places you like to go, and the businesses and people you&#39;re near-to provide, personalize and improve our Products, including ads, for you and others. Location-related information can be based on things like precise device location (if you&#39;ve allowed us to collect it), IP addresses, and information from your and others&#39; use of Gong Products (such as check-ins or events you attend).</span>
+            </p>
+            <p class="c5"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c4 c3">Product research and development:</span><span class="c0">&nbsp;We use the information we have to develop, test and improve our Products, including by conducting surveys and research, and testing and troubleshooting new products and features.</span>
+            </p>
+            <p class="c5"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c4 c3">Ads and other sponsored content:</span><span class="c0">&nbsp;We use the information we have about you-including information about your interests, actions and connections-to select and personalize ads, offers and other sponsored content that we show you. Learn more about how we select and personalize ads and your choices over the data we use to select ads and other sponsored content for you in the Gong settings.</span>
+            </p>
+            <p class="c5"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c0">Provide measurement, analytics, and other business services.</span></p>
+            <p class="c5"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c0">We use the information we have (including your activity off our Products, such as the websites you visit and ads you see) to help advertisers and other partners measure the effectiveness and distribution of their ads and services, and understand the types of people who use their services and how people interact with their websites, apps, and services.</span>
+            </p>
+            <p class="c5"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c0">We use the information we have to verify accounts and activity, combat harmful conduct, detect and prevent spam and other bad experiences, maintain the integrity of our Products, and promote safety and security on and off of Gong Products. For example, we use data we have to investigate suspicious activity or violations of our terms or policies, or to detect when someone needs help.</span>
+            </p>
+            <p class="c5"><span class="c3">&middot;</span><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    class="c0">We use the information we have to send you marketing communications, communicate with you about our Products, and let you know about our policies and terms. We also use your information to respond to you when you contact us.</span>
+            </p>
+            <p class="c5"><span class="c6 c4">5. INFORMATION SHARING AND DISCLOSURE</span></p>
+            <p class="c5"><span class="c0">We do not sell or disclose your Personal Data to unaffiliated third parties except under the circumstances described in this Privacy Policy.</span>
+            </p>
+            <p class="c5"><span class="c7 c4 c3">Other users</span></p>
+            <p class="c5"><span class="c10 c3">Any information in your Public Profile (e.g., your username and any profile image, location or additional information that you provide as part of your Public Profile, but not your phone number, or email address) will be accessible by other users of the Site and Services. Content that you create through or upload to the Site or the Services will by default be public and available to users of the Site and the Services. For information about how to change your privacy settings with respect to Content or delete Content from the Site or the Services, see the frequently asked questions at </span><span
+                    class="c10 c3 c14">www.Gongtalent.com/support</span><span class="c0">. Similarly, if you comment on any Content on the Site or the Services, your comments will be public and available to users of the Site and the Services.</span>
+            </p>
+            <p class="c5"><span class="c7 c4 c3">With your consent</span></p>
+            <p class="c5"><span class="c0">We may disclose your Personal Data when we have your express permission.</span></p>
+            <p class="c5"><span class="c7 c4 c3">Advertisers and other business partners</span></p>
+            <p class="c5"><span class="c0">We may share Anonymized or Aggregated Data about our users or the use of the Site or Services with our advertisers and partners. This means that we may tell our advertisers general information about the characteristics of our user base, but we do not specifically identify a particular user or visitor by name or provide the user&#39;s contact information. We may share your unique device ID and/or your location (based on opt-in location-based services, which rely upon a device&#39;s GPS coordinates) with third parties, including advertisers and partners, or provide reports to such parties about the number of unique users who saw or clicked on their advertisements. We may also share certain information such as cookie data with third-party advertising partners. This information, among other things, allows third-party ad networks to deliver targeted advertisements that they believe will be of most interest to you.</span>
+            </p>
+            <p class="c5"><span class="c7 c4 c3">Service providers</span></p>
+            <p class="c5"><span class="c0">We may disclose your information on a confidential basis to nonaffiliated service providers we engage to perform services for Gong in connection with the Site and our provision of the Services. Information will be shared with such service providers only to the extent reasonably necessary for them to perform such services.</span>
+            </p>
+            <p class="c5"><span class="c7 c4 c3">If required by law</span></p>
+            <p class="c5"><span class="c0">Regardless of any choices you make regarding your Personal Data (as described in Section 7 below), we may preserve and disclose your information if we believe in good faith that we are required to do so in connection with any legal investigation, or by law or regulation, including in response to a court order, subpoena or other legal demand or request.</span>
+            </p>
+            <p class="c5"><span class="c7 c4 c3">Safety and security</span></p>
+            <p class="c5"><span class="c0">Regardless of any choices you make regarding your Personal Data (as described in Section 7 below), we may preserve and disclose your Personal Data if we believe in good faith that it is reasonably necessary to protect the safety of any person, to address fraud, security or technical issues, to protect Gong&#39;s rights or property, and/or to investigate or assist in preventing any violation or potential violation of the law, this Privacy Policy, or our Terms of Use.</span>
+            </p>
+            <p class="c5"><span class="c7 c4 c3">Change of control</span></p>
+            <p class="c5"><span class="c0">We may share some or all of your Personal Data in connection with, or during negotiation of, any merger, financing, acquisition or dissolution, transaction or proceeding involving sale, transfer, divestiture, or disclosure of all or a portion of our business or assets. In the event of an insolvency, bankruptcy, or receivership, Personal Data may also be transferred as a business asset. If another company acquires our company, business or assets, that company will possess the Personal Data collected by us and will assume the rights and obligations regarding your Personal Data as described in this Privacy Policy.</span>
+            </p>
+            <p class="c5"><span class="c7 c4 c3">Creation of Anonymous and Aggregated Data</span></p>
+            <p class="c5"><span class="c0">We may create Anonymous and/or Aggregated Data records from Personal Data by excluding information (such as your name) that makes the data personally identifiable to you. We use this Anonymous and Aggregated Data to analyze request and usage patterns so that we may enhance the content of our Services and improve Site navigation. We reserve the right, in our sole discretion, to use Anonymous and/or Aggregated Data for any purpose and to disclose Anonymous and/or Aggregated Data to third parties for any purpose.</span>
+            </p>
+            <p class="c5"><span class="c6 c4">6. SECURITY</span></p>
+            <p class="c5"><span class="c0">Our websites have certain security measures in place in effort to protect the loss, misuse, and alteration of the Personal Data under our control. No method of transmission over the Internet, or method of electronic storage, is 100% secure, however. Therefore, while we use reasonable efforts to protect your Personal Data, we cannot guarantee its absolute security.</span>
+            </p>
+            <p class="c5"><span class="c6 c4">7. OTHER WEBSITES AND APPLICATIONS</span></p>
+            <p class="c5"><span class="c0">The Services contain links to third party websites and applications. When you click on a link to any other website or location, you will leave the Site and go to another site and another entity may collect Personal Data, Anonymous Data, and/or Aggregated Data from you. We have no control over, do not review, and cannot be responsible for, these outside websites or their content. We are not responsible for the privacy practices or the content of such websites or applications. You may wish to review the privacy policies of those websites and applications before use. The links to such websites or locations are for your convenience and do not signify our endorsement of such third parties or their products, content or websites.</span>
+            </p>
+            <p class="c5"><span class="c6 c4">8. CORRECTING AND UPDATING INFORMATION; DELETING YOUR ACCOUNT</span></p>
+            <p class="c5"><span class="c10 c3">We offer the ability to correct or update online the Personal Data collected during registration via your account settings on our website or the applicable application or by contacting support via our </span><span
+                    class="c1">online support form</span><span class="c10 c3">. You may request deletion of your account by contacting support via our </span><span
+                    class="c1">online support form</span><span class="c0">. You have the right to access, rectify, port, and erase your data. We store data until it is no longer necessary to provide our services and Gong Products, or until your account is deleted - whichever comes first. This is a case-by-case determination that depends on things like the nature of the data, why it is collected and processed, and relevant legal or operational retention needs. For example, when you search for something on Gong, you can access and delete that query from within your search history at any time, but the log of that search is deleted after 6 months. If you submit a copy of your government-issued ID for account verification purposes, we delete that copy 30 days after submission. Learn more about deletion content you have shared and cookie data obtained through social plugins:</span>
+            </p>
+            <p class="c5"><span class="c0">&nbsp;When you delete your account, we delete things you have posted, such as your photos and status updates, and you won&#39;t be able to recover that information later. Information that others have shared about you isn&#39;t part of your account and won&#39;t be deleted. If you don&#39;t want to delete your account but want to temporarily stop using the Products, you can deactivate your account instead. To delete your account at any time, please visit the Gong settings.</span>
+            </p>
+            <p class="c5"><span class="c6 c4">9. CHILDREN&#39;S PRIVACY</span></p>
+            <p class="c5"><span class="c10 c3">The Site is not directed to persons under 13. If you become aware that your child has provided us with Personal Data without your consent, please contact us via our </span><span
+                    class="c1">online support form</span><span class="c0">. We do not knowingly collect Personal Data from children under 13. If we become aware that a child under 13 has provided us with Personal Data, we take steps to remove such information and terminate the child&#39;s account. </span>
+            </p>
+            <p class="c8"><span class="c7 c11"></span></p>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-12 text-center ">
+                <div class="footer-widget d-flex align-items-center justify-content-center pb-4 pb-sm-0 h-100">
+                    <img class="logo" src="../assets/images/footer-logo.png" alt="footer-logo">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 text-center text-sm-left">
+                <div class="footer-widget">
+                    <h3>GONG</h3>
+                    <ul>
+                        <li><a href="">Advertise</a></li>
+                        <li><a href="">Investor Portal</a></li>
+                        <li><a href="">Press</a></li>
+                        <li><a href="">Releases</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Settings</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 text-center text-sm-left">
+                <div class="footer-widget">
+                    <h3>JOIN COMPETITIONS</h3>
+                    <ul>
+                        <li><a href="">Login</a> </li>
+                        <li><a href="">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 text-center text-sm-left">
+                <div class="footer-widget">
+                    <h3>FOLLOW US</h3>
+                    <ul class="social-media">
+                        <li>
+                            <a style="" href="">
+                                <img src="../assets/images/fb.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a style="" href="">
+                                <img src="../assets/images/twitter.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a style="" href="">
+                                <img src="../assets/images/insta.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a style="" href="">
+                                <img src="../assets/images/pin.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="copy-right">
+                    <p>
+                        2020, Gong. All Rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
