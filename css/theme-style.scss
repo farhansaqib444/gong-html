@@ -314,7 +314,7 @@ button:focus {
   }
   position: relative;
   input {
-    border: 1px solid #FEFEFE;
+    border: 1px solid #FEC157;
     background-color: transparent;
     border-radius: 21px;
     font-family: Roboto, serif;
@@ -325,6 +325,7 @@ button:focus {
     &:focus {
       background-color: transparent;
       color: #FEFEFE;
+      border: 1px solid #FEC157;
     }
   }
   button {

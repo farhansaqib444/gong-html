@@ -1,0 +1,300 @@
+.dfbkdjsf img {
+    width: 309px;
+    height: 214px;
+}
+.onChange_btn{
+	position: absolute;
+
+	bottom: 0;
+
+	right: 0px;
+}
+.error_msg{
+	display: none;
+}
+
+.coming-soon-title {
+  color: #AEAEAE;
+}
+.hide-display{
+	display: none;
+}
+
+.button-wrapper.create_category-lead.active span, .button-wrapper.create_file-type.active span {
+  background: #FEC157 0% 0% no-repeat padding-box !important;
+  color: #000 !important;
+  border: 2px solid #940000 !important; }
+.dsfsdfsdfdsfdsfsdf{
+
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    outline: 0;
+}
+
+.content .app-area {
+    background: url("../images/download-banner.png") no-repeat center center;
+        background-size: auto;
+    background-size: cover;
+    margin-bottom: 90px;
+}
+.ptc .flipdown .rotor-group .rotor-group-heading::before {
+    color: white;
+}
+.afg{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: -80px;
+}
+
+.preview {
+
+  overflow: hidden;
+
+  width: 160px;
+
+  height: 160px;
+
+  margin: 10px;
+
+  border: 1px solid red;
+
+
+}
+
+.skip_btn{
+  color: blue;
+  cursor: pointer;
+}
+.skip_btn:hover{
+  background-color: transparent;
+}
+.skip_btn:active{
+  background-color: transparent;
+}
+
+ .verification-modal .btn-primary{
+      background: #fff;
+      color: #000;
+      border-color: #fff;
+      max-width: 200px !important;
+      width: 100% !important;
+      padding: 5px 2px !important;
+    }
+  .verification-modal .btn-primary:hover {
+    color: #000;
+    background-color: #FDC156;
+    border-color: #FDC156;
+  }
+  .btn_reporting{
+    color: #000 !important;
+      background-color: #FDC156 !important;
+      border-color: #FDC156 !important;
+  }
+  .mar-right {
+    margin-right:54px;
+  }
+  .btn_flag{
+    position: absolute;
+z-index: 99;
+right: 10px;
+top: 10px;
+border: none;
+border-radius: 5px;
+display: inline-block;
+background-color: #940000;
+color: #fff;
+padding: 2px 5px;
+  }
+
+
+  #verify-wrapper {
+        font-family: Lato;
+        font-size: 1.5rem;
+        text-align: center;
+        box-sizing: border-box;
+        color: #333;
+    }
+    .verify-wrapper .dialog {
+        border: solid 1px #ccc;
+        margin: 10px auto;
+        padding: 20px 30px;
+        box-shadow: 0 0 4px #ccc;
+        background-color: #faf8f8;
+        overflow: hidden;
+        position: relative;
+        max-width: 450px;
+    }
+    .verify-wrapper .dialog h3 {
+        margin: 0 0 10px;
+        padding: 0;
+        line-height: 1.25;
+    }
+    .verify-wrapper .dialog span {
+        font-size: 90%;
+    }
+    .verify-wrapper .dialog #form {
+        max-width: 240px;
+        margin: 25px auto 0;
+    }
+    .verify-wrapper .dialog #form input {
+        margin: 0 5px;
+        text-align: center;
+        line-height: 80px;
+        font-size: 50px;
+        border: solid 1px #ccc;
+        box-shadow: 0 0 5px #ccc inset;
+        outline: none;
+        width: 20%;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        border-radius: 3px;
+    }
+    .verify-wrapper .dialog #form input:focus {
+        border-color: purple;
+        box-shadow: 0 0 5px purple inset;
+    }
+    .verify-wrapper .dialog #form input::-moz-selection {
+        background: transparent;
+    }
+    .verify-wrapper .dialog #form input::selection {
+        background: transparent;
+    }
+    .verify-wrapper .dialog #form button {
+        margin: 30px 0 50px;
+        width: 100%;
+        padding: 6px;
+        border: none;
+        text-transform: uppercase;
+    }
+    .verify-wrapper .dialog button.close {
+        border-radius: 30px;
+        line-height: 19px;
+        font-size: 120%;
+        width: 22px;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+    .verify-wrapper .dialog div {
+        position: relative;
+        z-index: 1;
+    }
+    .verify-wrapper .dialog img {
+        position: absolute;
+        bottom: -70px;
+        right: -63px;
+    }
+
+    .dsf .dialog .iti__flag-container {
+
+      position: absolute;
+      z-index: 1;
+
+  }
+.competition-from .input-field .form-control {
+    color: #343a40;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+#verify-wrapper {
+        font-family: Lato;
+        font-size: 1.5rem;
+        text-align: center;
+        box-sizing: border-box;
+        color: #333;
+    }
+    .verify-wrapper .dialog {
+        border: solid 1px #ccc;
+        margin: 10px auto;
+        padding: 20px 30px;
+        box-shadow: 0 0 4px #ccc;
+        background-color: #faf8f8;
+        overflow: hidden;
+        position: relative;
+        max-width: 450px;
+    }
+    .verify-wrapper .dialog h3 {
+        margin: 0 0 25px;
+        padding: 0;
+        line-height: 1.25;
+        font-size: 20px;
+        text-align: center;
+    }
+    .verify-wrapper .dialog span {
+        font-size: 90%;
+    }
+    .verify-wrapper .dialog #form {
+        max-width: 240px;
+        margin: 25px auto 0;
+    }
+    .verify-wrapper .dialog #form input {
+        margin: 0 5px;
+        text-align: center;
+        line-height: 80px;
+        font-size: 50px;
+        border: solid 1px #ccc;
+        box-shadow: 0 0 5px #ccc inset;
+        outline: none;
+        width: 20%;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        border-radius: 3px;
+    }
+    .verify-wrapper .dialog #form input:focus {
+        border-color: purple;
+        box-shadow: 0 0 5px purple inset;
+    }
+    .verify-wrapper .dialog #form input::-moz-selection {
+        background: transparent;
+    }
+    .verify-wrapper .dialog #form input::selection {
+        background: transparent;
+    }
+    .verify-wrapper .dialog #form button {
+        margin: 30px 0 50px;
+        width: 100%;
+        padding: 6px;
+        border: none;
+        text-transform: uppercase;
+    }
+    .verify-wrapper .dialog button.close {
+        border-radius: 30px;
+        line-height: 19px;
+        font-size: 120%;
+        width: 22px;
+        position: absolute;
+        right: -25px;
+        top: -15px;
+        cursor: pointer;
+    }
+    .verify-wrapper .dialog div {
+        position: relative;
+        z-index: 1;
+    }
+    .verify-wrapper .dialog .iti__flag-container {
+        position: absolute;
+    }
+    .verify-wrapper .dialog img {
+        position: absolute;
+        bottom: -70px;
+        right: -63px;
+    }
+    .verify-wrapper .chuspic .iti__selected-flag {
+        height: 36px;
+    }

@@ -266,7 +266,7 @@ button:focus {
     /* Microsoft Edge */
     color: #AEAEAE; }
   .search-widget input {
-    border: 1px solid #FEFEFE;
+    border: 1px solid #FEC157;
     background-color: transparent;
     border-radius: 21px;
     font-family: Roboto, serif;
@@ -276,7 +276,8 @@ button:focus {
     color: #FEFEFE; }
     .search-widget input:focus {
       background-color: transparent;
-      color: #FEFEFE; }
+      color: #FEFEFE;
+      border: 1px solid #FEC157; }
   .search-widget button {
     position: absolute;
     right: 10px;

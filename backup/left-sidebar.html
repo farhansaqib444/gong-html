@@ -1,0 +1,69 @@
+<div class="col-lg-3 col-sm-12">
+    <div class="user-card">
+        <img src="{{config('constant.BUCKET_URL') . $data['user']['profile_photo']}}" alt="">
+        <div>
+            <label for="">{{$data['user']['name']}}</label>
+        </div>
+        <p>{{$data['user']['tier']}}</p>
+    </div>
+    <div class="d-flex flex-lg-column justify-content-sm-between justify-content-center flex-wrap">
+        <div class="user-info">
+            <div class="info-field" data-toggle="tooltip" data-placement="top" title="{{$data['user']['username']}}">
+                <span><i class="fa fa-hand-scissors-o"></i>Search me </span> <label>{{$data['user']['username']}}</label>
+            </div>
+            <div class="info-field" data-toggle="tooltip" data-placement="top" title="{{$data['user']['email']}}">
+                <span><i class="fa fa-envelope-o"></i>Email </span> <a href="mailto:johndoe@company.com" >{{$data['user']['email']}} </a>
+
+            </div>
+            <div class="info-field">
+                <span><i class="fa fa-phone"></i>Reach me at  </span> <label>{{$data['user']['phone']}}</label>
+            </div>
+            <div class="info-field">
+                <span><i class="fa fa-venus"></i>Gender is</span> <label class="text-capitalize"> {{$data['user']['gender']}}</label>
+            </div>
+            <div class="info-field">
+                <span><i class="fa fa-calendar"></i>Wish me on  </span> <label>{{$data['user']['date_of_birth']}}</label>
+            </div>
+            <div class="info-field">
+                <span><i class="fa fa-home"></i>Lives in </span> <label>{{$data['user']['country']}}</label>
+            </div>
+        </div>
+        <div class="competition-btn-group">
+            @if(Auth::user()->hasRole([1]))
+            <div class=" py-3 text-center">
+                <button class="btn btn-primary rounded-pill btn_submit_competition_sidebar">Compete</button>
+            </div>
+            @endif
+            <!--  <div class=" py-3 text-center">
+                 <a class="btn btn-primary rounded-pill" href="{{route('user.competition.private_join')}}">Join Private Network</a>
+             </div> -->
+            @if(Auth::user()->hasRole([4,5]))
+            <div class=" py-3 justify-content-center mb-4 nav nav-tabs"  role="tablist">
+                <a class="btn btn-primary rounded-pill" href="{{route('user.competition.create')}}">Create Competition</a>
+            </div>
+            @endif
+        </div>
+    </div>
+</div>
+
+@section('script')
+@parent
+<script type="text/javascript">
+    $('.btn_submit_competition_sidebar').click(function(){
+        $('.nav_check_class').removeClass('active');
+        $("#nav-Social").hide();
+        $("#nav-Competitions").hide();
+        $('.competition_tab_submit_for').show();
+    });
+    $("#nav-Competitions-tab").click(function(){
+        $('.competition_tab_submit_for').hide();
+        $('#nav-Competitions').show();
+        $('#nav-Social').hide();
+    });
+    $("#nav-Social-tab").click(function(){
+        $('.competition_tab_submit_for').hide();
+        $('#nav-Social').show();
+        $('#nav-Competitions').hide();
+    });
+</script>
+@endsection
