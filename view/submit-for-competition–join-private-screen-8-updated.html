@@ -159,6 +159,9 @@
                             <span><i class="fa fa-home"></i>Lives in </span> <label>United States</label>
                         </div>
                         <div class="info-field">
+                            <span><i class="fa fa-heart-o"></i>is </span> <label> Complicated </label>
+                        </div>
+                        <div class="info-field">
                             <span><i class="fa fa-link"></i>Linked With </span> <label> Iliya Gorb</label>
                         </div>
                         <div class="info-field">
@@ -190,8 +193,8 @@
                             <a class="nav-item nav-link " id="nav-Competitions-tab" data-toggle="tab" href="#nav-Competitions" role="tab" aria-selected="false">Competitions</a>
                             <a class="nav-item nav-link " id="nav-Shop-tab" data-toggle="tab" href="#nav-Shop" role="tab" aria-selected="false">Shop</a>
                             <a class="nav-item nav-link" id="nav-album-tab" data-toggle="tab" href="#nav-album" role="tab" aria-selected="false">Albums</a>
-                            <a class="nav-item nav-link active" id="nav-album-chat" data-toggle="tab" href="#nav-chat" role="tab" aria-selected="false"><i class="fa fa-envelope"></i></a>
-                            <a class="nav-item nav-link" id="nav-album-chart" data-toggle="tab" href="#nav-chart" role="tab" aria-selected="false"><i class="fa fa-bar-chart-o"></i></a>
+                            <a class="nav-item nav-link" id="nav-album-chat" data-toggle="tab" href="#nav-chat" role="tab" aria-selected="false"><i class="fa fa-envelope"></i></a>
+                            <a class="nav-item nav-link active" id="nav-album-chart" data-toggle="tab" href="#nav-chart" role="tab" aria-selected="false"><i class="fa fa-bar-chart-o"></i></a>
                         </div>
                     </nav>
                     <div class="tab-content form-steps-content" id="competitor-nav-tabContent">
@@ -206,12 +209,12 @@
                                                     <h5 class="mt-2 mb-0 font-14">Johnny S</h5>
                                                 </div>
                                             </div>
-                                            <textarea name="new-story" id="" rows="3"  data-toggle="modal" data-target="#exampleModal"></textarea>
+                                            <textarea name="new-story" id="" rows="3"  data-toggle="modal" data-target="#createPostModal"></textarea>
                                         </div>
                                     </div>
 
 
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal fade" id="createPostModal" tabindex="-1" role="dialog" aria-labelledby="createPostModalLabel" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content bg-light">
                                                 <div class="modal-header border-0 justify-content-center">
@@ -832,7 +835,7 @@
                             <div class="flower-listing">
                                 <div class="row grid-divider">
                                     <div class="col-sm-6">
-                                        <div class="media align-items-center">
+                                        <div class="media align-items-center mb-2">
                                             <img src="../assets/images/user-icon.png" class="rounded-circle mr-2" alt="">
                                             <div class="media-body d-flex justify-content-between">
                                                 <h5>Jhonny S</h5>
@@ -842,11 +845,30 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
-                                        <div class="media align-items-center">
+                                        <div class="media align-items-center mb-2">
                                             <img src="../assets/images/user-icon.png" class="rounded-circle mr-2" alt="">
                                             <div class="media-body d-flex justify-content-between">
                                                 <h5>Jhonny S</h5>
-                                                <button class="btn btn-outline rounded-pill mini-btn">Follow</button>
+                                                <button class="btn btn-light rounded-pill mini-btn">Follow</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="media align-items-center mb-2">
+                                            <img src="../assets/images/user-icon.png" class="rounded-circle mr-2" alt="">
+                                            <div class="media-body d-flex justify-content-between">
+                                                <h5>Jhonny S</h5>
+                                                <button class="btn btn-light rounded-pill mini-btn">Follow</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="media align-items-center mb-2">
+                                            <img src="../assets/images/user-icon.png" class="rounded-circle mr-2" alt="">
+                                            <div class="media-body d-flex justify-content-between">
+                                                <h5>Jhonny S</h5>
+
+                                                <button class="btn btn-primary rounded-pill mini-btn">Follow</button>
                                             </div>
                                         </div>
                                     </div>
@@ -855,6 +877,7 @@
                         </div>
                         <div class="tab-pane fade show active" id="nav-chart" role="tabpanel" aria-labelledby="nav-chart-tab">
                             <div class="user-stats">
+                                <h1 class="page-title"><span>Jhonny S</span> Stats </h1>
                                 <div class="row">
                                     <div class="col-md-6 offset-3">
                                         <ul class="stats-title">
@@ -1006,6 +1029,77 @@
                                                 <span>22</span>
                                             </li>
                                         </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="notification-listing">
+                                <h1 class="page-title"> Notification </h1>
+
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="">
+                                            <div class="media align-items-center mb-2">
+                                                <img src="../assets/images/user-icon.png" class="rounded-circle mr-2" alt="">
+                                                <div class="media-body d-flex justify-content-between">
+                                                    <p>
+                                                        John Doe has listed you as their Agent. Please approve here.John Doe has listed you as their Agent. Please approve here.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <span class="notify-time">2 min ago</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="media align-items-center mb-2">
+                                                <img src="../assets/images/user-icon.png" class="rounded-circle mr-2" alt="">
+                                                <div class="media-body d-flex justify-content-between">
+                                                    <p>
+                                                        John Doe has listed you as their Agent. Please approve here.John Doe has listed you as their Agent. Please approve here.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <span class="notify-time">2 min ago</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="media align-items-center mb-2">
+                                                <img src="../assets/images/user-icon.png" class="rounded-circle mr-2" alt="">
+                                                <div class="media-body d-flex justify-content-between">
+                                                    <p>
+                                                        John Doe has listed you as their Agent. Please approve here.John Doe has listed you as their Agent. Please approve here.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <span class="notify-time">2 min ago</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="complete-section">
+                                <div class="pb-5 mb-5 border-bottom">
+                                    <h1 class="page-title">Submit for Gong Competition</h1>
+                                    <p>
+                                        Aliquid praesentium officiis aspernatur qui ut. Totam odio odit dolorum laboriosam incidunt.
+                                        Aliquid sit quam iure non ut aliquam doloribus. Aliquid praesentium officiis aspernatur qui ut.
+                                        Totam odio odit dolorum laboriosam incidunt. Aliquid sit quam iure non ut aliquam doloribus.
+                                    </p>
+                                    <div class="text-center">
+                                        <button class="btn btn-primary rounded-pill"> Gong Competition </button>
+                                    </div>
+                                </div>
+                                <div class="pb-5 mb-5">
+                                    <h1 class="page-title">Submit for Private Competition</h1>
+                                    <p>
+                                        Aliquid praesentium officiis aspernatur qui ut. Totam odio odit dolorum laboriosam incidunt.
+                                        Aliquid sit quam iure non ut aliquam doloribus. Aliquid praesentium officiis aspernatur qui ut.
+                                        Totam odio odit dolorum laboriosam incidunt. Aliquid sit quam iure non ut aliquam doloribus.
+                                    </p>
+                                    <div class="text-center">
+                                        <button class="btn btn-primary rounded-pill"> Private Competition </button>
                                     </div>
                                 </div>
                             </div>

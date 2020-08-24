@@ -103,11 +103,144 @@
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#phoneVerification">
           phone Verification
         </button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#reportModal">
+          Report Modal
+        </button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#reportOptionModal">
+          Report Option Modal
+        </button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#delModal">
+          Del Modal
+        </button>
+      </div>
+
+      <div class="col-6 my-4">
+        <div class="story-widget">
+          <div class="write-story">
+            <textarea name="new-story" id="" rows="3"  data-toggle="modal" data-target="#createPostModal" placeholder="create post"></textarea>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 <div class="footer"></div>
+
+
+<!--Report option Modal start-->
+<div class="modal fade" id="delModal" tabindex="-1" role="dialog" aria-labelledby="delModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-light">
+      <div class="modal-header border-0 justify-content-center">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="del-Modal">
+          <h3>
+            Are you sure you want to delete your product?
+          </h3>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center border-0 mb-5">
+        <button class="btn btn-primary rounded-pill px-5"> Yes </button>
+        <button class="btn btn-secondary rounded-pill px-5"> No </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Report option Modal End-->
+
+<!--Report option Modal start-->
+<div class="modal fade" id="reportOptionModal" tabindex="-1" role="dialog" aria-labelledby="reportOptionModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-light">
+      <div class="modal-header border-0 justify-content-center">
+        <p class="font-18 mb-0">Please select a problem to continue</p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="report-options">
+          <button class="btn btn-secondary mini-btn rounded-pill mr-3">Nudity</button>
+          <button class="btn btn-secondary mini-btn rounded-pill mr-3">Violence</button>
+          <button class="btn btn-secondary mini-btn rounded-pill mr-3">Spam</button>
+          <button class="btn btn-secondary mini-btn rounded-pill mr-3">False News</button>
+          <button class="btn btn-secondary mini-btn rounded-pill mr-3">Suicide / Self Injury</button>
+          <button class="btn btn-secondary mini-btn rounded-pill mr-3">Unauthorized Sales</button>
+          <button class="btn btn-secondary mini-btn rounded-pill mr-3">Terrorism</button>
+          <button class="btn btn-secondary mini-btn rounded-pill mr-3">Hate Speech</button>
+          <button class="btn btn-secondary mini-btn rounded-pill mr-3">Something else</button>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center border-0">
+        <button class="btn btn-primary rounded-pill px-5"> Report </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Report option Modal End-->
+
+<!--Report Modal start-->
+<div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="reportModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-light">
+      <div class="modal-header border-0 justify-content-center">
+        <h5 class="modal-title">Report Successful</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="report-modal">
+          <label for="">
+            <i class="fa fa-check"></i>
+          </label>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <p class="text-center">
+          <i>Thankyou for reporting this post and working with us to create a safe community for everyone to enjoy.</i>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Report Modal End-->
+
+<!--create post modal start-->
+<div class="modal fade" id="createPostModal" tabindex="-1" role="dialog" aria-labelledby="createPostModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-light">
+      <div class="modal-header border-0 justify-content-center">
+        <h5 class="modal-title">Create Post</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="story-widget mb-4">
+          <div class="write-story">
+            <textarea name="new-story" rows="3"></textarea>
+          </div>
+        </div>
+
+        <div class="upload-wrap">
+          <div class="uploadpreview 01"></div>
+          <input id="01" type="file" accept="image/*">
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary rounded-pill">Post</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--create post modal End-->
 
 <!--    Sign Up Modal Start-->
 <div class="modal fade" id="modalExpample-5" tabindex="-1" role="dialog" aria-labelledby="modalExpample-5Label" aria-hidden="true">

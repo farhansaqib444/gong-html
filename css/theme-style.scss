@@ -10,11 +10,11 @@ select.form-control {
     -moz-appearance: none;
     /* for Chrome */
     -webkit-appearance: none;
-    background: url('../images/dropdown-icon.png') no-repeat right 5px top 12px;
+    background: url('../assets/images/dropdown-icon.png') no-repeat right 5px top 12px;
     /* For IE10 */
 }
 select.form-control.white-icon {
-    background: url('../images/white-drop-angle.png') no-repeat right 5px top 12px;
+    background: url('../assets/images/white-drop-angle.png') no-repeat right 5px top 12px;
 }
 select.form-control::-ms-expand {
     display: none;
@@ -198,29 +198,29 @@ button:focus {
 }
 
 .btn-primary {
-  color: #000;
+  color: #273043;
   background-color: #FDC156;
   border: 2px solid #FDC156;
 }
 .btn-primary:hover {
-  color: #000;
+  color: #273043;
   background-color: #FDC156;
   border-color: #FDC156;
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-  color: #000;
+  color: #273043;
   background-color: #FDC156;
   border-color: #FDC156;
 }
 .btn-primary.focus, .btn-primary:focus, .btn-primary:disabled {
-  color: #000;
+  color: #273043;
   background-color: #FDC156;
   border-color: #FDC156;
   box-shadow: none;
 }
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
   box-shadow: none;
-    color: #000;
+    color: #273043;
     background-color: #FDC156;
     border-color: #FDC156;
 }
@@ -228,18 +228,24 @@ button:focus {
 .btn-secondary {
   color: #000;
   background-color: transparent;
-  border: 2px solid #AEAEAE;
+  border: 2px solid #FDC156;
 }
 .btn-secondary:hover {
-  color: #000;
-  background-color: transparent;
-  border-color: #AEAEAE;
+  color: #fff;
+  background-color: #FDC156;
+  border-color: #FDC156;
 }
 .btn-secondary.focus, .btn-secondary:focus {
-  color: #000;
-  background-color: transparent;
-  border-color: #AEAEAE;
+  color: #fff;
+  background-color: #FDC156;
+  border-color: #FDC156;
   box-shadow: none;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #FDC156;
+  border-color: #FDC156;
 }
 
 .btn-danger {
