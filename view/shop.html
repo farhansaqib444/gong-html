@@ -97,10 +97,58 @@
                         <button class="btn btn-primary rounded-pill border-white"> <i class="fa fa-plus mr-1"></i> Sell Product</button>
                     </li>
                     <li>
-                        <button class="btn btn-primary rounded-pill border-white"> <i class="fa fa-shopping-cart"></i> </button>
+
+                        <div class="dropdown cart">
+                            <button class="btn btn-primary border-white dropdown-toggle noIcon" data-toggle="dropdown" id="dropdownMenuButton"  aria-haspopup="true" aria-expanded="false"> <i class="fa fa-shopping-cart"></i> </button>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">
+                                    <div class="media">
+                                        <img src="../assets/images/shoe.png" alt="">
+
+                                        <div class="media-body">
+                                            <p>Long Shoe</p>
+                                            <h5>$999</h5>
+                                        </div>
+                                    </div>
+                                    <span class="del-cart-item"><i class="fa fa-close"></i></span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <div class="media">
+                                        <img src="../assets/images/shoe.png" alt="">
+
+                                        <div class="media-body">
+                                            <p>Long Shoe</p>
+                                            <h5>$999</h5>
+                                        </div>
+                                    </div>
+                                    <span class="del-cart-item"><i class="fa fa-close"></i></span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <div class="media">
+                                        <img src="../assets/images/shoe.png" alt="">
+
+                                        <div class="media-body">
+                                            <p>Long Shoe</p>
+                                            <h5>$999</h5>
+                                        </div>
+                                    </div>
+                                    <span class="del-cart-item"><i class="fa fa-close"></i></span>
+                                </a>
+                                <div class="dropdown-divider"></div>
+
+                                <div class="total-cart">
+                                    <p>Sub-total: <span> $ 9999</span></p>
+                                </div>
+
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-primary rounded-pill px-5">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <select name="" id="" class="form-control rounded-pill">
+                        <select name="" id="" class="form-control custom-select rounded-pill">
                             <option value="USD">USD</option>
                             <option value="USD">EUR</option>
                         </select>
@@ -122,7 +170,7 @@
                     <h1 class="page-title">Hot Deals</h1>
                     <div class="page-sec-content">
                         <div class="row">
-                            <div class="col-lg-3 col-md-4">
+                            <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="shop-card">
                                     <div class="item-img">
                                         <img src="../assets/images/watch.png" alt="">
@@ -137,7 +185,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-4">
+                            <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="shop-card">
                                     <div class="item-img">
                                         <img src="../assets/images/dress.png" alt="">
@@ -152,7 +200,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-4">
+                            <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="shop-card">
                                     <div class="item-img">
                                         <img src="../assets/images/shoe.png" alt="">
@@ -167,7 +215,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-4">
+                            <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="shop-card">
                                     <div class="item-img">
                                         <img src="../assets/images/shoe.png" alt="">
@@ -197,7 +245,7 @@
                     </div>
                     <div class="page-sec-content">
                         <div class="row">
-                            <div class="col-lg-3 col-md-4">
+                            <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="shop-card">
                                     <div class="item-img">
                                         <img src="../assets/images/watch.png" alt="">
@@ -212,7 +260,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-4">
+                            <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="shop-card">
                                     <div class="item-img">
                                         <img src="../assets/images/dress.png" alt="">
@@ -227,7 +275,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-4">
+                            <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="shop-card">
                                     <div class="item-img">
                                         <img src="../assets/images/shoe.png" alt="">
@@ -242,7 +290,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-4">
+                            <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="shop-card">
                                     <div class="item-img">
                                         <img src="../assets/images/shoe.png" alt="">
@@ -257,7 +305,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-4">
+                            <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="shop-card">
                                     <div class="item-img">
                                         <img src="../assets/images/shoe.png" alt="">
@@ -272,37 +320,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-4">
-                                <div class="shop-card">
-                                    <div class="item-img">
-                                        <img src="../assets/images/shoe.png" alt="">
-                                    </div>
-
-                                    <div class="shop-item-title">
-                                        <h4>Lorum Ipsum Text</h4>
-                                        <span>45 $</span>
-                                    </div>
-                                    <div class="mb-2 text-center">
-                                        <button class="btn btn-primary rounded-pill">Buy Now</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4">
-                                <div class="shop-card">
-                                    <div class="item-img">
-                                        <img src="../assets/images/shoe.png" alt="">
-                                    </div>
-
-                                    <div class="shop-item-title">
-                                        <h4>Lorum Ipsum Text</h4>
-                                        <span>45 $</span>
-                                    </div>
-                                    <div class="mb-2 text-center">
-                                        <button class="btn btn-primary rounded-pill">Buy Now</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4">
+                            <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="shop-card">
                                     <div class="item-img">
                                         <img src="../assets/images/shoe.png" alt="">
@@ -331,7 +349,7 @@
                     </div>
                     <div class="page-sec-content">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="shop-card">
                                     <div class="item-img">
                                         <img src="../assets/images/shop-grid-img.png" alt="">
@@ -346,7 +364,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="shop-card">

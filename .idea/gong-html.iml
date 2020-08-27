@@ -9,5 +9,6 @@
     <orderEntry type="library" name="mediaelementplayer-legacy" level="application" />
     <orderEntry type="library" name="mediaelement-and-player" level="application" />
     <orderEntry type="library" name="wavesurfer" level="application" />
+    <orderEntry type="library" name="jquery-ui" level="application" />
   </component>
 </module>
