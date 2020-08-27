@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> Check out </title>
+    <title> Address </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--  Font Icons-->
@@ -90,151 +90,89 @@
         </div>
     </nav>
 </div>
-<div class="nav-bottom sticky-top">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <ul class="list-unstyled">
-                    <li>
-                        <button class="btn btn-primary rounded-pill border-white"> <i class="fa fa-plus mr-1"></i> Sell Product</button>
-                    </li>
-                    <li>
-
-                        <div class="dropdown cart">
-                            <button class="btn btn-primary border-white dropdown-toggle noIcon" data-toggle="dropdown" id="dropdownMenuButton"  aria-haspopup="true" aria-expanded="false"> <i class="fa fa-shopping-cart"></i> </button>
-
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">
-                                    <div class="media">
-                                        <img src="../assets/images/shoe.png" alt="">
-
-                                        <div class="media-body">
-                                            <p>Long Shoe</p>
-                                            <h5>$999</h5>
-                                        </div>
-                                    </div>
-                                    <span class="del-cart-item"><i class="fa fa-close"></i></span>
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <div class="media">
-                                        <img src="../assets/images/shoe.png" alt="">
-
-                                        <div class="media-body">
-                                            <p>Long Shoe</p>
-                                            <h5>$999</h5>
-                                        </div>
-                                    </div>
-                                    <span class="del-cart-item"><i class="fa fa-close"></i></span>
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <div class="media">
-                                        <img src="../assets/images/shoe.png" alt="">
-
-                                        <div class="media-body">
-                                            <p>Long Shoe</p>
-                                            <h5>$999</h5>
-                                        </div>
-                                    </div>
-                                    <span class="del-cart-item"><i class="fa fa-close"></i></span>
-                                </a>
-                                <div class="dropdown-divider"></div>
-
-                                <div class="total-cart">
-                                    <p>Sub-total: <span> $ 9999</span></p>
-                                </div>
-
-                                <div class="text-center mt-5">
-                                    <button class="btn btn-primary rounded-pill px-5">Checkout</button>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <select name="" id="" class="form-control custom-select rounded-pill">
-                            <option value="USD">USD</option>
-                            <option value="USD">EUR</option>
-                        </select>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="content mt-5">
+<div class="content">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="cart-page">
-                    <h1 class="page-title">
-                        Checkout
+                <div class="page-head mt-5">
+                    <h1  class="page-title">
+                        Address
                     </h1>
-                    <div class="added-items">
-                        <div class="cart-item">
-                            <div class="media">
-                                <img src="../assets/images/shoe.png" alt="">
+                </div>
+                <div class="page-content">
+                    <form action="">
+                        <div class="input-field">
+                            <label for="Address" class="text-dark">Address 1</label>
+                            <div class="input-group mb-4">
+                                <div class="input-pre-icon">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                                <input type="text" class="form-control border-dark" id="Address">
+                            </div>
+                        </div>
 
-                                <div class="media-body">
-                                    <p>Long Shoe</p>
-                                    <h5>$999</h5>
+                        <div class="input-field">
+                            <label for="Address2" class="text-dark">Address 2</label>
+                            <div class="input-group mb-4">
+                                <div class="input-pre-icon">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                                <input type="text" class="form-control border-dark" id="Address2">
+                            </div>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="City" class="text-dark">City</label>
+                            <div class="input-group mb-4">
+                                <div class="input-pre-icon">
+                                    <i class="fa fa-location-arrow"></i>
+                                </div>
+                                <input type="text" class="form-control border-dark" id="City">
+                            </div>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="Region" class="text-dark">Region</label>
+                            <div class="input-group mb-4">
+                                <div class="input-pre-icon">
+                                    <i class="fa fa-area-chart"></i>
+                                </div>
+                                <input type="text" class="form-control border-dark" id="Region">
+                            </div>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="Country" class="text-dark">Country</label>
+                            <div class="input-group mb-4">
+                                <div class="input-pre-icon">
+                                    <i class="fa fa-flag"></i>
+                                </div>
+                                <input type="text" class="form-control border-dark" id="Country">
+                            </div>
+                        </div>
+
+                        <div class="border-bottom my-5"></div>
+
+                        <div class="col-12 d-flex justify-content-center ">
+                            <div>
+                                <div class="checkbox checkbox-primary checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox2" value="option1" checked="">
+                                    <label for="inlineCheckbox2"> I agree to the <a href=""> <strong>Privacy Policy</strong> </a> </label>
+                                </div>
+                                <div class="checkbox checkbox-primary checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label for="inlineCheckbox1"> I agree to the <a href=""> <strong>Terms &amp; Conditions</strong> </a> </label>
                                 </div>
                             </div>
-                            <span class="del-cart-item"><i class="fa fa-close"></i></span>
+
                         </div>
-                        <div class="cart-item">
-                            <div class="media">
-                                <img src="../assets/images/shoe.png" alt="">
 
-                                <div class="media-body">
-                                    <p>Long Shoe</p>
-                                    <h5>$999</h5>
-                                </div>
-                            </div>
-                            <span class="del-cart-item"><i class="fa fa-close"></i></span>
+                        <div class="text-center mt-4">
+                            <button class="btn btn-primary rounded-pill px-5">
+                                <i class="fa fa-save mr-1"></i>Save
+                            </button>
                         </div>
-                        <div class="cart-item">
-                            <div class="media">
-                                <img src="../assets/images/shoe.png" alt="">
-
-                                <div class="media-body">
-                                    <p>Long Shoe</p>
-                                    <h5>$999</h5>
-                                </div>
-                            </div>
-                            <span class="del-cart-item"><i class="fa fa-close"></i></span>
-                        </div>
-                    </div>
-
-                    <div class="total-cart">
-                        <p>Sub-total: <span> $ 9999</span></p>
-                    </div>
-
-
-                    <div class="cart-slide">
-                        <h2 class="cart-slide-title">Address</h2>
-                        <div class="cart-slide-data">
-                            <i class="fa fa-home"></i>
-                        </div>
-                    </div>
-                    <div class="cart-slide">
-                        <h2 class="cart-slide-title">Payment</h2>
-                        <div class="cart-slide-data">
-                            <i class="fa fa-paypal"></i> / <i class="fa fa-cc-mastercard"></i>
-                        </div>
-                    </div>
-                    <div class="cart-slide">
-                        <h2 class="cart-slide-title">Shipping</h2>
-                        <div class="cart-slide-data">
-                            <p>$ 0.00</p>
-                        </div>
-                    </div>
-
-                    <div class="total-cart">
-                        <p>Sub-total: <span> $ 9999</span></p>
-                    </div>
-
-                    <div class="text-center mt-5">
-                        <button class="btn btn-primary rounded-pill px-5">Place Order</button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
