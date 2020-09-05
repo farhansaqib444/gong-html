@@ -11,5 +11,6 @@
     <orderEntry type="library" name="wavesurfer" level="application" />
     <orderEntry type="library" name="jquery-ui" level="application" />
     <orderEntry type="library" name="hbh4adk" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
   </component>
 </module>

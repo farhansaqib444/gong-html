@@ -1202,13 +1202,22 @@ body, h1, h2, h3, h4, h5, label, span, p, a, ul li, div, i {
 
         li {
             margin-bottom: 10px;
-            border-bottom: 1px solid #F2F2F2;
+            border-bottom: 0;
+            &:last-child {
 
+            }
             .review-content {
                 background: #FAFAFA 0% 0% no-repeat padding-box;
                 border-radius: 10px;
                 margin-bottom: 10px;
                 padding: 10px;
+                .report-dropdown {
+                    position: absolute;
+                    padding: 4px;
+                    right: 0;
+                    top: 0;
+                    cursor: pointer;
+                }
             }
 
             p {
@@ -1220,6 +1229,7 @@ body, h1, h2, h3, h4, h5, label, span, p, a, ul li, div, i {
 
             .media {
                 align-items: center;
+                position: relative;
                 margin-bottom: 10px;
 
                 img {
@@ -1545,16 +1555,6 @@ body, h1, h2, h3, h4, h5, label, span, p, a, ul li, div, i {
             text-decoration: none;
         }
     }
-    .story-eidt {
-        position: absolute;
-        padding: 4px;
-        right: 2%;
-        top: 15px;
-        cursor: pointer;
-        &::after {
-            display: none;
-        }
-    }
     .story-description {
         text-align: left;
         font-family: proxima-nova,sans-serif;
@@ -1604,6 +1604,21 @@ body, h1, h2, h3, h4, h5, label, span, p, a, ul li, div, i {
                 width: 100%;
             }
         }
+    }
+}
+.report-dropdown {
+    position: absolute;
+    padding: 4px;
+    right: 2%;
+    top: 15px;
+    cursor: pointer;
+    .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: 0;
+        vertical-align: 0;
+        font-family: FontAwesome;
+        content: "\f142";
+        border-top: 0;
     }
 }
 .pagination-sm .page-item:first-child .page-link, .pagination-sm .page-item:last-child .page-link {

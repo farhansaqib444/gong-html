@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Z-Plan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style>
+    p, ul, li, div, nav {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: Calibri;
+    }
+
+    #tool-menu {
+        overflow: auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    .parent-menu {
+        background-color: #0c8fff;
+        min-width: 60px;
+        float: left;
+    }
+
+    #tool-menu ul {
+        list-style-type: none;
+    }
+
+    #tool-menu ul li a {
+        padding: 5px 15px;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #tool-menu ul li a img {
+        width: 40px;
+    }
+
+    #tool-menu ul li a:hover {
+        background-color: #007ee9;
+    }
+
+    /*=========================    Sub Menu    --===================*/
+
+    #tool-menu ul li:hover > ul {
+        left: 60px;
+        -webkit-transition: left 700ms ease-in;
+        -moz-transition: left 700ms ease-in;
+        -ms-transition: left 700ms ease-in;
+        transition: left 700ms ease-in;
+    }
+
+    #tool-menu ul li > ul {
+        position: absolute;
+        background-color: #333;
+        top: 0;
+        left: -60px;
+        min-width: 60px;
+        z-index: -1;
+        height: 100%;
+        -webkit-transition: left 450ms ease-in;
+        -moz-transition: left 450ms ease-in;
+        -ms-transition: left 450ms ease-in;
+        transition: left 450ms ease-in;
+    }
+
+    #tool-menu ul li > ul li a:hover {
+        background-color: #2e2e2e;
+    }
+
+</style>
+<body>
+<nav id="tool-menu">
+    <ul class="parent-menu">
+        <li><a href="#">
+            <img src="../assets/images/fan-form-icon.png" alt="">
+        </a>
+            <ul>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+            </ul>
+        </li>
+        <li><a href="#"><img src="../assets/images/fan-form-icon.png" alt=""></a>
+            <ul>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+            </ul>
+        </li>
+        <li><a href="#">
+            <img src="../assets/images/fan-form-icon.png" alt="">
+        </a>
+            <ul>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+            </ul>
+        </li>
+        <li><a href="#"><img src="../assets/images/fan-form-icon.png" alt=""></a>
+            <ul>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+            </ul>
+        </li>
+        <li><a href="#">
+            <img src="../assets/images/fan-form-icon.png" alt="">
+        </a>
+            <ul>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+            <img src="../assets/images/fan-form-icon.png" alt="">
+            </a>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Deliveries</a></li>
+                <li><a href="#">T&C</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+</body>
+</html>

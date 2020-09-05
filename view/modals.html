@@ -114,6 +114,12 @@
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#delModal">
           Del Modal
         </button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#forgotPassword">
+          Forgot Modal
+        </button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#forgot-timer">
+          forgot-timer Modal
+        </button>
       </div>
 
       <div class="col-6 my-4">
@@ -127,6 +133,7 @@
   </div>
 </div>
 <div class="footer"></div>
+
 
 
 <!--Report option Modal start-->
@@ -421,24 +428,36 @@
                 <div class="input-field">
                   <label for="email">Email</label>
                   <div class="input-group mb-3">
+                    <div class="input-pre-icon">
+                      <i class="fa fa-envelope"></i>
+                    </div>
                     <input type="email" class="form-control" id="email">
                   </div>
                 </div>
                 <div class="input-field">
                   <label for="Phone">Phone</label>
                   <div class="input-group mb-3">
+                    <div class="input-pre-icon">
+                      <i class="fa fa-phone"></i>
+                    </div>
                     <input type="text" class="form-control" id="Phone">
                   </div>
                 </div>
                 <div class="input-field">
                   <label for="Password">Password</label>
                   <div class="input-group mb-3">
+                    <div class="input-pre-icon">
+                      <i class="fa fa-lock"></i>
+                    </div>
                     <input type="password" class="form-control" id="Password">
                   </div>
                 </div>
                 <div class="input-field">
                   <label for="confirm-password">Password</label>
                   <div class="input-group mb-3">
+                    <div class="input-pre-icon">
+                      <i class="fa fa-lock"></i>
+                    </div>
                     <input type="password" class="form-control" id="confirm-password">
                   </div>
                 </div>
@@ -468,8 +487,11 @@
           <div class="row align-items-center">
             <div class="col-md-6 col-sm-6">
               <div class="already-account mb-0 mb-sm-4">
-                <p>Already have an account?</p>
-                <a href="">Log In</a>
+                <h2 class="text-white">Sign Up</h2>
+                <p>
+                  Please complete the details to complete your sign up
+                </p>
+
               </div>
               <div class="user-gender">
                 <label for=""> I'm a</label>
@@ -477,8 +499,11 @@
                   <button class="btn btn-primary rounded-pill mr-2">
                     <img src="../assets/images/female-icon.png" alt="female"> Female
                   </button>
-                  <button class="btn btn-light rounded-pill">
+                  <button class="btn btn-light rounded-pill mr-2">
                     <img src="../assets/images/male-icon.png" alt="male"> Male
+                  </button>
+                  <button class="btn btn-light rounded-pill">
+                    <i class="fa fa-group mr-2"></i>Group
                   </button>
                 </div>
               </div>
@@ -495,26 +520,47 @@
                   <input type="file">
                 </div>
                 <div class="input-field">
-                  <label for="Name">Name</label>
+                  <label for="fName"> First Name</label>
                   <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="Name">
+                    <div class="input-pre-icon">
+                      <i class="fa fa-user"></i>
+                    </div>
+                    <input type="text" class="form-control" id="fName">
+                  </div>
+                </div>
+                <div class="input-field">
+                  <label for="lName"> Last Name</label>
+                  <div class="input-group mb-3">
+                    <div class="input-pre-icon">
+                      <i class="fa fa-hand-scissors-o"></i>
+                    </div>
+                    <input type="text" class="form-control" id="lName">
                   </div>
                 </div>
                 <div class="input-field">
                   <label for="Username">Username</label>
                   <div class="input-group mb-3">
+                    <div class="input-pre-icon">
+                      <i class="fa fa-hand-scissors-o"></i>
+                    </div>
                     <input type="text" class="form-control" id="Username">
                   </div>
                 </div>
                 <div class="input-field">
                   <label for="Date of Birth">Date of Birth</label>
                   <div class="input-group mb-3">
+                    <div class="input-pre-icon">
+                      <i class="fa fa-calendar"></i>
+                    </div>
                     <input type="date" class="form-control" id="Date of Birth">
                   </div>
                 </div>
                 <div class="input-field">
                   <label for="Region">Region</label>
                   <div class="input-group mb-3">
+                    <div class="input-pre-icon">
+                      <i class="fa fa-flag-o"></i>
+                    </div>
                     <select name="" class="form-control" id="Region">
                       <option value="">New York</option>
                       <option value="">Washington</option>
@@ -524,6 +570,9 @@
                 <div class="input-field">
                   <label for="Country">Country</label>
                   <div class="input-group mb-3">
+                    <div class="input-pre-icon">
+                      <i class="fa fa-flag"></i>
+                    </div>
                     <select name="" class="form-control" id="Country">
                       <option value="">UK</option>
                       <option value="">USA</option>
@@ -563,16 +612,29 @@
                   to your account
                 </p>
                 <div class="input-field">
-                  <label for="login-email">Email</label>
-                  <div class="input-group mb-3">
-                    <input type="email" class="form-control" id="login-email">
+                  <label for="log-email" class="">Email</label>
+                  <div class="input-group mb-4">
+                    <div class="input-pre-icon">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                    <input type="email" class="form-control" id="log-email">
                   </div>
                 </div>
                 <div class="input-field">
-                  <label for="login-password">Password</label>
-                  <div class="input-group mb-3">
-                    <input type="password" class="form-control" id="login-password">
+                  <label for="log-pass" class="">Password</label>
+                  <div class="input-group mb-4">
+                    <div class="input-pre-icon">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <input type="password" class="form-control" id="log-pass">
                   </div>
+                </div>
+                <div class="input-field d-flex justify-content-between align-items-center">
+                  <div class="checkbox checkbox-primary checkbox-inline">
+                    <input type="checkbox" id="Remember" checked="">
+                    <label for="Remember"> Remember me </label>
+                  </div>
+                  <label for=""><a href="" style="color: #fff">Forgot Password</a></label>
                 </div>
                 <button class="btn btn-primary rounded-pill mt-3">Login</button>
               </form>
@@ -689,11 +751,175 @@
 </div>
 <!--    Login Modal End-->
 
+<!--    Forgot Modal Start-->
+<div class="modal fade" id="forgotPassword" tabindex="-1" role="dialog" aria-labelledby="forgotPassword" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content theme-modal login-modal">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <span class="modal-divider">
+            OR
+          </span>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 col-sm-6 text-center bg-red py-5">
+              <form action="">
+                <h2 class="modal-title">Forgot Password</h2>
+                <p class="title-description">
+                  Enter your email below to receive your Password reset instructions
+                </p>
+                <div class="input-field">
+                  <label for="forgot-email" class="">Email</label>
+                  <div class="input-group mb-4">
+                    <div class="input-pre-icon">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                    <input type="email" class="form-control" id="forgot-email">
+                  </div>
+                </div>
+                <button class="btn btn-primary rounded-pill mt-3">Send Password</button>
+              </form>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="already-account mb-0 mb-sm-4">
+                <img src="../assets/images/gong-logo.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--    Forgot Modal End-->
+
+<!--    Forgot Modal Start-->
+<div class="modal fade" id="forgot-timer" tabindex="-1" role="dialog" aria-labelledby="forgot-timer" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content theme-modal login-modal">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <span class="modal-divider">
+            OR
+          </span>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 col-sm-6 text-center bg-red py-5">
+              <form action="">
+                <h2 class="modal-title">Forgot Password</h2>
+                <p class="title-description">
+                  Please enter password reset code
+                </p>
+                <div class="countDown">
+                  <div class="item-alfa html">
+                    <h2 class="show-time">0</h2>
+                    <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                      <g>
+                        <title>Layer 1</title>
+                        <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="2" stroke="#6fdb6f" fill="none"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="otp-input">
+                  <form>
+                    <input id="codeBox1" type="number" maxlength="1" onkeyup="onKeyUpEvent(1, event)" onfocus="onFocusEvent(1)" maxlength="1"/>
+                    <input id="codeBox2" type="number" maxlength="1" onkeyup="onKeyUpEvent(2, event)" onfocus="onFocusEvent(2)" maxlength="1"/>
+                    <input id="codeBox3" type="number" maxlength="1" onkeyup="onKeyUpEvent(3, event)" onfocus="onFocusEvent(3)" maxlength="1"/>
+                    <input id="codeBox4" type="number" maxlength="1" onkeyup="onKeyUpEvent(4, event)" onfocus="onFocusEvent(4)" maxlength="1"/>
+                  </form>
+                </div>
+                <button class="btn btn-primary rounded-pill mt-3 mb-3">Continue</button>
+                <div class="text-center">
+                  <p class="text-white mb-0">If you did not receive Code</p>
+                  <a class="text-white border-bottom border-white" href="">Resend Code?</a>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="already-account mb-0 mb-sm-4">
+                <img src="../assets/images/gong-logo.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--    Forgot Modal End-->
 <!--Bootstrap 4 JS files-->
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!--Bootstrap 4 JS files-->
+
+
+<script>
+
+  // Here is something i was playing around with a while ago. It uses a combination of SVG, css transitions and javascript. You should be able to rip it apart and use as a starting point...
+
+  /**
+   * The setTimeout({},0) is a workaround for what appears to be a bug in StackSnippets.
+   * It should not be required. See JSFiddle version.
+   */
+
+  setTimeout(function() {
+
+    var time = 120; /* how long the timer will run (seconds) */
+    var initialOffset = '440';
+    var i = 1;
+
+    /* Need initial run as interval hasn't yet occured... */
+    $('.circle_animation').css('stroke-dashoffset', initialOffset-(1*(initialOffset/time)));
+
+    var interval = setInterval(function() {
+      $('.show-time').text(i);
+      if (i == time) {
+        clearInterval(interval);
+        return;
+      }
+      $('.circle_animation').css('stroke-dashoffset', initialOffset-((i-1)*(initialOffset/time)));
+      i++;
+    }, 1000);
+
+  }, 0)
+</script>
+<!--OTP Input Validation-->
+<script>
+  function getCodeBoxElement(index) {
+    return document.getElementById('codeBox' + index);
+  }
+  function onKeyUpEvent(index, event) {
+    const eventCode = event.which || event.keyCode;
+    if (getCodeBoxElement(index).value.length === 1) {
+      if (index !== 4) {
+        getCodeBoxElement(index+ 1).focus();
+      } else {
+        getCodeBoxElement(index).blur();
+        // Submit code
+        console.log('submit code ');
+      }
+    }
+    if (eventCode === 8 && index !== 1) {
+      getCodeBoxElement(index - 1).focus();
+    }
+  }
+  function onFocusEvent(index) {
+    for (item = 1; item < index; item++) {
+      const currentElement = getCodeBoxElement(item);
+      if (!currentElement.value) {
+        currentElement.focus();
+        break;
+      }
+    }
+  }
+</script>
+<!--OTP Input Validation-->
 
 </body>
 </html>

@@ -216,7 +216,7 @@
 
     &.login-modal {
         form {
-            max-width: 250px;
+            max-width: 300px;
             width: 100%;
             margin: 0 auto;
         }
@@ -273,6 +273,55 @@
                 }
             }
         }
+    }
+}
+
+.countDown {
+    display: flex;
+    .item-alfa {
+        position: relative;
+        float: left;
+        margin: 0 auto;
+    }
+
+    .item-alfa h2 {
+        position: absolute;
+        line-height: 0;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        color: #fff;
+    }
+
+    svg {
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .circle_animation {
+        stroke-dasharray: 440; /* this value is the pixel circumference of the circle */
+        stroke-dashoffset: 440;
+        transition: all 1s linear;
+    }
+}
+.otp-input {
+    input[type=number] {
+        height: 45px;
+        width: 45px;
+        font-size: 25px;
+        text-align: center;
+        background: transparent;
+        color: #fff;
+        border: 0;
+        border-bottom: 1px solid #fff;
+        &:focus {
+            outline: none;
+        }
+    }
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
     }
 }
 

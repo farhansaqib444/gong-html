@@ -193,15 +193,12 @@ var wavesurfer = Object.create(WaveSurfer);
     preventDefaultEvents: false,
     threshold: 75
   });
-  /*
-  $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
-  });
-  */
 
-  $('#myCarousel .carousel-item img').on('click', function(e) {
-    var src = $(e.target).attr('data-remote');
-    if (src) $(this).ekkoLightbox();
-  });
+
   // Single Product Slider End
+
+
+// Chat images upload start
+
+// Chat images upload End
+
